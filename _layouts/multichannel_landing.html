@@ -21,14 +21,10 @@
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preload" href="{{ '/assets/fonts/montserrat-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="{{ '/assets/images/sellerchamp-logo-dk.png' | relative_url }}" as="image">
+  <link rel="preload" href="{{ '/assets/images/sellerchamp-logo-dk.png' | relative_url }}" as="image" fetchpriority="high">
 
-  <link rel="preload" href="{{ '/assets/css/fonts.css' | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="{{ '/assets/css/multichannel_landing.css' | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="{{ '/assets/css/fonts.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/multichannel_landing.css' | relative_url }}">
-  </noscript>
+  <link rel="stylesheet" href="{{ '/assets/css/fonts.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/multichannel_landing.css' | relative_url }}">
 
   {% seo title=false %}
 </head>

@@ -581,6 +581,16 @@
        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
      }
      .ch-badge--sm img { height: 18px; width: auto; object-fit: contain; display: block; opacity: 0.85; filter: brightness(0) invert(1); }
+     /* Full-color / raster logos — skip white invert on dark hero badges */
+     .ch-badge--sm img.logo-fullcolor,
+     .sc-ch-tile img.logo-fullcolor {
+       filter: none;
+       opacity: 1;
+       background: #fff;
+       border-radius: 3px;
+       padding: 1px 4px;
+       box-sizing: content-box;
+     }
      .ch-badge-name { font-size: 10px; font-weight: 600; color: rgba(255,255,255,0.75); white-space: nowrap; }
      .ch-strip-more {
        font-size: 11px; color: rgba(255,255,255,0.4);
@@ -591,6 +601,11 @@
         padding:0px !important;
      }
 /* ── Jekyll overrides ─────────────────────────────────────────────── */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .site-logo {
   height: 40px;
