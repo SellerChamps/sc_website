@@ -2,6 +2,16 @@
 <script>
 (function () {
   var loaded = false;
+  var events = ['scroll', 'click', 'touchstart', 'keydown'];
+
+  function prefetchOrigins() {
+    ['https://www.googletagmanager.com', 'https://connect.facebook.net', 'https://r.wdfl.co', 'https://widget.intercom.io'].forEach(function (origin) {
+      var link = document.createElement('link');
+      link.rel = 'dns-prefetch';
+      link.href = origin;
+      document.head.appendChild(link);
+    });
+  }
 
   function loadGtm() {
     {% if site.tracking.gtm_id %}
@@ -88,24 +98,24 @@
   function loadTracking() {
     if (loaded) return;
     loaded = true;
+    prefetchOrigins();
     loadGtm();
     loadRewardful();
     loadFacebook();
     loadIntercom();
   }
 
-  function schedule() {
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(loadTracking, { timeout: 2500 });
-    } else {
-      setTimeout(loadTracking, 1);
-    }
+  function bindInteraction() {
+    events.forEach(function (eventName) {
+      window.addEventListener(eventName, loadTracking, { once: true, passive: true, capture: true });
+    });
+    window.setTimeout(loadTracking, 30000);
   }
 
   if (document.readyState === 'complete') {
-    schedule();
+    bindInteraction();
   } else {
-    window.addEventListener('load', schedule, { once: true, passive: true });
+    window.addEventListener('load', bindInteraction, { once: true, passive: true });
   }
 })();
 </script>
