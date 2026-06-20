@@ -13,8 +13,8 @@ bundle exec jekyll serve --livereload
 
 Pushes to `main` deploy via GitHub Actions.
 
-- **Site URL:** https://noorani786.github.io/sellerchamp-jekyll/
-- **Landing page:** https://noorani786.github.io/sellerchamp-jekyll/ebay-lister-landing-v2/
+- **Site URL:** https://sellerchamps.github.io/sc_website/
+- **Landing page:** https://sellerchamps.github.io/sc_website/ebay-lister-landing-v2/
 
 To publish: push to `main`. Monitor the **Deploy Jekyll site to Pages** workflow in the repo Actions tab.
 
