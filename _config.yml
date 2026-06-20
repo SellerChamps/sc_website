@@ -1,0 +1,38 @@
+# ── Site ──────────────────────────────────────────────────────────────
+title: SellerChamp
+description: >-
+  Self-serve AI listing software for eBay, Amazon, Walmart, Shopify & 10+
+  channels. From $29/month. Real-time inventory sync, bulk listing,
+  AI-generated content. Free 14-day trial, no credit card.
+url: "https://sellerchamp.com"
+lang: en-US
+
+# Contact / brand details reused across templates
+phone: "(469) 224-5624"
+phone_raw: "4692245624"
+support_email: "support@sellerchamp.com"
+
+# App URLs (kept in one place so they're easy to swap)
+app:
+  signin:  "https://app.sellerchamp.com/users/sign_in"
+  signup:  "https://app.sellerchamp.com/users/sign_up?scenario=lister_trial"
+  leads:   "https://app.sellerchamp.com/leads/new"
+
+# ── Build ─────────────────────────────────────────────────────────────
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+sass:
+  style: compressed
+
+# Don't copy these into the built _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+# Pretty permalinks
+permalink: pretty
