@@ -19,9 +19,9 @@ Pushes to `main` deploy via GitHub Actions.
 To publish: push to `main`. Monitor the **Deploy Jekyll site to Pages** workflow in the repo Actions tab.
 
 - `_config.yml` — site + brand config (phone, app URLs, SEO)
-- `_layouts/landing.html` — HTML shell, `<head>`, SEO meta, asset links
+- `_layouts/lister_landing.html` — HTML shell, `<head>`, SEO meta, asset links
 - `ebay-lister-landing-v2.html` — the page (front matter + sections)
-- `assets/css/landing.css` — all styles, brand tokens at top
+- `assets/css/lister_landing.css` — all styles, brand tokens at top
 - `assets/js/landing.js` — pricing toggle + mobile nav
 - `assets/images/` — drop real images here (see placeholders in the page)
 
