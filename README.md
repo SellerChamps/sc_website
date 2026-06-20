@@ -1,6 +1,6 @@
 # SellerChamp Frontend - Built on Jekyll
 
-Static rebuild of the eBay Lister landing page.
+Static rebuild of the SellerChamp.com website
 
 ## Run locally
 ```bash
