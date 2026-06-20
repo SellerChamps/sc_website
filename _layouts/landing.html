@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
+  <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
+
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description | strip_newlines }}">
   {% if page.canonical %}<link rel="canonical" href="{{ page.canonical }}">{% endif %}
@@ -33,6 +36,7 @@
 <body>
   {% include tracking-body.html %}
   {{ content }}
+  {% include tracking-deferred.html %}
   <script src="{{ '/assets/js/landing.js' | relative_url }}" defer></script>
 </body>
 </html>

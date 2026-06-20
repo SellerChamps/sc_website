@@ -1,0 +1,112 @@
+{% if jekyll.environment == "production" and site.tracking %}
+<script>
+(function () {
+  var loaded = false;
+
+  function loadGtm() {
+    {% if site.tracking.gtm_id %}
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0];
+      var j = d.createElement(s);
+      var dl = l !== 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', '{{ site.tracking.gtm_id }}');
+    {% endif %}
+  }
+
+  function loadRewardful() {
+    {% if site.tracking.rewardful_id %}
+    (function (w, r) {
+      w._rwq = r;
+      w[r] = w[r] || function () { (w[r].q = w[r].q || []).push(arguments); };
+    })(window, 'rewardful');
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://r.wdfl.co/rw.js';
+    s.setAttribute('data-rewardful', '{{ site.tracking.rewardful_id }}');
+    document.head.appendChild(s);
+    {% endif %}
+  }
+
+  function loadFacebook() {
+    {% if site.tracking.facebook_pixel_id %}
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = true;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = true;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '{{ site.tracking.facebook_pixel_id }}');
+    fbq('track', 'PageView');
+    fbq('track', 'ViewContent', { value: 2, currency: 'USD' });
+    {% endif %}
+  }
+
+  function loadIntercom() {
+    {% if site.tracking.intercom_app_id %}
+    window.intercomSettings = { app_id: '{{ site.tracking.intercom_app_id }}' };
+    (function () {
+      var w = window;
+      var ic = w.Intercom;
+      if (typeof ic === 'function') {
+        ic('reattach_activator');
+        ic('update', w.intercomSettings);
+        return;
+      }
+      var d = document;
+      var i = function () { i.c(arguments); };
+      i.q = [];
+      i.c = function (args) { i.q.push(args); };
+      w.Intercom = i;
+      var l = function () {
+        var s = d.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://widget.intercom.io/widget/{{ site.tracking.intercom_app_id }}';
+        var x = d.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      };
+      l();
+    })();
+    {% endif %}
+  }
+
+  function loadTracking() {
+    if (loaded) return;
+    loaded = true;
+    loadGtm();
+    loadRewardful();
+    loadFacebook();
+    loadIntercom();
+  }
+
+  function schedule() {
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadTracking, { timeout: 2500 });
+    } else {
+      setTimeout(loadTracking, 1);
+    }
+  }
+
+  if (document.readyState === 'complete') {
+    schedule();
+  } else {
+    window.addEventListener('load', schedule, { once: true, passive: true });
+  }
+})();
+</script>
+{% endif %}
