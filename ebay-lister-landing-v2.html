@@ -7,7 +7,8 @@ description: >-
   channels. From $29/month. Real-time inventory sync, bulk listing,
   AI-generated content. Free 14-day trial, no credit card.
 canonical: https://sellerchamp.com/ebay-lister-landing-v2/
-image: /assets/images/hero-scan-visual.jpeg
+image: /assets/images/hero-scan-visual-1240.webp
+lcp_preload: /assets/images/hero-scan-visual-640.webp
 ---
 
 <!-- ════ Top utility bar ════ -->
@@ -63,14 +64,22 @@ image: /assets/images/hero-scan-visual.jpeg
       <div class="hero__media-col hero-right">
         <div id="heroScanVideo" class="hero-illustration-wrap hero-scan-video">
           <div id="heroScanPoster" class="hero-illustration-poster">
-            <img
-              class="hero-illustration"
-              src="{{ '/assets/images/hero-scan-visual.jpeg' | relative_url }}"
-              alt="A seller scans a UPC barcode — SellerChamp auto-fetches listing details and populates the listing with a Rephrase with AI button."
-              width="1376"
-              height="768"
-              fetchpriority="high"
-              decoding="async">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="{{ '/assets/images/hero-scan-visual-640.webp' | relative_url }} 640w, {{ '/assets/images/hero-scan-visual-1240.webp' | relative_url }} 1240w"
+                sizes="(max-width: 760px) 100vw, 620px">
+              <img
+                class="hero-illustration"
+                src="{{ '/assets/images/hero-scan-visual-640.jpg' | relative_url }}"
+                srcset="{{ '/assets/images/hero-scan-visual-640.jpg' | relative_url }} 640w, {{ '/assets/images/hero-scan-visual.jpeg' | relative_url }} 1240w"
+                sizes="(max-width: 760px) 100vw, 620px"
+                alt="A seller scans a UPC barcode — SellerChamp auto-fetches listing details and populates the listing with a Rephrase with AI button."
+                width="1240"
+                height="692"
+                fetchpriority="high"
+                decoding="async">
+            </picture>
             <button class="hero-illustration-play" type="button" aria-label="Play barcode scan demo video"></button>
           </div>
         </div>
@@ -105,31 +114,31 @@ image: /assets/images/hero-scan-visual.jpeg
 
     <div class="cred__partners">
       <div class="cred__mp">
-        <img class="cred__mp-logo" src="{{ '/assets/images/amazon-partner.png' | relative_url }}" alt="Amazon" width="200" height="60">
+        <img class="cred__mp-logo" src="{{ '/assets/images/amazon-partner.png' | relative_url }}" alt="Amazon" width="200" height="60" loading="lazy" decoding="async">
         <span class="cred__mp-tier">Software Partner</span>
       </div>
       <div class="cred__mp">
-        <img class="cred__mp-logo" src="{{ '/assets/images/ebay-partner.png' | relative_url }}" alt="eBay" width="200" height="60">
+        <img class="cred__mp-logo" src="{{ '/assets/images/ebay-partner.png' | relative_url }}" alt="eBay" width="200" height="60" loading="lazy" decoding="async">
         <span class="cred__mp-tier">Silver Solution Provider</span>
       </div>
       <div class="cred__mp">
-        <img class="cred__mp-logo" src="{{ '/assets/images/walmart-partner.png' | relative_url }}" alt="Walmart" width="200" height="60">
+        <img class="cred__mp-logo" src="{{ '/assets/images/walmart-partner.png' | relative_url }}" alt="Walmart" width="200" height="60" loading="lazy" decoding="async">
         <span class="cred__mp-tier">Preferred Solution Provider</span>
       </div>
     </div>
 
     <div class="cred__awards">
       <a class="cred__award" href="https://www.capterra.com/p/179124/SellerChamp/reviews/" target="_blank" rel="noopener">
-        <img class="cred__award-badge" src="{{ '/assets/images/badge-capterra-ease-of-use.jpg' | relative_url }}" alt="Capterra Best Ease of Use 2025" width="300" height="280">
+        <img class="cred__award-badge" src="{{ '/assets/images/badge-capterra-ease-of-use.jpg' | relative_url }}" alt="Capterra Best Ease of Use 2025" width="300" height="280" loading="lazy" decoding="async">
       </a>
       <a class="cred__award" href="https://www.capterra.com/p/179124/SellerChamp/reviews/" target="_blank" rel="noopener">
-        <img class="cred__award-badge" src="{{ '/assets/images/badge-capterra-best-value.jpg' | relative_url }}" alt="Capterra Best Value 2025" width="300" height="234">
+        <img class="cred__award-badge" src="{{ '/assets/images/badge-capterra-best-value.jpg' | relative_url }}" alt="Capterra Best Value 2025" width="300" height="234" loading="lazy" decoding="async">
       </a>
       <a class="cred__award" href="https://www.softwareadvice.com/ecommerce/sellerchamp-profile/reviews/" target="_blank" rel="noopener">
-        <img class="cred__award-badge" src="{{ '/assets/images/badge-software-advice-support.jpg' | relative_url }}" alt="Software Advice Best Customer Support 2025" width="283" height="300">
+        <img class="cred__award-badge" src="{{ '/assets/images/badge-software-advice-support.jpg' | relative_url }}" alt="Software Advice Best Customer Support 2025" width="283" height="300" loading="lazy" decoding="async">
       </a>
       <a class="cred__award" href="https://www.getapp.com/website-ecommerce-software/a/sellerchamp/reviews/" target="_blank" rel="noopener">
-        <img class="cred__award-badge" src="{{ '/assets/images/badge-getapp-leader.jpg' | relative_url }}" alt="GetApp Category Leader 2025" width="300" height="234">
+        <img class="cred__award-badge" src="{{ '/assets/images/badge-getapp-leader.jpg' | relative_url }}" alt="GetApp Category Leader 2025" width="300" height="234" loading="lazy" decoding="async">
       </a>
     </div>
 
@@ -172,10 +181,10 @@ image: /assets/images/hero-scan-visual.jpeg
       <div class="embed">
         <div class="video-frame__poster">
           <img
-            src="{{ '/assets/images/hero-scan-visual.jpeg' | relative_url }}"
+            src="{{ '/assets/images/hero-scan-visual-640.webp' | relative_url }}"
             alt="SellerChamp barcode-to-listing demo"
-            width="1376"
-            height="768"
+            width="640"
+            height="358"
             loading="lazy"
             decoding="async">
           <button class="video-frame__play" type="button" aria-label="Play barcode-to-listing demo"></button>
@@ -194,14 +203,14 @@ image: /assets/images/hero-scan-visual.jpeg
       <p>No setup fees, no per-channel charges, no surprise add-ons. The price you see is the price you pay.</p>
     </div>
     <div class="feature-grid">
-      <div class="feature"><div class="feature__ic"><i class="fas fa-check" aria-hidden="true"></i></div><h3>Free 14-day trial</h3><p>Full access to your chosen plan. No credit card required. Cancel before day 14 and you’ll never be charged.</p></div>
-      <div class="feature"><div class="feature__ic"><i class="fas fa-broom" aria-hidden="true"></i></div><h3>Free migration support</h3><p>From 3DSellers, Vendoo, List Perfectly, or wherever — our team imports your listings and gets you live in days.</p></div>
-      <div class="feature"><div class="feature__ic"><i class="fas fa-comment" aria-hidden="true"></i></div><h3>Live human support</h3><p>Email on Starter. Chat on Growth. Priority phone support on Pro & Platform. Real people who know the platform.</p></div>
-      <div class="feature"><div class="feature__ic"><i class="fas fa-truck" aria-hidden="true"></i></div><h3>Discounted shipping labels</h3><p>Save up to 89% on USPS, UPS & FedEx labels — included with every plan. No separate shipping software needed.</p></div>
-      <div class="feature"><div class="feature__ic"><i class="fas fa-rotate" aria-hidden="true"></i></div><h3>Real-time inventory sync</h3><p>When stock changes anywhere, every channel updates in seconds. No polling delays, no overselling.</p></div>
-      <div class="feature"><div class="feature__ic"><i class="fas fa-gear" aria-hidden="true"></i></div><h3>AI listing content</h3><p>Every plan includes AI-generated titles, descriptions, and item specifics. Optimized for marketplace search ranking.</p></div>
-      <div class="feature"><div class="feature__ic"><i class="fa-solid fa-rectangle-history-circle-plus" aria-hidden="true"></i></div><h3>List in bulk, any way</h3><p>Upload a CSV, scan a barcode, or paste a product URL. Create thousands of listings at once — no manual entry.</p></div>
-      <div class="feature"><div class="feature__ic"><i class="fa-solid fa-arrows-left-right" aria-hidden="true"></i></div><h3>Cross-list ready</h3><p>Automated data mapping translates titles, categories, and item specifics for every channel. List once, sell everywhere.</p></div>
+      <div class="feature"><div class="feature__ic"><svg class="feature__svg" aria-hidden="true"><use href="#icon-check"/></svg></div><h3>Free 14-day trial</h3><p>Full access to your chosen plan. No credit card required. Cancel before day 14 and you’ll never be charged.</p></div>
+      <div class="feature"><div class="feature__ic"><svg class="feature__svg" aria-hidden="true"><use href="#icon-broom"/></svg></div><h3>Free migration support</h3><p>From 3DSellers, Vendoo, List Perfectly, or wherever — our team imports your listings and gets you live in days.</p></div>
+      <div class="feature"><div class="feature__ic"><svg class="feature__svg" aria-hidden="true"><use href="#icon-comment"/></svg></div><h3>Live human support</h3><p>Email on Starter. Chat on Growth. Priority phone support on Pro & Platform. Real people who know the platform.</p></div>
+      <div class="feature"><div class="feature__ic"><svg class="feature__svg" aria-hidden="true"><use href="#icon-truck"/></svg></div><h3>Discounted shipping labels</h3><p>Save up to 89% on USPS, UPS & FedEx labels — included with every plan. No separate shipping software needed.</p></div>
+      <div class="feature"><div class="feature__ic"><svg class="feature__svg" aria-hidden="true"><use href="#icon-sync"/></svg></div><h3>Real-time inventory sync</h3><p>When stock changes anywhere, every channel updates in seconds. No polling delays, no overselling.</p></div>
+      <div class="feature"><div class="feature__ic"><svg class="feature__svg" aria-hidden="true"><use href="#icon-gear"/></svg></div><h3>AI listing content</h3><p>Every plan includes AI-generated titles, descriptions, and item specifics. Optimized for marketplace search ranking.</p></div>
+      <div class="feature"><div class="feature__ic"><svg class="feature__svg" aria-hidden="true"><use href="#icon-bulk"/></svg></div><h3>List in bulk, any way</h3><p>Upload a CSV, scan a barcode, or paste a product URL. Create thousands of listings at once — no manual entry.</p></div>
+      <div class="feature"><div class="feature__ic"><svg class="feature__svg" aria-hidden="true"><use href="#icon-arrows"/></svg></div><h3>Cross-list ready</h3><p>Automated data mapping translates titles, categories, and item specifics for every channel. List once, sell everywhere.</p></div>
     </div>
   </div>
 </section>

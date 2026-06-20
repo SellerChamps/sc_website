@@ -18,17 +18,18 @@
   {% if page.image %}<meta property="og:image" content="{{ page.image | absolute_url }}">{% endif %}
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  {% if page.lcp_preload %}
+  <link rel="preload" as="image" type="image/webp" href="{{ page.lcp_preload | relative_url }}" fetchpriority="high">
+  {% endif %}
+  <link rel="preload" href="{{ '/assets/fonts/inter-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 
+  <link rel="stylesheet" href="{{ '/assets/css/fonts.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/landing.css' | relative_url }}">
-  <script src="https://kit.fontawesome.com/2c8e156add.js" crossorigin="anonymous"></script>
 
   {% seo title=false %}
 </head>
 <body>
+  {% include icon-sprite.html %}
   {{ content }}
   <script src="{{ '/assets/js/landing.js' | relative_url }}" defer></script>
 </body>
