@@ -26,9 +26,12 @@
   <link rel="stylesheet" href="{{ '/assets/css/fonts.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/landing.css' | relative_url }}">
 
+  {% include tracking-head.html %}
+
   {% seo title=false %}
 </head>
 <body>
+  {% include tracking-body.html %}
   {{ content }}
   <script src="{{ '/assets/js/landing.js' | relative_url }}" defer></script>
 </body>

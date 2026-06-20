@@ -18,6 +18,13 @@ app:
   signup:  "https://app.sellerchamp.com/users/sign_up?scenario=lister_trial"
   leads:   "https://app.sellerchamp.com/leads/new"
 
+# Marketing / analytics (matches live sellerchamp.com)
+tracking:
+  gtm_id: GTM-PJSCRR2
+  facebook_pixel_id: "476998489733035"
+  rewardful_id: "0a69b2"
+  intercom_app_id: nawne3lq
+
 # ── Build ─────────────────────────────────────────────────────────────
 plugins:
   - jekyll-seo-tag
