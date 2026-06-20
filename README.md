@@ -1,4 +1,4 @@
-# SellerChamp Frontend - Built on Jeykll 
+# SellerChamp Frontend - Built on Jekyll
 
 Static rebuild of the eBay Lister landing page.
 
