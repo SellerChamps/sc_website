@@ -1,6 +1,6 @@
-# SellerChamp Frontend - Built on Jekyll
+# SellerChamp Frontend - Built on Jekyll.  Live on GitHub pages.  
 
-Static rebuild of the SellerChamp.com website
+Static rebuild of the SellerChamp.com website.  
 
 ## Run locally
 ```bash
@@ -29,3 +29,5 @@ To publish: push to `main`. Monitor the **Deploy Jekyll site to Pages** workflow
 Search the page for `.ph` placeholder blocks. The main one is the hero
 (`hero-barcode.jpg`). Marketplace/partner/review badges are rendered as
 styled text — swap to real logo `<img>` tags if you prefer.
+
+NOTE: Keep this repo public so that site stays live on GitHub pages. 
