@@ -740,6 +740,51 @@ footer .site-logo {
   color: var(--text);
 }
 
+.operator-scale-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem 2rem;
+  background: var(--navy);
+  color: #fff;
+  border-radius: 14px;
+  padding: 1.35rem 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.operator-scale-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.operator-scale-stat--wide {
+  max-width: 320px;
+}
+
+.operator-scale-num {
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--teal);
+}
+
+.operator-scale-label {
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.4;
+}
+
+.operator-scale-divider {
+  width: 1px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.18);
+  flex-shrink: 0;
+}
+
 .featured-testimonial {
   background: linear-gradient(135deg, rgba(0, 207, 167, 0.08), rgba(45, 108, 182, 0.06));
   border: 1.5px solid rgba(0, 207, 167, 0.25);
@@ -805,6 +850,21 @@ footer .site-logo {
 
   .featured-testimonial {
     padding: 1.75rem 1.25rem;
+  }
+
+  .operator-scale-bar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem 1rem;
+  }
+
+  .operator-scale-divider {
+    width: 48px;
+    height: 1px;
+  }
+
+  .operator-scale-stat--wide {
+    max-width: none;
   }
 }
 
@@ -1079,4 +1139,45 @@ footer .site-logo {
   background: #fff;
   transform: translate(-50%, -50%) scale(1.08);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* ── Pricing anchor (pre-CTA) ─────────────────────────────────────── */
+
+.pricing-anchor-section {
+  padding: 3rem 2rem;
+  background: var(--white);
+  border-top: 1px solid var(--border);
+}
+
+.pricing-anchor {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--light);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  padding: 2rem 2.5rem;
+}
+
+.pricing-anchor-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--muted);
+  font-weight: 300;
+  margin: 0;
+}
+
+.pricing-anchor-text strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .pricing-anchor {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .pricing-anchor-text {
+    font-size: 0.95rem;
+  }
 }
