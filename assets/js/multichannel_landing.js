@@ -66,4 +66,36 @@
     if (prev) prev.onclick = function () { goTo(current - 1); };
     if (next) next.onclick = function () { goTo(current + 1); };
   })();
+
+  /* Click-to-play video frames */
+  (function () {
+    function playVideoFrame(frame) {
+      if (frame.classList.contains("is-playing")) return;
+
+      var embed = frame.querySelector(".embed");
+      var poster = frame.querySelector(".video-frame__poster");
+      if (!embed || !poster) return;
+
+      var ytId = frame.getAttribute("data-youtube-id");
+      if (!ytId) return;
+
+      var iframe = document.createElement("iframe");
+      iframe.src = "https://www.youtube.com/embed/" + ytId + "?autoplay=1&rel=0";
+      iframe.title = "SellerChamp overview";
+      iframe.allow =
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      iframe.allowFullscreen = true;
+      embed.appendChild(iframe);
+
+      poster.classList.add("is-hidden");
+      frame.classList.add("is-playing");
+    }
+
+    document.querySelectorAll(".video-frame--click").forEach(function (frame) {
+      frame.addEventListener("click", function (e) {
+        if (e.target.closest("iframe")) return;
+        playVideoFrame(frame);
+      });
+    });
+  })();
 })();
