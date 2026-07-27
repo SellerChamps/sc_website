@@ -1,0 +1,565 @@
+# Individual integration pages — keep URLs aligned with live sellerchamp.com where possible.
+# category: marketplace | cart | shipping | fulfillment | service
+
+- id: amazon
+  name: Amazon
+  path: /integrations/market-places/amazon-seller-software/
+  category: marketplace
+  title: Amazon Seller Software | Professional Software for Amazon Sellers
+  description: >-
+    Amazon seller software to bulk list, sync inventory, create FBA shipments,
+    reprice for the Buy Box, and fulfill multichannel orders with SellerChamp.
+  canonical: https://sellerchamp.com/integrations/market-places/amazon-seller-software/
+  hero_title: Amazon seller software to automate your business
+  hero_sub: Bulk list products, create FBA shipments, sync inventory, win the Buy Box, and manage multichannel fulfillment — reclaim time and grow.
+  logo: /assets/images/channel-amazon.svg
+  redirects:
+    - /integrations/market-places/amazon/
+  highlights:
+    - title: Bulk Lister for Amazon
+      text: Scan barcodes or upload a file to bulk-list on Amazon in minutes — and cross-list to other marketplaces from the same catalog.
+    - title: Inventory sync
+      text: Keep Amazon stock accurate across every selling channel so fast movers never oversell.
+    - title: FBA & multichannel fulfillment
+      text: Create FBA shipments and route orders to Amazon FBA or other partners with rules you control.
+    - title: Buy Box RePricer
+      text: Compete continuously with margin floors so you win more Buy Box without racing to zero.
+    - title: Insights & reports
+      text: See sales and profit by channel, date range, and product — including Amazon performance.
+    - title: API & supplier feeds
+      text: Import supplier catalogs via FTP or API and keep Amazon listings current as feeds change.
+
+- id: ebay
+  name: eBay
+  path: /integrations/market-places/ebay/
+  category: marketplace
+  title: eBay Listing Software | Multichannel eBay Integration
+  description: >-
+    Scan or upload products, fetch item specifics, and quickly build eBay listings,
+    variations, bundles, and kits with SellerChamp.
+  canonical: https://sellerchamp.com/integrations/market-places/ebay/
+  hero_title: eBay listing software that keeps up with your catalog
+  hero_sub: Scan barcodes or upload files, auto-fetch product data and item specifics, then publish variations, bundles, and kits — and sync inventory everywhere else you sell.
+  logo: /assets/images/channel-ebay.svg
+  highlights:
+    - title: Fast eBay listing
+      text: Build listings with fetched product data and item specifics so catalog onboarding stays fast.
+    - title: Variations, bundles & kits
+      text: Manage multi-SKU families and kits without spreadsheet gymnastics.
+    - title: Cross-channel inventory
+      text: When an eBay order sells, quantities update across Amazon, Walmart, Shopify, and more.
+    - title: Order management
+      text: Pull eBay orders into one queue with the rest of your multichannel volume.
+
+- id: walmart
+  name: Walmart
+  path: /integrations/market-places/sell-on-walmart/
+  category: marketplace
+  title: Sell on Walmart | Walmart Marketplace Listing Software
+  description: >-
+    Publish and manage Walmart Marketplace listings, sync inventory, reprice for
+    the Buy Box, and fulfill with WFS or your warehouse using SellerChamp.
+  canonical: https://sellerchamp.com/integrations/market-places/sell-on-walmart/
+  hero_title: Sell on Walmart without a second ops stack
+  hero_sub: Quickly publish listings, resolve errors, sync inventory, and dynamically price items so you can compete for the Walmart Buy Box.
+  logo: /assets/images/channel-walmart.svg
+  highlights:
+    - title: Walmart listing tools
+      text: Publish and manage listings with the fields Walmart expects — fewer errors, faster go-live.
+    - title: Dynamic pricing
+      text: Reprice with floors so you stay competitive without killing margin.
+    - title: Inventory truth
+      text: Keep Walmart stock aligned with Amazon, eBay, Shopify, and every other connected channel.
+    - title: WFS & warehouse routing
+      text: Route orders to Walmart WFS or your own fulfillment workflow from one place.
+
+- id: etsy
+  name: Etsy
+  path: /integrations/market-places/etsy/
+  category: marketplace
+  title: Etsy Integration | Multichannel Listing for Etsy Sellers
+  description: >-
+    List and manage Etsy products, sync inventory across channels, and keep
+    orders flowing from one SellerChamp dashboard.
+  canonical: https://sellerchamp.com/integrations/market-places/etsy/
+  hero_title: Etsy integration for multichannel sellers
+  hero_sub: Publish and manage Etsy listings, connect with your audience, and keep inventory accurate when the same SKUs sell on other marketplaces.
+  logo: /assets/images/channel-etsy.svg
+  highlights:
+    - title: Etsy listing management
+      text: List and update products on Etsy from the same catalog you use everywhere else.
+    - title: Inventory sync
+      text: Prevent oversells when items sell on Etsy, Amazon, eBay, or your storefront.
+    - title: Centralized orders
+      text: Manage Etsy orders alongside every other channel in one queue.
+
+- id: google-shopping
+  name: Google Shopping
+  path: /integrations/market-places/google-shopping/
+  category: marketplace
+  title: Google Shopping Integration | Product Feed & Listing Software
+  description: >-
+    Publish products to Google Shopping and gain exposure across the web with
+    SellerChamp multichannel listing and inventory sync.
+  canonical: https://sellerchamp.com/integrations/market-places/google-shopping/
+  hero_title: Google Shopping integration for product discovery
+  hero_sub: Publish your catalog to Google Shopping and keep availability accurate as inventory moves across marketplaces.
+  logo: /assets/images/channel-google-shopping.png
+  logo_fullcolor: true
+  highlights:
+    - title: Reach buyers worldwide
+      text: Get product exposure across Google Shopping while managing the rest of your channels in SellerChamp.
+    - title: Keep feeds accurate
+      text: Sync stock and catalog updates so shoppers see what’s actually available.
+    - title: One catalog source
+      text: Maintain product data once and push it to Google Shopping plus marketplaces and carts.
+
+- id: poshmark
+  name: Poshmark
+  path: /integrations/market-places/sell-on-poshmark/
+  category: marketplace
+  title: Sell on Poshmark | Poshmark Listing Integration
+  description: >-
+    Upload or sync products to Poshmark quickly and keep inventory aligned with
+    your other selling channels using SellerChamp.
+  canonical: https://sellerchamp.com/integrations/market-places/sell-on-poshmark/
+  hero_title: Sell on Poshmark from your central catalog
+  hero_sub: Add products or sync them from another channel to launch Poshmark listings faster — without losing inventory control elsewhere.
+  logo: /assets/images/channel-poshmark.png
+  highlights:
+    - title: Faster Poshmark listings
+      text: Upload products or pull them from another channel to get live quickly.
+    - title: Multichannel sync
+      text: Keep quantities accurate when the same items sell on Poshmark and other marketplaces.
+    - title: Shared catalog
+      text: Manage Poshmark alongside Amazon, eBay, Walmart, and more.
+
+- id: valore
+  name: Valore
+  path: /integrations/market-places/valore/
+  category: marketplace
+  title: Valore Integration | Textbook & Catalog Listing Software
+  description: >-
+    Scan textbooks or import products from another channel to quickly list on
+    Valore with SellerChamp.
+  canonical: https://sellerchamp.com/integrations/market-places/valore/
+  hero_title: Valore listing integration for textbook and catalog sellers
+  hero_sub: Scan textbooks or import them from another channel to list on Valore quickly — then keep inventory synced across the rest of your stack.
+  logo: /assets/images/channel-valore.png
+  highlights:
+    - title: Scan-to-list
+      text: Scan textbooks and fetch product data to build Valore listings fast.
+    - title: Import from other channels
+      text: Pull products from your existing catalog instead of re-entering everything.
+    - title: Inventory sync
+      text: Avoid oversells when Valore and other channels share stock.
+
+- id: bonanza
+  name: Bonanza
+  path: /integrations/market-places/bonanza/
+  category: marketplace
+  title: Bonanza Integration | Multichannel Listing Software
+  description: >-
+    Quickly publish and manage Bonanza listings and sync inventory across your
+    other marketplaces with SellerChamp.
+  canonical: https://sellerchamp.com/integrations/market-places/bonanza/
+  hero_title: Bonanza marketplace integration
+  hero_sub: Publish and manage Bonanza listings from the same multichannel catalog you use for Amazon, eBay, Walmart, and more.
+  logo: /assets/images/channel-bonanza.png
+  highlights:
+    - title: Fast Bonanza listings
+      text: Get products live without maintaining a separate listing workflow.
+    - title: Shared inventory
+      text: Sync stock so Bonanza sales update every other connected channel.
+    - title: Centralized orders
+      text: Process Bonanza orders in the same queue as the rest of your volume.
+
+- id: tiktok
+  name: TikTok Shop
+  path: /integrations/market-places/tiktok-shop/
+  category: marketplace
+  title: TikTok Shop Integration | Multichannel Listing Software
+  description: >-
+    Sync products to TikTok Shop, keep inventory accurate, and manage orders
+    alongside your other marketplaces with SellerChamp.
+  canonical: https://sellerchamp.com/integrations/market-places/tiktok-shop/
+  hero_title: TikTok Shop integration for multichannel sellers
+  hero_sub: Upload or sync products to TikTok Shop quickly and keep stock accurate when the same SKUs sell everywhere else.
+  logo: /assets/images/channel-tiktok.svg
+  logo_fullcolor: true
+  highlights:
+    - title: Launch on TikTok Shop
+      text: Publish from your central catalog instead of rebuilding listings from scratch.
+    - title: Real-time inventory
+      text: Protect seller metrics with sync across TikTok Shop and your other channels.
+    - title: One order queue
+      text: Fulfill TikTok Shop orders with the same ops workflow as Amazon, eBay, and Walmart.
+
+- id: temu
+  name: Temu
+  path: /integrations/market-places/temu/
+  category: marketplace
+  title: Temu Integration | Multichannel Listing Software
+  description: >-
+    Publish products to Temu and keep inventory and orders in sync with the rest
+    of your multichannel business using SellerChamp.
+  canonical: https://sellerchamp.com/integrations/market-places/temu/
+  hero_title: Temu integration for growing multichannel catalogs
+  hero_sub: Upload or sync products to Temu quickly — then keep quantities and orders tied to your central SellerChamp catalog.
+  logo: /assets/images/channel-temu.svg
+  logo_fullcolor: true
+  highlights:
+    - title: Temu listings from one catalog
+      text: Publish without maintaining a separate product database.
+    - title: Inventory sync
+      text: Update stock across Temu and every other connected marketplace.
+    - title: Unified fulfillment
+      text: Route and track Temu orders with the rest of your volume.
+
+- id: newegg
+  name: Newegg
+  path: /integrations/market-places/newegg/
+  category: marketplace
+  title: Newegg Integration | Multichannel Listing Software
+  description: >-
+    Add products or pull them from another channel to quickly launch Newegg
+    listings and sync inventory with SellerChamp.
+  canonical: https://sellerchamp.com/integrations/market-places/newegg/
+  hero_title: Newegg marketplace integration
+  hero_sub: Add products or pull them from another channel to launch Newegg listings quickly — with inventory sync across your stack.
+  logo: /assets/images/channel-newegg.png
+  highlights:
+    - title: Faster Newegg go-live
+      text: Import from your existing catalog instead of rebuilding SKUs.
+    - title: Cross-channel sync
+      text: Keep Newegg quantities honest when items sell elsewhere.
+    - title: Shared order management
+      text: Process Newegg orders in one multichannel queue.
+
+- id: overstock
+  name: Overstock
+  path: /integrations/market-places/overstock/
+  category: marketplace
+  title: Overstock Integration | Multichannel Listing Software
+  description: >-
+    Transfer products or import them from another channel to create Overstock
+    listings quickly with SellerChamp.
+  canonical: https://sellerchamp.com/integrations/market-places/overstock/
+  hero_title: Overstock marketplace integration
+  hero_sub: Transfer products or bring them in from another channel to create Overstock listings — then sync inventory everywhere you sell.
+  logo: /assets/images/channel-overstock.svg
+  highlights:
+    - title: Catalog transfer
+      text: Launch Overstock listings from products you already manage in SellerChamp.
+    - title: Inventory accuracy
+      text: Prevent oversells with real-time sync across channels.
+    - title: Central ops
+      text: Manage Overstock orders with Amazon, eBay, Walmart, and more.
+
+- id: fruugo
+  name: Fruugo
+  path: /integrations/market-places/fruugo/
+  category: marketplace
+  title: Fruugo Integration | Multichannel Listing Software
+  description: >-
+    Upload products or import them from another channel to quickly list on
+    Fruugo with SellerChamp inventory sync.
+  canonical: https://sellerchamp.com/integrations/market-places/fruugo/
+  hero_title: Fruugo marketplace integration
+  hero_sub: Upload products or import them from another channel to list on Fruugo quickly — with multichannel inventory control.
+  logo: /assets/images/channel-fruugo.svg
+  highlights:
+    - title: Quick Fruugo listings
+      text: Get products live from your central catalog.
+    - title: Inventory sync
+      text: Keep Fruugo stock aligned with every other channel.
+    - title: Shared order flow
+      text: Fulfill Fruugo orders from the same SellerChamp queue.
+
+- id: bestbuy
+  name: Best Buy
+  path: /integrations/market-places/best-buy/
+  category: marketplace
+  title: Best Buy Marketplace Integration | Listing Software
+  description: >-
+    Upload or sync products to Best Buy Marketplace and keep inventory accurate
+    across channels with SellerChamp.
+  canonical: https://sellerchamp.com/integrations/market-places/best-buy/
+  hero_title: Best Buy Marketplace integration
+  hero_sub: Upload products or sync them from another channel to create Best Buy listings — without losing inventory control.
+  logo: /assets/images/channel-bestbuy.png
+  highlights:
+    - title: Best Buy listings
+      text: Publish from your SellerChamp catalog with less duplicate data entry.
+    - title: Multichannel sync
+      text: Update stock across Best Buy and your other marketplaces.
+    - title: Unified orders
+      text: Manage Best Buy orders alongside the rest of your volume.
+
+- id: shein
+  name: SHEIN
+  path: /integrations/market-places/shein/
+  category: marketplace
+  title: SHEIN Integration | Multichannel Listing Software
+  description: >-
+    Upload or sync products to SHEIN and keep inventory and orders connected to
+    your SellerChamp multichannel catalog.
+  canonical: https://sellerchamp.com/integrations/market-places/shein/
+  hero_title: SHEIN marketplace integration
+  hero_sub: Upload products or sync them from another channel to publish on SHEIN — then keep quantities accurate everywhere else.
+  logo: /assets/images/channel-shein.svg
+  highlights:
+    - title: SHEIN listings
+      text: Launch from your central catalog instead of a separate spreadsheet stack.
+    - title: Inventory sync
+      text: Protect against oversells across SHEIN and other channels.
+    - title: One ops queue
+      text: Process SHEIN orders with your existing fulfillment workflow.
+
+- id: macys
+  name: "Macy's"
+  path: /integrations/market-places/macys/
+  category: marketplace
+  title: "Macy's Marketplace Integration | Listing Software"
+  description: >-
+    Bring in products or sync them from another channel to publish on Macy's
+    Marketplace with SellerChamp.
+  canonical: https://sellerchamp.com/integrations/market-places/macys/
+  hero_title: "Macy's Marketplace integration"
+  hero_sub: Bring in products or sync them from another channel to publish on Macy's — with inventory sync across your multichannel stack.
+  logo: /assets/images/channel-macys.svg
+  highlights:
+    - title: "Macy's listings"
+      text: Publish from the same catalog you use for Amazon, eBay, Walmart, and more.
+    - title: Inventory truth
+      text: Keep Macy's stock aligned after every sale on any channel.
+    - title: Centralized orders
+      text: Fulfill Macy's orders from one SellerChamp dashboard.
+
+- id: shopify
+  name: Shopify
+  path: /integrations/shopping-carts/shopify/
+  category: cart
+  title: Shopify Integration | Multichannel Inventory & Listing Software
+  description: >-
+    Bulk-update Shopify products (something Shopify’s own admin doesn’t offer),
+    list and promote on your store, and sync inventory and orders with Amazon,
+    eBay, Walmart, and more.
+  canonical: https://sellerchamp.com/integrations/shopping-carts/shopify/
+  hero_title: Shopify integration for multichannel brands
+  hero_sub: Bulk-update your Shopify catalog, list and promote products, and keep inventory and orders in sync with every marketplace you sell on — including bulk edits Shopify’s own website doesn’t provide.
+  logo: /assets/images/channel-shopify.svg
+  highlights:
+    - title: Shopify bulk updates
+      text: Change titles, prices, quantities, descriptions, and more across hundreds or thousands of Shopify products at once. Shopify’s admin doesn’t give you true bulk product updates — SellerChamp does.
+    - title: Shopify store listing
+      text: Manage Shopify products from the same catalog that powers your marketplaces.
+    - title: Inventory sync
+      text: A sale on Amazon or eBay updates Shopify stock — and the other way around.
+    - title: Unified orders
+      text: Pull Shopify orders into the same fulfillment queue as marketplace volume.
+
+- id: woocommerce
+  name: WooCommerce
+  path: /integrations/shopping-carts/woocommerce/
+  category: cart
+  title: WooCommerce Integration | Multichannel Listing Software
+  description: >-
+    List and promote products on WooCommerce and sync inventory across
+    marketplaces with SellerChamp.
+  canonical: https://sellerchamp.com/integrations/shopping-carts/woocommerce/
+  hero_title: WooCommerce integration for multichannel sellers
+  hero_sub: Quickly list and promote products on your WooCommerce store while keeping marketplace inventory accurate.
+  logo: /assets/images/channel-woocommerce.png
+  highlights:
+    - title: WooCommerce listings
+      text: Manage storefront products alongside Amazon, eBay, Walmart, and more.
+    - title: Prevent oversells
+      text: Sync stock between your store and every connected marketplace.
+    - title: Shared order management
+      text: Fulfill WooCommerce orders with the rest of your multichannel volume.
+
+- id: bigcommerce
+  name: BigCommerce
+  path: /integrations/shopping-carts/bigcommerce/
+  category: cart
+  title: BigCommerce Integration | Multichannel Listing Software
+  description: >-
+    List products on BigCommerce and expose your brand while syncing inventory
+    and orders across marketplaces with SellerChamp.
+  canonical: https://sellerchamp.com/integrations/shopping-carts/bigcommerce/
+  hero_title: BigCommerce integration for growing brands
+  hero_sub: Quickly list products and expose your brand on BigCommerce — without disconnecting marketplace inventory and fulfillment.
+  logo: /assets/images/channel-bigcommerce.png
+  highlights:
+    - title: BigCommerce store control
+      text: Manage storefront listings from your central SellerChamp catalog.
+    - title: Cross-channel inventory
+      text: Keep BigCommerce stock honest when marketplaces sell the same SKUs.
+    - title: One fulfillment workflow
+      text: Process BigCommerce orders with marketplace orders in one queue.
+
+- id: shipstation
+  name: ShipStation
+  path: /integrations/service-integrations/shipstation/
+  category: shipping
+  title: ShipStation Integration | Pick, Pack & Ship Faster
+  description: >-
+    Send BIN locations, weight, dimensions, UPC, and order data to ShipStation
+    to speed pick-and-pack with SellerChamp.
+  canonical: https://sellerchamp.com/integrations/service-integrations/shipstation/
+  hero_title: ShipStation integration for faster pick-and-pack
+  hero_sub: Send item BIN locations, weight/dimensions, UPC, and order details to ShipStation so your team ships faster with fewer errors.
+  logo: /assets/images/integration-shipstation.svg
+  logo_fullcolor: true
+  highlights:
+    - title: Rich shipment data
+      text: Push the warehouse details ShipStation needs to pick and pack accurately.
+    - title: Faster despatch
+      text: Reduce tab-hopping between SellerChamp and shipping tools.
+    - title: Multichannel orders
+      text: Ship Amazon, eBay, Walmart, Shopify, and more from one connected flow.
+
+- id: shiprush
+  name: ShipRush
+  path: /integrations/service-integrations/shiprush/
+  category: shipping
+  title: ShipRush Integration | Shipping Labels Inside SellerChamp
+  description: >-
+    Launch ShipRush directly inside SellerChamp to print shipping labels without
+    switching programs.
+  canonical: https://sellerchamp.com/integrations/service-integrations/shiprush/
+  hero_title: ShipRush integration — labels without the app switch
+  hero_sub: Launch ShipRush directly inside SellerChamp so your team prints labels without jumping between programs.
+  logo: /assets/images/integration-shiprush.png
+  highlights:
+    - title: In-app shipping
+      text: Print labels from the same place you manage multichannel orders.
+    - title: Less context switching
+      text: Keep warehouse staff in one workflow from order to label.
+    - title: Works with your order queue
+      text: Ship orders from every connected marketplace and cart.
+
+- id: amazon-fba
+  name: Amazon FBA
+  path: /integrations/service-integrations/amazon-fba/
+  category: fulfillment
+  title: Amazon FBA Integration | Multichannel Fulfillment
+  description: >-
+    List FBA products on other channels and use Fulfillment by Amazon to ship —
+    plus create FBA shipments with SellerChamp.
+  canonical: https://sellerchamp.com/integrations/service-integrations/amazon-fba/
+  hero_title: Amazon FBA integration for multichannel growth
+  hero_sub: Get more exposure by listing FBA products on other channels and using Fulfillment by Amazon to ship — while creating FBA shipments without the spreadsheet mess.
+  logo_text: FBA
+  highlights:
+    - title: Multichannel FBA selling
+      text: List FBA inventory on other marketplaces and fulfill with Amazon.
+    - title: FBA shipment tools
+      text: Create Amazon FBA shipments quickly and with fewer errors.
+    - title: Inventory visibility
+      text: Track FBA and seller-fulfilled stock together in SellerChamp.
+
+- id: walmart-wfs
+  name: Walmart WFS
+  path: /integrations/service-integrations/walmart-wfs/
+  category: fulfillment
+  title: Walmart WFS Integration | Walmart Fulfillment Services
+  description: >-
+    Route Walmart Marketplace orders to Walmart Fulfillment Services (WFS),
+    sync WFS inventory, and manage multichannel fulfillment alongside FBA and
+    your warehouse with SellerChamp.
+  canonical: https://sellerchamp.com/integrations/service-integrations/walmart-wfs/
+  hero_title: Walmart WFS integration for faster delivery badges
+  hero_sub: Route orders to Walmart Fulfillment Services, keep WFS inventory visible next to seller-fulfilled stock, and run Walmart fulfillment from the same queue as Amazon FBA and your other channels.
+  logo_text: WFS
+  highlights:
+    - title: Route orders to WFS
+      text: Send the right Walmart Marketplace orders to Walmart Fulfillment Services with rules you control — without juggling a separate ops tool.
+    - title: WFS inventory visibility
+      text: Track WFS and seller-fulfilled Walmart stock together so you don’t oversell or miss replenishment signals.
+    - title: Fast delivery eligibility
+      text: Support fulfillment workflows that help unlock Walmart’s faster shipping badges and buyer trust.
+    - title: Multichannel fulfillment
+      text: Manage WFS alongside Amazon FBA, 3PLs, and your warehouse from one SellerChamp order queue.
+
+- id: flexport
+  name: Flexport
+  path: /integrations/service-integrations/flexport/
+  category: fulfillment
+  title: Flexport Integration | Fast Shipping Badges & Fulfillment
+  description: >-
+    Fulfill orders with Flexport and unlock fast-shipping badges like Walmart
+    2-day delivery and eBay Fast ‘N Free.
+  canonical: https://sellerchamp.com/integrations/service-integrations/flexport/
+  hero_title: Flexport fulfillment integration
+  hero_sub: Route orders to Flexport and pursue fast-shipping badges — Walmart 2-day delivery and eBay Fast ‘N Free — to boost visibility.
+  logo: /assets/images/integration-flexport.png
+  highlights:
+    - title: Fast-shipping badges
+      text: Support fulfillment workflows that help unlock marketplace speed badges.
+    - title: Order routing
+      text: Send the right orders to Flexport based on rules you define.
+    - title: Multichannel ready
+      text: Keep Flexport fulfillment tied to your central order queue.
+
+- id: quickbooks
+  name: QuickBooks
+  path: /integrations/service-integrations/quickbooks/
+  category: service
+  title: QuickBooks Integration | Ecommerce Accounting Sync
+  description: >-
+    Connect SellerChamp with QuickBooks to keep ecommerce operations and
+    accounting workflows aligned.
+  canonical: https://sellerchamp.com/integrations/service-integrations/quickbooks/
+  hero_title: QuickBooks integration for multichannel sellers
+  hero_sub: Connect ecommerce operations with QuickBooks so financial workflows stay closer to the systems that run your catalog and orders.
+  logo: /assets/images/integration-quickbooks.svg
+  logo_fullcolor: true
+  highlights:
+    - title: Accounting connection
+      text: Reduce manual export/import between ops and QuickBooks.
+    - title: Multichannel context
+      text: Keep financial workflows tied to the same platform that runs listings and orders.
+    - title: Scale without spreadsheet glue
+      text: Spend less time reconciling channel activity by hand.
+
+- id: informed
+  name: Informed
+  path: /integrations/service-integrations/informed/
+  category: service
+  title: Informed Integration | Cost & Min Price Feeds for Repricing
+  description: >-
+    SellerChamp sends cost or minimum selling price to Informed on a continuous
+    basis for accurate repricing.
+  canonical: https://sellerchamp.com/integrations/service-integrations/informed/
+  hero_title: Informed integration for accurate repricing inputs
+  hero_sub: Continuously send cost price or minimum selling price to Informed so repricing stays grounded in real margins.
+  logo: /assets/images/integration-informed-repricer.png
+  highlights:
+    - title: Continuous price feeds
+      text: Keep Informed updated with cost or minimum selling price from SellerChamp.
+    - title: Margin-aware automation
+      text: Support smarter external repricing with accurate floor inputs.
+    - title: Works with your catalog
+      text: Pull pricing inputs from the same system that manages listings and inventory.
+
+- id: api-data-feed
+  name: API & Data Feed
+  path: /integrations/service-integrations/api-data-feed/
+  category: service
+  title: API & Data Feed | Supplier Catalog Integration
+  description: >-
+    Connect suppliers via FTP or API to import catalogs and inventory, and use
+    the SellerChamp REST API for custom integrations.
+  canonical: https://sellerchamp.com/integrations/service-integrations/api-data-feed/
+  hero_title: API & data feed integrations for supplier automation
+  hero_sub: Connect with suppliers to import product catalogs and inventory — plus use our REST API to build custom integrations.
+  logo: /assets/images/integration-api-data-feed.png
+  highlights:
+    - title: Supplier FTP & API
+      text: Auto-import catalogs and keep inventory synchronized as vendor data changes.
+    - title: Feed customization
+      text: Set exclusions, quantity rules, and pricing logic before products hit channels.
+    - title: REST API
+      text: Connect ERPs, WMS, and internal tools without a black-box ops stack.

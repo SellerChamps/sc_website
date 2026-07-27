@@ -1,0 +1,90 @@
+# Blog index sections (Sellbrite-style).
+# Posts are matched by lowercase title/url keyword (first section wins).
+# Unmatched posts stay in "Guides & tips".
+
+- id: product-updates
+  title: Product Updates
+  blurb: What’s new in SellerChamp — releases, improvements, and platform changes.
+  limit: 6
+  match:
+    - product update
+    - product-updates
+    - february-update
+    - january-product
+    - november-product
+    - april-product
+    - june-product
+    - august-2025-product
+    - whats-new-in-2021
+    - exciting-new-features-in-sellerchamps-mobile-app
+
+- id: multichannel
+  title: Multichannel Operations
+  blurb: List, sync, and fulfill across every channel from one system.
+  limit: 6
+  match:
+    - multichannel
+    - multi-channel
+    - multi channel
+    - omnichannel
+    - cross-listing
+    - cross listing
+    - sell on multiple
+    - multi-listing
+    - multi listing
+
+- id: marketplaces
+  title: Marketplaces
+  blurb: Channel playbooks for Amazon, eBay, Walmart, Shopify, and more.
+  limit: 6
+  match:
+    - amazon
+    - ebay
+    - walmart
+    - shopify
+    - etsy
+    - temu
+    - tiktok
+    - newegg
+    - google shopping
+    - marketplace
+
+- id: inventory-fulfillment
+  title: Inventory & Fulfillment
+  blurb: Stock sync, shipping, 3PLs, and warehouse workflows that scale.
+  limit: 6
+  match:
+    - inventory
+    - fulfillment
+    - fulfilment
+    - shipping
+    - 3pl
+    - warehouse
+    - order management
+    - pick and pack
+    - pick-and-pack
+    - stockout
+    - oversell
+
+- id: growth-strategy
+  title: Growth & Strategy
+  blurb: Marketing, SEO, automation, and plays to grow multichannel revenue.
+  limit: 6
+  match:
+    - marketing
+    - seo
+    - growth
+    - automation
+    - generative ai
+    - ai tools
+    - ai-tools
+    - ai automation
+    - dropship
+    - liquidation
+    - conversion
+    - abandoned cart
+    - branding
+    - revenue
+    - profit
+    - strategy
+    - trends

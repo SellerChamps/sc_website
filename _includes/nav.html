@@ -6,12 +6,209 @@
     <span></span><span></span><span></span>
   </button>
   <div class="nav-links" id="site-nav-links">
-    <a href="{{ '/features/' | relative_url }}"{% if page.url == '/features/' %} class="is-active"{% endif %}>Features</a>
-    <a href="{{ '/solutions/' | relative_url }}"{% if page.url contains '/solutions' %} class="is-active"{% endif %}>Solutions</a>
-    <a href="{{ '/integrations/' | relative_url }}"{% if page.url == '/integrations/' %} class="is-active"{% endif %}>Integrations</a>
-    <a href="{{ '/pricing/' | relative_url }}"{% if page.url == '/pricing/' %} class="is-active"{% endif %}>Pricing</a>
-    <a href="{{ '/our-customers/' | relative_url }}"{% if page.url == '/our-customers/' %} class="is-active"{% endif %}>Customers</a>
-    <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog' %} class="is-active"{% endif %}>Blog</a>
+    <div class="nav-item has-dropdown has-mega{% if page.nav_section == 'features' or page.url == '/features/' %} is-current{% endif %}">
+      <div class="nav-item-head">
+        <a href="{{ '/features/' | relative_url }}" class="nav-top-link{% if page.nav_section == 'features' or page.url == '/features/' %} is-active{% endif %}">Features</a>
+        <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="nav-menu-features" aria-label="Features submenu">
+          <span class="nav-caret" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="nav-dropdown nav-dropdown--mega" id="nav-menu-features">
+        <div class="mega-grid mega-grid--features">
+          <div class="mega-col">
+            <p class="mega-label">Listing</p>
+            <a href="{{ '/bulk-lister-seller-champ/' | relative_url }}">
+              <span class="mega-link-title">Multi-Channel Listing</span>
+              <span class="mega-link-desc">List once, publish everywhere</span>
+            </a>
+            <a href="{{ '/bulk-lister-seller-champ/' | relative_url }}">
+              <span class="mega-link-title">Bulk CSV &amp; barcode scan</span>
+              <span class="mega-link-desc">Onboard catalogs in minutes</span>
+            </a>
+            <a href="{{ '/ai-automation/' | relative_url }}">
+              <span class="mega-link-title">AI listing content</span>
+              <span class="mega-link-desc">Titles, descriptions, attributes</span>
+            </a>
+            <a href="{{ '/ai-automation/' | relative_url }}">
+              <span class="mega-link-title">Photo to listing</span>
+              <span class="mega-link-desc">Snap a product, draft a listing</span>
+            </a>
+            <a href="{{ '/solutions/automotive-fitment-tool/' | relative_url }}">
+              <span class="mega-link-title">Automotive Fitment</span>
+              <span class="mega-link-desc">YMMT mapping that cuts returns</span>
+            </a>
+            <p class="mega-label">Inventory</p>
+            <a href="{{ '/inventory-sync-software/' | relative_url }}">
+              <span class="mega-link-title">Real-time Inventory Sync</span>
+              <span class="mega-link-desc">End overselling across channels</span>
+            </a>
+            <a href="{{ '/inventory-sync-software/' | relative_url }}">
+              <span class="mega-link-title">Multi-warehouse &amp; FBA</span>
+              <span class="mega-link-desc">Seller-fulfilled + FBA together</span>
+            </a>
+            <a href="{{ '/inventory-management-api-ftp/' | relative_url }}">
+              <span class="mega-link-title">Supplier feeds &amp; POs</span>
+              <span class="mega-link-desc">FTP/API catalog automation</span>
+            </a>
+          </div>
+          <div class="mega-col">
+            <p class="mega-label">Orders &amp; fulfillment</p>
+            <a href="{{ '/solutions/order-management-system-ecommerce/' | relative_url }}">
+              <span class="mega-link-title">Order Management</span>
+              <span class="mega-link-desc">One queue for every channel</span>
+            </a>
+            <a href="{{ '/multi-channel-fulfillment-software/' | relative_url }}">
+              <span class="mega-link-title">Pick, pack &amp; ship</span>
+              <span class="mega-link-desc">Warehouse workflows that scale</span>
+            </a>
+            <a href="{{ '/multi-channel-fulfillment-software/' | relative_url }}">
+              <span class="mega-link-title">3PL order routing</span>
+              <span class="mega-link-desc">Route to the right ship-from</span>
+            </a>
+            <p class="mega-label">Pricing</p>
+            <a href="{{ '/repricer-software/' | relative_url }}">
+              <span class="mega-link-title">Amazon &amp; Walmart Repricer</span>
+              <span class="mega-link-desc">Compete without racing to zero</span>
+            </a>
+            <a href="{{ '/repricer-software/' | relative_url }}">
+              <span class="mega-link-title">Margin floors</span>
+              <span class="mega-link-desc">Protect profit while you win Buy Box</span>
+            </a>
+            <p class="mega-label">Data &amp; automation</p>
+            <a href="{{ '/ecommerce-analytics-tool-insights-reports/' | relative_url }}">
+              <span class="mega-link-title">Insights &amp; Reports</span>
+              <span class="mega-link-desc">Sales, margins, ops in one view</span>
+            </a>
+            <a href="{{ '/inventory-management-api-ftp/' | relative_url }}">
+              <span class="mega-link-title">API &amp; FTP feeds</span>
+              <span class="mega-link-desc">Connect suppliers and internal systems</span>
+            </a>
+            <a href="{{ '/ai-automation/' | relative_url }}">
+              <span class="mega-link-title">AI Automation</span>
+              <span class="mega-link-desc">Listing AI + pricing automation</span>
+            </a>
+          </div>
+          <div class="mega-featured">
+            <p class="mega-featured-label">Featured</p>
+            <p class="mega-featured-text">See how SellerChamp runs listing, inventory, and fulfillment from one platform — in about 2 minutes.</p>
+            <a class="mega-featured-cta" href="{{ '/' | relative_url }}#overview-video">Watch overview →</a>
+            <a class="mega-featured-link" href="{{ '/features/' | relative_url }}">Explore all features</a>
+            <a class="mega-featured-link" href="{{ site.app.leads }}?variant=strategy_call">Book a free demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown has-mega{% if page.url contains '/solutions' and page.nav_section != 'features' %} is-current{% endif %}">
+      <div class="nav-item-head">
+        <a href="{{ '/solutions/' | relative_url }}" class="nav-top-link{% if page.url contains '/solutions' and page.nav_section != 'features' %} is-active{% endif %}">Solutions</a>
+        <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="nav-menu-solutions" aria-label="Solutions submenu">
+          <span class="nav-caret" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="nav-dropdown nav-dropdown--mega" id="nav-menu-solutions">
+        <div class="mega-grid mega-grid--solutions">
+          <div class="mega-col">
+            <p class="mega-label">By seller type</p>
+            <a href="{{ '/solutions/ecommerce-reseller/' | relative_url }}">
+              <span class="mega-link-title">Resellers</span>
+              <span class="mega-link-desc">High-SKU catalogs across marketplaces</span>
+            </a>
+            <a href="{{ '/solutions/retail-ecommerce-solution/' | relative_url }}">
+              <span class="mega-link-title">Retailers</span>
+              <span class="mega-link-desc">Store + online inventory in sync</span>
+            </a>
+            <a href="{{ '/solutions/dropshipping-automation-software/' | relative_url }}">
+              <span class="mega-link-title">Drop Shippers</span>
+              <span class="mega-link-desc">Supplier feeds and order routing</span>
+            </a>
+          </div>
+          <div class="mega-col">
+            <p class="mega-label">Growth plays</p>
+            <a href="{{ '/solutions/brand-owner/' | relative_url }}">
+              <span class="mega-link-title">Brand Owners</span>
+              <span class="mega-link-desc">Protect brand presence everywhere</span>
+            </a>
+            <a href="{{ '/solutions/amazon-seller-software-for-fba/' | relative_url }}">
+              <span class="mega-link-title">Amazon FBA Sellers</span>
+              <span class="mega-link-desc">FBA + multichannel in one system</span>
+            </a>
+            <a href="{{ '/solutions/' | relative_url }}">
+              <span class="mega-link-title">All solutions</span>
+              <span class="mega-link-desc">See every seller workflow</span>
+            </a>
+          </div>
+          <div class="mega-featured">
+            <p class="mega-featured-label">Featured</p>
+            <p class="mega-featured-text">Built for operators managing serious catalogs — not starter-store tools.</p>
+            <a class="mega-featured-cta" href="{{ site.app.leads }}?variant=strategy_call">Book a free demo →</a>
+            <a class="mega-featured-link" href="{{ '/our-customers/' | relative_url }}">See customer results</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown has-mega{% if page.nav_section == 'integrations' or page.url == '/integrations/' %} is-current{% endif %}">
+      <div class="nav-item-head">
+        <a href="{{ '/integrations/' | relative_url }}" class="nav-top-link{% if page.nav_section == 'integrations' or page.url == '/integrations/' %} is-active{% endif %}">Integrations</a>
+        <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="nav-menu-integrations" aria-label="Integrations submenu">
+          <span class="nav-caret" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="nav-dropdown nav-dropdown--mega" id="nav-menu-integrations">
+        <div class="mega-grid mega-grid--integrations">
+          <div class="mega-col">
+            <p class="mega-label">Marketplaces</p>
+            <a class="mega-int" href="{{ '/integrations/market-places/amazon-seller-software/' | relative_url }}"><img src="{{ '/assets/images/channel-amazon.svg' | relative_url }}" alt=""><span>Amazon</span></a>
+            <a class="mega-int" href="{{ '/integrations/market-places/ebay/' | relative_url }}"><img src="{{ '/assets/images/channel-ebay.svg' | relative_url }}" alt=""><span>eBay</span></a>
+            <a class="mega-int" href="{{ '/integrations/market-places/sell-on-walmart/' | relative_url }}"><img src="{{ '/assets/images/channel-walmart.svg' | relative_url }}" alt=""><span>Walmart</span></a>
+            <a class="mega-int" href="{{ '/integrations/market-places/etsy/' | relative_url }}"><img src="{{ '/assets/images/channel-etsy.svg' | relative_url }}" alt=""><span>Etsy</span></a>
+            <a class="mega-int" href="{{ '/integrations/market-places/tiktok-shop/' | relative_url }}"><img class="logo-fullcolor" src="{{ '/assets/images/channel-tiktok.svg' | relative_url }}" alt=""><span>TikTok Shop</span></a>
+            <a class="mega-int" href="{{ '/integrations/market-places/temu/' | relative_url }}"><img class="logo-fullcolor" src="{{ '/assets/images/channel-temu.svg' | relative_url }}" alt=""><span>Temu</span></a>
+            <a class="mega-int" href="{{ '/integrations/market-places/newegg/' | relative_url }}"><img src="{{ '/assets/images/channel-newegg.png' | relative_url }}" alt=""><span>Newegg</span></a>
+            <a class="mega-more" href="{{ '/integrations/market-places/' | relative_url }}">+ more marketplaces</a>
+          </div>
+          <div class="mega-col">
+            <p class="mega-label">eCommerce platforms</p>
+            <a class="mega-int" href="{{ '/integrations/shopping-carts/shopify/' | relative_url }}"><img src="{{ '/assets/images/channel-shopify.svg' | relative_url }}" alt=""><span>Shopify</span></a>
+            <a class="mega-int" href="{{ '/integrations/shopping-carts/woocommerce/' | relative_url }}"><img src="{{ '/assets/images/channel-woocommerce.png' | relative_url }}" alt=""><span>WooCommerce</span></a>
+            <a class="mega-int" href="{{ '/integrations/shopping-carts/bigcommerce/' | relative_url }}"><img src="{{ '/assets/images/channel-bigcommerce.png' | relative_url }}" alt=""><span>BigCommerce</span></a>
+            <a class="mega-int" href="{{ '/integrations/' | relative_url }}#shoppingcart"><img src="{{ '/assets/images/integration-square.png' | relative_url }}" alt=""><span>Square</span></a>
+            <p class="mega-label">Shipping</p>
+            <a class="mega-int" href="{{ '/integrations/service-integrations/shipstation/' | relative_url }}"><img class="logo-fullcolor" src="{{ '/assets/images/integration-shipstation.svg' | relative_url }}" alt=""><span>ShipStation</span></a>
+            <a class="mega-int" href="{{ '/integrations/service-integrations/shiprush/' | relative_url }}"><img src="{{ '/assets/images/integration-shiprush.png' | relative_url }}" alt=""><span>ShipRush</span></a>
+            <a class="mega-more" href="{{ '/integrations/service-integrations/' | relative_url }}">+ more shipping</a>
+          </div>
+          <div class="mega-col">
+            <p class="mega-label">Fulfillment</p>
+            <a class="mega-int" href="{{ '/integrations/service-integrations/amazon-fba/' | relative_url }}"><span class="mega-int-fallback">FBA</span><span>Amazon FBA</span></a>
+            <a class="mega-int" href="{{ '/integrations/service-integrations/walmart-wfs/' | relative_url }}"><span class="mega-int-fallback">WFS</span><span>Walmart WFS</span></a>
+            <a class="mega-int" href="{{ '/integrations/service-integrations/flexport/' | relative_url }}"><img src="{{ '/assets/images/integration-flexport.png' | relative_url }}" alt=""><span>Flexport</span></a>
+            <p class="mega-label">Services</p>
+            <a class="mega-int" href="{{ '/integrations/service-integrations/quickbooks/' | relative_url }}"><img class="logo-fullcolor" src="{{ '/assets/images/integration-quickbooks.svg' | relative_url }}" alt=""><span>QuickBooks</span></a>
+            <a class="mega-int" href="{{ '/integrations/service-integrations/api-data-feed/' | relative_url }}"><span class="mega-int-fallback">API</span><span>API &amp; Data Feed</span></a>
+            <a class="mega-more" href="{{ '/integrations/' | relative_url }}">View all integrations</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="nav-top-link{% if page.url == '/pricing/' %} is-active{% endif %}" href="{{ '/pricing/' | relative_url }}">Pricing</a>
+
+    <div class="nav-item has-dropdown{% if page.url == '/our-customers/' or page.url contains '-case-study' %} is-current{% endif %}">
+      <div class="nav-item-head">
+        <a href="{{ '/our-customers/' | relative_url }}" class="nav-top-link{% if page.url == '/our-customers/' or page.url contains '-case-study' %} is-active{% endif %}">Customers</a>
+        <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="nav-menu-customers" aria-label="Customers submenu">
+          <span class="nav-caret" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="nav-dropdown" id="nav-menu-customers" role="list">
+        <a role="listitem" href="{{ '/our-customers/' | relative_url }}#testimonials">Testimonials</a>
+        <a role="listitem" href="{{ '/our-customers/' | relative_url }}#casestudy">Case Studies</a>
+      </div>
+    </div>
+
+    <a class="nav-top-link{% if page.url contains '/blog' %} is-active{% endif %}" href="{{ '/blog/' | relative_url }}">Blog</a>
   </div>
   <div class="nav-right">
     <a class="btn-login" href="{{ site.app.signin }}">Login</a>

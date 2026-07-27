@@ -1,0 +1,105 @@
+{% assign cat_label = page.category_label | default: 'Integration' %}
+{% assign int_name = page.integration_name | default: page.title %}
+
+<section class="site-section">
+  <div class="wrap">
+    <div class="int-detail-head">
+      {% if page.logo %}
+      <div class="int-detail-logo">
+        <img{% if page.logo_fullcolor %} class="logo-fullcolor"{% endif %} src="{{ page.logo | relative_url }}" alt="{{ int_name }}">
+      </div>
+      {% elsif page.logo_text %}
+      <div class="int-detail-logo int-detail-logo--text">
+        <span>{{ page.logo_text }}</span>
+      </div>
+      {% endif %}
+      <div>
+        <div class="slabel">{{ cat_label }}</div>
+        <h2>Why sellers connect {{ int_name }} to SellerChamp</h2>
+        <span class="h2-line"></span>
+        <p class="section-lead">{{ page.hero_sub }}</p>
+      </div>
+    </div>
+
+    {% if page.highlights and page.highlights.size > 0 %}
+    <div class="rgrid" style="margin-top:2rem;">
+      {% for item in page.highlights %}
+      <div class="rcard">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="site-section section-alt">
+  <div class="wrap">
+    <div class="slabel">Platform capabilities</div>
+    <h2>What you get with SellerChamp</h2>
+    <span class="h2-line"></span>
+    <p class="section-lead">{{ int_name }} sits inside the same multichannel stack that runs listing, inventory, orders, pricing, and supplier feeds.</p>
+    <div class="rgrid">
+      <div class="rcard">
+        <h3><a href="{{ '/bulk-lister-seller-champ/' | relative_url }}">Bulk Lister</a></h3>
+        <p>Scan, CSV upload, or feed import — then publish channel-ready listings without rebuilding your catalog.</p>
+      </div>
+      <div class="rcard">
+        <h3><a href="{{ '/inventory-sync-software/' | relative_url }}">Inventory Sync</a></h3>
+        <p>Real-time quantity updates across marketplaces and carts so oversells don’t wreck your seller metrics.</p>
+      </div>
+      <div class="rcard">
+        <h3><a href="{{ '/multi-channel-fulfillment-software/' | relative_url }}">Multi-Channel Fulfillment</a></h3>
+        <p>One order queue with routing to FBA, 3PL, WFS, or your warehouse.</p>
+      </div>
+      <div class="rcard">
+        <h3><a href="{{ '/repricer-software/' | relative_url }}">RePricer</a></h3>
+        <p>Compete for Buy Box on Amazon and Walmart with margin floors you control.</p>
+      </div>
+      <div class="rcard">
+        <h3><a href="{{ '/ecommerce-analytics-tool-insights-reports/' | relative_url }}">Insights &amp; Reports</a></h3>
+        <p>See sales and profit by channel, date range, and product from one dashboard.</p>
+      </div>
+      <div class="rcard">
+        <h3><a href="{{ '/inventory-management-api-ftp/' | relative_url }}">API &amp; FTP Feeds</a></h3>
+        <p>Connect suppliers and internal systems so catalog and stock stay current.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-section">
+  <div class="wrap">
+    <div class="slabel">Explore more</div>
+    <h2>Related integrations</h2>
+    <span class="h2-line"></span>
+    <p class="section-lead"><a href="{{ '/integrations/' | relative_url }}">View all integrations</a> — marketplaces, carts, shipping, fulfillment, and services.</p>
+    <div class="rgrid">
+      {% assign related_count = 0 %}
+      {% for item in site.data.integrations %}
+        {% if item.path != page.permalink and item.category == page.integration_category and related_count < 3 %}
+          {% assign related_count = related_count | plus: 1 %}
+          <div class="rcard">
+            <h3><a href="{{ item.path | relative_url }}">{{ item.name }}</a></h3>
+            <p>{{ item.hero_sub | truncate: 120 }}</p>
+          </div>
+        {% endif %}
+      {% endfor %}
+      {% if related_count == 0 %}
+      <div class="rcard">
+        <h3><a href="{{ '/integrations/market-places/amazon-seller-software/' | relative_url }}">Amazon</a></h3>
+        <p>Bulk list, FBA shipments, Buy Box repricing, and multichannel fulfillment.</p>
+      </div>
+      <div class="rcard">
+        <h3><a href="{{ '/integrations/market-places/ebay/' | relative_url }}">eBay</a></h3>
+        <p>Item specifics, variations, and inventory sync across every other channel.</p>
+      </div>
+      <div class="rcard">
+        <h3><a href="{{ '/integrations/shopping-carts/shopify/' | relative_url }}">Shopify</a></h3>
+        <p>Storefront listings tied to marketplace inventory and orders.</p>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

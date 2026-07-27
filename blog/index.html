@@ -7,7 +7,7 @@ description: >-
   team.
 canonical: https://sellerchamp.com/blog/
 eyebrow: Resources
-hero_title: SellerChamp blog
+hero_title: SellerChamp Blog
 hero_sub: Multichannel operations tips, marketplace guides, and product updates.
 redirect_from:
   - /resources/
@@ -21,18 +21,125 @@ redirect_from:
   - /updates/
 ---
 
-<section class="site-section">
+{% assign assigned_urls = '' | split: '' %}
+{% assign featured_posts = site.posts | slice: 0, 2 %}
+{% assign section_i = 0 %}
+
+<section class="site-section blog-index">
   <div class="wrap">
-    <div class="blog-grid">
-      {% for post in site.posts %}
-      <a class="blog-card" href="{{ post.url | relative_url }}">
-        <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d, %Y' }}</time>
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.description | default: post.excerpt | strip_html | truncate: 140 }}</p>
-      </a>
-      {% else %}
-      <p class="section-lead">Posts are being migrated. Check back soon, or <a href="{{ site.app.leads }}?variant=strategy_call">book a demo</a>.</p>
-      {% endfor %}
+    {% include blog-topic-nav.html %}
+
+    <div class="blog-section" id="latest">
+      <div class="blog-section-head">
+        <div>
+          <div class="slabel">Latest</div>
+          <h2>Fresh from the blog</h2>
+          <span class="h2-line"></span>
+        </div>
+      </div>
+      <div class="blog-featured">
+        {% for post in featured_posts %}
+        <a class="blog-card blog-card--featured" href="{{ post.url | relative_url }}">
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d, %Y' }}</time>
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.description | default: post.excerpt | strip_html | truncate: 180 }}</p>
+          <span class="persona-link">Read article →</span>
+        </a>
+        {% endfor %}
+      </div>
     </div>
+
+    {% for section in site.data.blog_sections %}
+      {% assign section_posts = '' | split: '' %}
+      {% for post in site.posts %}
+        {% assign haystack = post.title | append: ' ' | append: post.url | downcase %}
+        {% assign matched = false %}
+        {% for keyword in section.match %}
+          {% unless matched %}
+            {% assign needle = keyword | downcase %}
+            {% if haystack contains needle %}
+              {% unless assigned_urls contains post.url %}
+                {% assign section_posts = section_posts | push: post %}
+                {% assign assigned_urls = assigned_urls | push: post.url %}
+                {% assign matched = true %}
+              {% endunless %}
+            {% endif %}
+          {% endunless %}
+        {% endfor %}
+      {% endfor %}
+
+      {% if section_posts.size > 0 %}
+      {% assign section_i = section_i | plus: 1 %}
+      {% assign rem = section_i | modulo: 2 %}
+      {% assign section_url = '/blog/' | append: section.id | append: '/' %}
+      <div class="blog-section{% if rem == 0 %} blog-section--alt{% endif %}" id="{{ section.id }}">
+        <div class="blog-section-head">
+          <div>
+            <h2><a class="blog-section-title" href="{{ section_url | relative_url }}">{{ section.title }}</a></h2>
+            <span class="h2-line"></span>
+            {% if section.blurb %}<p class="section-lead">{{ section.blurb }}</p>{% endif %}
+          </div>
+        </div>
+        <div class="blog-grid">
+          {% for post in section_posts limit: section.limit %}
+          <a class="blog-card" href="{{ post.url | relative_url }}">
+            <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d, %Y' }}</time>
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.description | default: post.excerpt | strip_html | truncate: 140 }}</p>
+          </a>
+          {% endfor %}
+        </div>
+        {% if section_posts.size > section.limit %}
+        <p class="blog-section-more">
+          <a href="{{ section_url | relative_url }}">Showing {{ section.limit }} of {{ section_posts.size }} articles in {{ section.title }} →</a>
+        </p>
+        {% else %}
+        <p class="blog-section-more">
+          <a href="{{ section_url | relative_url }}">View all {{ section_posts.size }} articles in {{ section.title }} →</a>
+        </p>
+        {% endif %}
+      </div>
+      {% endif %}
+    {% endfor %}
+
+    {% assign guides_posts = '' | split: '' %}
+    {% for post in site.posts %}
+      {% unless assigned_urls contains post.url %}
+        {% assign guides_posts = guides_posts | push: post %}
+      {% endunless %}
+    {% endfor %}
+
+    {% if guides_posts.size > 0 %}
+    {% assign section_i = section_i | plus: 1 %}
+    {% assign rem = section_i | modulo: 2 %}
+    <div class="blog-section{% if rem == 0 %} blog-section--alt{% endif %}" id="guides-tips">
+      <div class="blog-section-head">
+        <div>
+          <div class="slabel">More reading</div>
+          <h2><a class="blog-section-title" href="{{ '/blog/guides-tips/' | relative_url }}">Guides &amp; tips</a></h2>
+          <span class="h2-line"></span>
+          <p class="section-lead">Additional ecommerce guides and how-tos from the SellerChamp team.</p>
+        </div>
+      </div>
+      <div class="blog-grid">
+        {% for post in guides_posts limit: 9 %}
+        <a class="blog-card" href="{{ post.url | relative_url }}">
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d, %Y' }}</time>
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.description | default: post.excerpt | strip_html | truncate: 140 }}</p>
+        </a>
+        {% endfor %}
+      </div>
+      {% if guides_posts.size > 9 %}
+      <p class="blog-section-more">
+        <a href="{{ '/blog/guides-tips/' | relative_url }}">Showing 9 of {{ guides_posts.size }} additional articles →</a>
+      </p>
+      {% else %}
+      <p class="blog-section-more">
+        <a href="{{ '/blog/guides-tips/' | relative_url }}">View all {{ guides_posts.size }} guides &amp; tips →</a>
+      </p>
+      {% endif %}
+    </div>
+    {% endif %}
   </div>
 </section>

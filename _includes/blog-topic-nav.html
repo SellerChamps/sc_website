@@ -1,0 +1,7 @@
+<nav class="blog-section-nav" aria-label="Blog topics">
+  <a href="{{ '/blog/' | relative_url }}"{% if page.url == '/blog/' %} class="is-active"{% endif %}>Latest</a>
+  {% for section in site.data.blog_sections %}
+  <a href="{{ '/blog/' | append: section.id | append: '/' | relative_url }}"{% if page.blog_section_id == section.id %} class="is-active"{% endif %}>{{ section.title }}</a>
+  {% endfor %}
+  <a href="{{ '/blog/guides-tips/' | relative_url }}"{% if page.blog_section_id == 'guides-tips' %} class="is-active"{% endif %}>Guides &amp; tips</a>
+</nav>

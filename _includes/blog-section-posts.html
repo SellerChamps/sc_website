@@ -1,0 +1,40 @@
+{% comment %}
+  Resolves page.blog_section_id (or include.section_id) against site.data.blog_sections,
+  assigns matching posts to section_posts (first matching section wins, same as blog index).
+{% endcomment %}
+{% assign target_id = include.section_id | default: page.blog_section_id %}
+{% assign section_posts = '' | split: '' %}
+{% assign assigned_urls = '' | split: '' %}
+
+{% for section in site.data.blog_sections %}
+  {% assign bucket = '' | split: '' %}
+  {% for post in site.posts %}
+    {% assign haystack = post.title | append: ' ' | append: post.url | downcase %}
+    {% assign matched = false %}
+    {% for keyword in section.match %}
+      {% unless matched %}
+        {% assign needle = keyword | downcase %}
+        {% if haystack contains needle %}
+          {% unless assigned_urls contains post.url %}
+            {% assign bucket = bucket | push: post %}
+            {% assign assigned_urls = assigned_urls | push: post.url %}
+            {% assign matched = true %}
+          {% endunless %}
+        {% endif %}
+      {% endunless %}
+    {% endfor %}
+  {% endfor %}
+  {% if section.id == target_id %}
+    {% assign section_posts = bucket %}
+  {% endif %}
+{% endfor %}
+
+{% if target_id == 'guides-tips' %}
+  {% assign guides = '' | split: '' %}
+  {% for post in site.posts %}
+    {% unless assigned_urls contains post.url %}
+      {% assign guides = guides | push: post %}
+    {% endunless %}
+  {% endfor %}
+  {% assign section_posts = guides %}
+{% endif %}

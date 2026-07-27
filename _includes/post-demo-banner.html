@@ -1,0 +1,12 @@
+{% assign demo_href = include.href | default: site.app.leads | append: '?variant=strategy_call&utm_source=blog&utm_campaign=post-demo-banner' %}
+<a class="post-demo-banner" href="{{ demo_href }}">
+  <div class="post-demo-banner__copy">
+    <p class="post-demo-banner__eyebrow">Free strategy call</p>
+    <h3 class="post-demo-banner__title">Try SellerChamp for Yourself!</h3>
+    <p class="post-demo-banner__text">Schedule a demo today and discover how our Bulk Lister can help you list more products, increase sales, and grow your e-commerce business faster than ever.</p>
+    <span class="post-demo-banner__cta">Schedule Your Demo Today →</span>
+  </div>
+  <div class="post-demo-banner__visual" aria-hidden="true">
+    <img src="{{ '/assets/images/hero-devices.png' | relative_url }}" alt="" width="640" height="400" loading="lazy" decoding="async">
+  </div>
+</a>
