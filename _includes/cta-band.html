@@ -1,0 +1,14 @@
+{% assign cta_label = include.label | default: "Ready to get started?" %}
+{% assign cta_heading = include.heading | default: "Ready to run your multichannel business from one platform?" %}
+{% assign cta_text = include.text | default: "We start by learning your challenges, then customize the demo to show exactly how SellerChamp solves them — not a generic slide walkthrough." %}
+{% assign cta_button = include.button | default: "Book Your Free Demo →" %}
+<div class="cta-wrap" id="cta">
+  <div class="cta-in">
+    <p class="slabel">{{ cta_label }}</p>
+    <h2>{{ cta_heading }}</h2>
+    <span class="h2-line" style="margin:0.6rem auto 1.25rem;"></span>
+    <p>{{ cta_text }}</p>
+    <a href="{{ site.app.leads }}?variant=strategy_call" class="btn-cta">{{ cta_button }}</a>
+    <p class="cta-fine">Questions? Call <a href="tel:{{ site.phone_raw }}">{{ site.phone }}</a> or <a href="mailto:{{ site.support_email }}">{{ site.support_email }}</a></p>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<nav class="site-nav" aria-label="Primary">
+  <a class="nav-logo" href="{{ '/' | relative_url }}">
+    <img class="site-logo" decoding="async" fetchpriority="high" src="{{ '/assets/images/sellerchamp-logo-dk.png' | relative_url }}" alt="SellerChamp" width="500" height="121">
+  </a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-links" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="site-nav-links">
+    <a href="{{ '/features/' | relative_url }}"{% if page.url == '/features/' %} class="is-active"{% endif %}>Features</a>
+    <a href="{{ '/solutions/' | relative_url }}"{% if page.url contains '/solutions' %} class="is-active"{% endif %}>Solutions</a>
+    <a href="{{ '/integrations/' | relative_url }}"{% if page.url == '/integrations/' %} class="is-active"{% endif %}>Integrations</a>
+    <a href="{{ '/pricing/' | relative_url }}"{% if page.url == '/pricing/' %} class="is-active"{% endif %}>Pricing</a>
+    <a href="{{ '/our-customers/' | relative_url }}"{% if page.url == '/our-customers/' %} class="is-active"{% endif %}>Customers</a>
+    <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog' %} class="is-active"{% endif %}>Blog</a>
+  </div>
+  <div class="nav-right">
+    <a class="btn-login" href="{{ site.app.signin }}">Login</a>
+    <a class="btn-demo" href="{{ site.app.leads }}?variant=strategy_call">Book a Demo</a>
+  </div>
+</nav>
+<div class="sc-nav-spacer"></div>

@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<header class="page-hero">
+  <div class="wrap page-hero-in">
+    {% if page.eyebrow %}<p class="slabel">{{ page.eyebrow }}</p>{% endif %}
+    <h1>{{ page.hero_title | default: page.title }}</h1>
+    {% if page.hero_sub %}<p class="page-hero-sub">{{ page.hero_sub }}</p>{% endif %}
+    {% if page.hero_cta %}
+    <div class="hero-btns" style="margin-top:1.5rem;">
+      <a href="{{ page.hero_cta_url | default: site.app.leads }}{% unless page.hero_cta_url %}?variant=strategy_call{% endunless %}" class="btn-hero-primary">{{ page.hero_cta }}</a>
+    </div>
+    {% endif %}
+  </div>
+</header>
+{% if page.show_runway %}
+{% include channel-runway.html %}
+{% endif %}
+{{ content }}

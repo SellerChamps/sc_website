@@ -17,5 +17,11 @@
   <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M17 14v7M14 17.5h6"/>
   {% when 'arrows' %}
   <path d="m8 3 4 4-4 4"/><path d="M4 7h12"/><path d="m16 21-4-4 4-4"/><path d="M20 17H8"/>
+  {% when 'tag' %}
+  <path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"/><path d="M7 7h.01"/>
+  {% when 'chart' %}
+  <path d="M3 3v18h18"/><path d="M7 14v4"/><path d="M12 10v8"/><path d="M17 6v12"/>
+  {% when 'plug' %}
+  <path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8v5a6 6 0 0 1-12 0V8Z"/>
   {% endcase %}
 </svg>

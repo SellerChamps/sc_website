@@ -1,33 +1,37 @@
-# SellerChamp Frontend - Built on Jekyll.  Live on GitHub pages.  
+# SellerChamp website (Jekyll → GitHub Pages)
 
-Static rebuild of the SellerChamp.com website.  
+Static rebuild of [sellerchamp.com](https://sellerchamp.com) with the navy/teal design system from the multichannel operations landing pages.
 
 ## Run locally
 ```bash
 bundle install
 bundle exec jekyll serve --livereload
-# → http://localhost:4000/ebay-lister-landing-v2/
+# → http://localhost:4000/
 ```
 
-## Deploy (GitHub Pages)
+## Deploy
+Pushes to `main` deploy via GitHub Actions (**Deploy Jekyll site to Pages**).
 
-Pushes to `main` deploy via GitHub Actions.
+- Preview: `https://sellerchamps.github.io/sc_website/`
+- Production cutover: see [`docs/CUTOVER.md`](docs/CUTOVER.md)
 
-- **Site URL:** https://sellerchamps.github.io/sc_website/
-- **Landing page:** https://sellerchamps.github.io/sc_website/ebay-lister-landing-v2/
+## Structure
+| Path | Purpose |
+|------|---------|
+| `_layouts/default.html` | Site chrome (util bar, nav, CTA, footer) |
+| `_layouts/page.html` / `post.html` | Marketing pages + blog posts |
+| `_includes/` | Shared nav, footer, CTA, tracking |
+| `pages/` | Features, pricing, integrations, solutions, FAQ, legal |
+| `blog/` | Blog index |
+| `_posts/` | Migrated WordPress posts (`/blog/{slug}/`) |
+| `landing/` | Paid ads landings (unchanged permalinks) |
+| `assets/css/site.css` | Site extensions on top of `multichannel_landing.css` |
+| `_data/url_inventory.md` | WP URL rebuild/redirect map |
+| `scripts/migrate_wp_blog.py` | Re-run blog import from live WP URLs |
 
-To publish: push to `main`. Monitor the **Deploy Jekyll site to Pages** workflow in the repo Actions tab.
+## Blog re-import
+```bash
+python3 scripts/migrate_wp_blog.py
+```
 
-- `_config.yml` — site + brand config (phone, app URLs, SEO)
-- `_layouts/lister_landing.html` — HTML shell, `<head>`, SEO meta, asset links
-- `ebay-lister-landing-v2.html` — the page (front matter + sections)
-- `assets/css/lister_landing.css` — all styles, brand tokens at top
-- `assets/js/landing.js` — pricing toggle + mobile nav
-- `assets/images/` — drop real images here (see placeholders in the page)
-
-## Images to add
-Search the page for `.ph` placeholder blocks. The main one is the hero
-(`hero-barcode.jpg`). Marketplace/partner/review badges are rendered as
-styled text — swap to real logo `<img>` tags if you prefer.
-
-NOTE: Keep this repo public so that site stays live on GitHub pages. 
+NOTE: Keep this repo public so GitHub Pages stays live. Keep `app`, `kb`, and `community` subdomains on their existing hosts.

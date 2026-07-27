@@ -1,0 +1,38 @@
+---
+layout: page
+permalink: /blog/
+title: Blog — Ecommerce Multichannel Tips & Product Updates
+description: >-
+  Guides, product updates, and multichannel ecommerce tips from the SellerChamp
+  team.
+canonical: https://sellerchamp.com/blog/
+eyebrow: Resources
+hero_title: SellerChamp blog
+hero_sub: Multichannel operations tips, marketplace guides, and product updates.
+redirect_from:
+  - /resources/
+  - /amazon-fba-checklist/
+  - /amazon-fba-revenue-calculator/
+  - /ebay-fee-calculator/
+  - /ebay-description/
+  - /ecommerce-seo-checklist/
+  - /free-shipping-label-template/
+  - /shopify-store-checklist/
+  - /updates/
+---
+
+<section class="site-section">
+  <div class="wrap">
+    <div class="blog-grid">
+      {% for post in site.posts %}
+      <a class="blog-card" href="{{ post.url | relative_url }}">
+        <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d, %Y' }}</time>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.description | default: post.excerpt | strip_html | truncate: 140 }}</p>
+      </a>
+      {% else %}
+      <p class="section-lead">Posts are being migrated. Check back soon, or <a href="{{ site.app.leads }}?variant=strategy_call">book a demo</a>.</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>

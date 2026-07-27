@@ -1,0 +1,11 @@
+---
+title: Boosting Sales by Listing Multiple Items On eBay
+date: 2020-09-19 12:00:00 +0000
+permalink: /blog/boosting-sales-by-listing-multiple-items-on-ebay/
+description: Get an in-depth idea of how to boost sales by listing multiple items on eBay. Learn the tricks of the trade and benefit from the knowledge of the experts.
+---
+
+<div class="elementor-widget-container">
+<div class="fusion-fullwidth fullwidth-box fusion-builder-row-1 fusion-flex-container nonhundred-percent-fullwidth non-hundred-percent-height-scrolling" style="background-color: rgba(255,255,255,0);background-position: center center;background-repeat: no-repeat;border-width: 0px 0px 0px 0px;border-color:#e2e2e2;border-style:solid;" ><div class="fusion-builder-row fusion-row fusion-flex-align-items-flex-start" style="max-width:1248px;margin-left: calc(-4% / 2 );margin-right: calc(-4% / 2 );"><div class="fusion-layout-column fusion_builder_column fusion-builder-column-0 fusion_builder_column_1_1 1_1 fusion-flex-column"><div class="fusion-column-wrapper fusion-flex-justify-content-flex-start fusion-content-layout-column" style="background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;padding: 0px 0px 0px 0px;"><div class="fusion-text fusion-text-1"><p>The past few years have seen significantly less foot traffic in shopping malls and brick-and-mortar shops, but that doesn’t mean that people are no longer buying things! E-Commerce and <a href="https://www.crazyegg.com/blog/reasons-people-buy-products-online/#:~:text=One%20of%20the%20reasons%20people,stores%20and%20products%20at%20once.&amp;text=They%20search%20for%20reviews%20of,can%20do%20it%20all%20online.">online purchases are booming</a>, thanks to their convenience, better prices, and the wide range of items available.</p>
+<p>In fact, according to the <a href="https://www.digitalcommerce360.com/2020/08/25/ecommerce-during-coronavirus-pandemic-in-charts/">latest Digital Commerce 360 analysis</a> of data gathered from the United States Department of Commerce, a total of $347.26 billion was spent on online retailers during the first six months of 2020, up 30.1% from $266.84 billion for the same period last year.</p>
+</div></div></div></div>

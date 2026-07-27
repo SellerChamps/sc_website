@@ -1,0 +1,12 @@
+<figure class="feature-quote">
+  <blockquote>
+    <p>“{{ include.quote }}”</p>
+  </blockquote>
+  <figcaption>
+    <span class="feature-quote-av" aria-hidden="true">{{ include.initials }}</span>
+    <span>
+      <strong>{{ include.name }}</strong>
+      {% if include.role %}<span class="feature-quote-role">{{ include.role }}</span>{% endif %}
+    </span>
+  </figcaption>
+</figure>

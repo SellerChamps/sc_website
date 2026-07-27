@@ -1,9 +1,8 @@
 # ── Site ──────────────────────────────────────────────────────────────
 title: SellerChamp
 description: >-
-  Self-serve AI listing software for eBay, Amazon, Walmart, Shopify & 10+
-  channels. From $29/month. Real-time inventory sync, bulk listing,
-  AI-generated content. Free 14-day trial, no credit card.
+  Multichannel listing, inventory, and order management for Amazon, eBay,
+  Walmart, Shopify & 20+ channels. From $399/month. Book a free demo.
 url: "https://sellerchamp.com"
 lang: en-US
 
@@ -40,6 +39,20 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor
+  - scripts
+  - docs
+  - _data/url_inventory.md
+  - _data/wp_pages.txt
+  - _data/wp_posts.txt
 
-# Pretty permalinks
+# Collections / defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /blog/:title/
+
+# Pretty permalinks for pages
 permalink: pretty
