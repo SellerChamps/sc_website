@@ -8,7 +8,7 @@ layout: default
     {% if page.hero_sub %}<p class="page-hero-sub">{{ page.hero_sub }}</p>{% endif %}
     {% if page.hero_cta %}
     <div class="hero-btns" style="margin-top:1.5rem;">
-      <a href="{{ page.hero_cta_url | default: site.app.leads }}{% unless page.hero_cta_url %}?variant=strategy_call{% endunless %}" class="btn-hero-primary">{{ page.hero_cta }}</a>
+      <a href="{{ page.hero_cta_url | default: site.app.leads }}" class="btn-hero-primary">{{ page.hero_cta }}</a>
     </div>
     {% endif %}
   </div>
