@@ -261,3 +261,33 @@
     }
   }
 })();
+
+/* Homepage SEO pack — scroll reveal */
+(function () {
+  var nodes = document.querySelectorAll(".scx-reveal");
+  if (!nodes.length) return;
+
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduced || !("IntersectionObserver" in window)) {
+    for (var i = 0; i < nodes.length; i++) nodes[i].classList.add("is-in");
+    return;
+  }
+
+  var io = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var el = entry.target;
+        var group = el.parentElement
+          ? Array.prototype.indexOf.call(el.parentElement.children, el)
+          : 0;
+        el.style.setProperty("--scx-delay", Math.min(group, 5) * 70 + "ms");
+        el.classList.add("is-in");
+        io.unobserve(el);
+      });
+    },
+    { rootMargin: "0px 0px -8% 0px", threshold: 0.08 }
+  );
+
+  for (var j = 0; j < nodes.length; j++) io.observe(nodes[j]);
+})();

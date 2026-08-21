@@ -27,6 +27,11 @@
   <link rel="stylesheet" href="{{ '/assets/css/fonts.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/multichannel_landing.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  {% if page.extra_css %}
+    {% for href in page.extra_css %}
+  <link rel="stylesheet" href="{{ href | relative_url }}">
+    {% endfor %}
+  {% endif %}
 
   {% seo title=false %}
 </head>

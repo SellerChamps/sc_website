@@ -7,6 +7,8 @@ description: >-
   sellers running serious catalogs. Amazon, eBay, Walmart, Shopify & 20+ more.
 canonical: https://sellerchamp.com/
 image: /assets/images/sellerchamp-logo-dk.png
+extra_css:
+  - /assets/css/homepage-seo.css
 redirect_from:
   - /home-3/
   - /landing/
@@ -28,7 +30,7 @@ redirect_from:
         <p class="hero-sub">Run your entire multichannel ecommerce business from one central dashboard.</p>
       </div>
       <div class="hero-btns">
-        <a href="{{ site.app.leads }}" class="btn-hero-primary">Book a Free Demo →</a>
+        <a href="{{ site.app.leads }}" class="btn-hero-primary">Book Free Demo →</a>
         <a href="#overview-video" class="btn-hero-outline">Watch overview</a>
       </div>
       <p class="hero-cta-fine">Customized to your catalog · Month-to-month · No GMV fees</p>
@@ -113,24 +115,24 @@ redirect_from:
 <section class="site-section home-pain">
   <div class="wrap">
     <div class="slabel">The problem</div>
-    <h2>Don&#8217;t let broken multichannel ops hold you back</h2>
+    <h2 class="scx-h2">Don&#8217;t let broken multichannel ops hold you back</h2>
     <span class="h2-line"></span>
     <div class="pain-grid">
       <div class="pain-card">
-        <h3>Every channel shows different inventory</h3>
-        <p>Oversells and cancellations pile up when Amazon, eBay, Walmart, and your storefront don&#8217;t share the same truth.</p>
+        <h3 class="scx-card__title">Every channel shows different inventory</h3>
+        <p class="scx-card__body">Oversells and cancellations pile up when Amazon, eBay, Walmart, and your storefront don&#8217;t share the same truth.</p>
       </div>
       <div class="pain-card">
-        <h3>Manual listing updates never end</h3>
-        <p>Copy-paste titles, item specifics, and category mapping across portals steals time your team should spend sourcing and selling.</p>
+        <h3 class="scx-card__title">Manual listing updates never end</h3>
+        <p class="scx-card__body">Copy-paste titles, item specifics, and category mapping across portals steals time your team should spend sourcing and selling.</p>
       </div>
       <div class="pain-card">
-        <h3>You either lose the Buy Box or your margin</h3>
-        <p>Without automated pricing floors, competing by hand means missed wins — or racing prices to zero.</p>
+        <h3 class="scx-card__title">You either lose the Buy Box or your margin</h3>
+        <p class="scx-card__body">Without automated pricing floors, competing by hand means missed wins — or racing prices to zero.</p>
       </div>
       <div class="pain-card">
-        <h3>Ops lives in five tools (or one person&#8217;s head)</h3>
-        <p>When inventory, orders, and listings live in separate systems, growth means chaos — and sick days mean downtime.</p>
+        <h3 class="scx-card__title">Ops lives in five tools (or one person&#8217;s head)</h3>
+        <p class="scx-card__body">When inventory, orders, and listings live in separate systems, growth means chaos — and sick days mean downtime.</p>
       </div>
     </div>
   </div>
@@ -139,28 +141,28 @@ redirect_from:
 <section class="site-section section-alt home-outcomes">
   <div class="wrap">
     <div class="slabel">The shift</div>
-    <h2>Turn multichannel chaos into a competitive advantage</h2>
+    <h2 class="scx-h2">Turn multichannel chaos into a competitive advantage</h2>
     <span class="h2-line"></span>
     <p class="section-lead">While competitors babysit spreadsheets, you&#8217;ll list faster, sync accurately, and ship from one system.</p>
     <div class="rgrid">
       <div class="rcard">
-        <h3>Inventory truth</h3>
-        <p>Stock updates across connected channels the moment you sell — protecting ratings and revenue.</p>
+        <h3 class="scx-card__title">Inventory truth</h3>
+        <p class="scx-card__body">Stock updates across connected channels the moment you sell — protecting ratings and revenue.</p>
       </div>
       <div class="rcard">
-        <h3>List once, sell everywhere</h3>
-        <p>CSV, barcode, AI content, and catalog-to-channel mappings so large catalogs go live without duplicate work.</p>
+        <h3 class="scx-card__title">List once, sell everywhere</h3>
+        <p class="scx-card__body">CSV, barcode, AI content, and catalog-to-channel mappings so large catalogs go live without duplicate work.</p>
       </div>
       <div class="rcard">
-        <h3>Orders on autopilot</h3>
-        <p>Auto-sync, route, pick, pack, and hand off to FBA, 3PL, or your warehouse from one queue.</p>
+        <h3 class="scx-card__title">Orders on autopilot</h3>
+        <p class="scx-card__body">Auto-sync, route, pick, pack, and hand off to FBA, 3PL, or your warehouse from one queue.</p>
       </div>
       <div class="rcard">
-        <h3>Pricing that protects floors</h3>
-        <p>Compete for the Buy Box on Amazon and Walmart without a separate repricer or margin freefall.</p>
+        <h3 class="scx-card__title">Pricing that protects floors</h3>
+        <p class="scx-card__body">Compete for the Buy Box on Amazon and Walmart without a separate repricer or margin freefall.</p>
       </div>
     </div>
-    <p class="section-cta-row"><a href="{{ site.app.leads }}" class="btn-hero-primary" style="font-size:14px;padding:12px 22px;">Book a free demo →</a></p>
+    <p class="section-cta-row"><a href="{{ site.app.leads }}" class="btn-hero-primary" style="font-size:14px;padding:12px 22px;">Book Free Demo →</a></p>
   </div>
 </section>
 
@@ -221,67 +223,13 @@ redirect_from:
   </div>
 </div>
 
-<section class="site-section">
-  <div class="wrap">
-    <div class="slabel">Platform</div>
-    <h2>Everything you need to run multichannel ops</h2>
-    <span class="h2-line"></span>
-    <p class="section-lead">Listing, inventory, orders, and repricing in one system — not five tools stitched together.</p>
-    <div class="rgrid rgrid--quiet">
-      <div class="rcard rcard--quiet">
-        <div class="feat-icon" aria-hidden="true">{% include feature-icon.html icon="bulk" %}</div>
-        <h3>Bulk listing</h3>
-        <p>Get thousands of SKUs live across channels with templates, CSV, barcode scan, and AI-assisted content.</p>
-      </div>
-      <div class="rcard rcard--quiet">
-        <div class="feat-icon" aria-hidden="true">{% include feature-icon.html icon="sync" %}</div>
-        <h3>Inventory sync</h3>
-        <p>End overselling — one sale adjusts stock everywhere, including multi-warehouse and FBA.</p>
-      </div>
-      <div class="rcard rcard--quiet">
-        <div class="feat-icon" aria-hidden="true">{% include feature-icon.html icon="truck" %}</div>
-        <h3>Order routing</h3>
-        <p>Cut manual order handling with pick-sets, packing slips, labels, and 3PL routing as volume grows.</p>
-      </div>
-      <div class="rcard rcard--quiet">
-        <div class="feat-icon" aria-hidden="true">{% include feature-icon.html icon="tag" %}</div>
-        <h3>Amazon &amp; Walmart repricer</h3>
-        <p>Win the Buy Box and protect margin floors — no separate repricing product.</p>
-      </div>
-      <div class="rcard rcard--quiet">
-        <div class="feat-icon" aria-hidden="true">{% include feature-icon.html icon="plug" %}</div>
-        <h3>Vendor feeds &amp; APIs</h3>
-        <p>Stop spreadsheet uploads — pull supplier catalogs via FTP/API and push updates to every channel.</p>
-      </div>
-      <div class="rcard rcard--quiet">
-        <div class="feat-icon" aria-hidden="true">{% include feature-icon.html icon="chart" %}</div>
-        <h3>Insights &amp; forecasting</h3>
-        <p>See what&#8217;s selling and what&#8217;s about to stock out — without five exports.</p>
-      </div>
-    </div>
-
-    <figure class="feature-quote">
-      <blockquote>
-        <p>“The centralized dashboard simplifies managing inventory, syncing orders, and adjusting prices without jumping between systems. It&#8217;s saved us countless hours and reduced listing errors significantly.”</p>
-      </blockquote>
-      <figcaption>
-        <span class="feature-quote-av" aria-hidden="true">CO</span>
-        <span>
-          <strong>Cathy Ortlieb</strong>
-          <span class="feature-quote-role">Multi-marketplace seller · Amazon, eBay, Shopify, Walmart</span>
-        </span>
-      </figcaption>
-    </figure>
-
-    <p class="section-cta-row"><a href="{{ '/features/' | relative_url }}" class="text-link">Explore all features →</a></p>
-  </div>
-</section>
+{% include homepage-seo-features-solutions.html %}
 
 <section class="site-section section-alt" id="overview-video">
   <div class="wrap">
     <div class="video-section-head">
       <div class="slabel">Product overview</div>
-      <h2>See SellerChamp in action</h2>
+      <h2 class="scx-h2">See SellerChamp in action</h2>
       <span class="h2-line" style="margin-left:auto;margin-right:auto;"></span>
       <p class="section-lead" style="margin-left:auto;margin-right:auto;text-align:center;">A full platform walkthrough — listings, inventory sync, orders, and multichannel ops.</p>
     </div>
@@ -303,40 +251,13 @@ redirect_from:
   </div>
 </section>
 
-<section class="site-section">
-  <div class="wrap">
-    <div class="slabel">Why SellerChamp</div>
-    <h2>Built differently than locked-in enterprise stacks</h2>
-    <span class="h2-line"></span>
-    <div class="compare-grid">
-      <div class="compare-col compare-col--them">
-        <p class="compare-label">Typical alternatives</p>
-        <ul class="compare-list">
-          <li>Long contracts and painful exits</li>
-          <li>Generic demos that ignore your catalog</li>
-          <li>Listing, sync, orders, and pricing split across tools</li>
-          <li>Surprise fees or GMV-based pricing</li>
-          <li>Ticket queues measured in days</li>
-        </ul>
-      </div>
-      <div class="compare-col compare-col--us">
-        <p class="compare-label">SellerChamp</p>
-        <ul class="compare-list">
-          <li>Month-to-month — cancel anytime</li>
-          <li>Demo customized to your channels and SKU reality</li>
-          <li>Listing, inventory, orders, and repricer in one platform</li>
-          <li>Transparent quotes — no GMV fees</li>
-          <li>Support teams sellers actually rate highly</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+{% include homepage-seo-integrations-comparison.html %}
+
 
 <section class="site-section section-alt">
   <div class="wrap">
     <div class="slabel">Social proof</div>
-    <h2>Trusted by sellers managing serious catalogs</h2>
+    <h2 class="scx-h2">Trusted by sellers managing serious catalogs</h2>
     <span class="h2-line"></span>
     <div class="proof-strip">
       <div class="proof-stat">
@@ -367,7 +288,7 @@ redirect_from:
 <section class="site-section">
   <div class="wrap">
     <div class="slabel">Case studies</div>
-    <h2>How ecommerce sellers scale with SellerChamp</h2>
+    <h2 class="scx-h2">How ecommerce sellers scale with SellerChamp</h2>
     <span class="h2-line"></span>
     <p class="section-lead">Real multichannel sellers who consolidated listing, inventory, and fulfillment.</p>
     <div class="case-grid">
@@ -395,28 +316,12 @@ redirect_from:
   </div>
 </section>
 
-<section class="site-section section-alt">
-  <div class="wrap">
-    <div class="slabel">From the blog</div>
-    <h2>Guides, updates &amp; multichannel tips</h2>
-    <span class="h2-line"></span>
-    <div class="blog-grid">
-      {% for post in site.posts limit: 3 %}
-      <a class="blog-card" href="{{ post.url | relative_url }}">
-        <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d, %Y' }}</time>
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.description | default: post.excerpt | strip_html | truncate: 120 }}</p>
-      </a>
-      {% endfor %}
-    </div>
-    <p class="section-cta-row"><a href="{{ '/blog/' | relative_url }}" class="text-link">View all posts →</a></p>
-  </div>
-</section>
+{% include homepage-seo-pack-bottom.html %}
 
 <section class="site-section">
   <div class="wrap">
     <div class="slabel">FAQ</div>
-    <h2>Frequently asked questions</h2>
+    <h2 class="scx-h2">Frequently asked questions</h2>
     <span class="h2-line"></span>
     <div class="faq-list">
       <details class="faq-item" open>
@@ -447,7 +352,7 @@ redirect_from:
 <section class="site-section section-alt">
   <div class="wrap pricing-teaser">
     <div class="slabel">Transparent pricing</div>
-    <h2>Most teams land between $399–$999/month</h2>
+    <h2 class="scx-h2">Most teams land between $399–$999/month</h2>
     <span class="h2-line"></span>
     <p class="section-lead">Custom quote based on SKU count, order volume, and channels — within 24 hours of the demo. No GMV fees. No annual lock-in.</p>
     <a href="{{ '/pricing/' | relative_url }}" class="btn-hero-primary" style="font-size:14px;padding:12px 22px;">View pricing →</a>
