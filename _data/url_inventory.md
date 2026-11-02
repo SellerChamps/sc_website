@@ -32,6 +32,7 @@ Raw lists: `_data/wp_pages.txt` (86), `_data/wp_posts.txt` (196).
 
 ## Keep (ads landings already in repo)
 - `/ebay-lister-landing-v2/`
+- `/landing-amazon-lister-multi-marketplace-listing-software/`
 - `/landing-multi-channel-listing-software-v2/`
 - `/fullsuite-landing/`
 - `/multichannel-operations/`
@@ -47,7 +48,8 @@ Raw lists: `_data/wp_pages.txt` (86), `_data/wp_posts.txt` (196).
 | `/terms-and-conditions/` | `/terms-of-service/` |
 | `/always-in-touch-case-study/`, `/bonterra-companies-case-study/`, `/fragrance-spot-case-study/`, `/gamequest-case-study/` | `/our-customers/` |
 | `/resources/`, `/amazon-fba-checklist/`, `/amazon-fba-revenue-calculator/`, `/ebay-fee-calculator/`, `/ebay-description/`, `/ecommerce-seo-checklist/`, `/free-shipping-label-template/`, `/shopify-store-checklist/`, `/updates/` | `/blog/` |
-| `/landing-multi-channel-listing-software/`, `/landing-amazon-lister-multi-marketplace-listing-software/`, `/landing-fastest-ebay-lister-multi-marketplace-listing-software/`, `/sellerchamp-comparison-sellercloud/`, `/sellerchamp_comparison_sellercloud_rithum_landing/`, `/inkfrog-migration/` | `/landing-multi-channel-listing-software-v2/` |
+| `/landing-multi-channel-listing-software/`, `/landing-fastest-ebay-lister-multi-marketplace-listing-software/`, `/sellerchamp-comparison-sellercloud/`, `/sellerchamp_comparison_sellercloud_rithum_landing/`, `/inkfrog-migration/` | `/landing-multi-channel-listing-software-v2/` |
+| `/landing-amazon-lister-multi-marketplace-listing-software/` | dedicated Amazon Lister landing (no longer redirected) |
 | `/sellerchamp-affliate-program/`, `/partner-with-sellerchamp/`, `/prospershow/`, `/sellerchamp-carbon6-partnership/` | `/` |
 
 ## External (do not host)
