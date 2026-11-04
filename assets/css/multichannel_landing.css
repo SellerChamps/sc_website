@@ -312,7 +312,7 @@
      .slabel { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal); margin-bottom: 0.5rem; }
      h2 { font-family: "Montserrat", system-ui, sans-serif; font-size: clamp(1.7rem, 1.15rem + 1.7vw, 2.5rem); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; color: var(--navy); margin-bottom: 0.5rem; }
      .h2-line { display: block; width: 60px; height: 3px; background: linear-gradient(90deg, var(--teal), var(--blue)); border-radius: 2px; margin: 0.6rem 0 1.25rem; }
-     .sdesc { font-size: 0.95rem; color: var(--muted); max-width: 580px; line-height: 1.7; margin-bottom: 2.5rem; font-weight: 300; }
+     .sdesc { font-size: 0.95rem; color: var(--muted); max-width: 100%; line-height: 1.7; margin-bottom: 2.5rem; font-weight: 300; }
 
      /* TABLE */
      .tscroll { overflow-x: auto; border-radius: 14px; box-shadow: 0 4px 24px rgba(0,26,74,0.08); }
