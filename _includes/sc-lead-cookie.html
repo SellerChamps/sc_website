@@ -1,0 +1,38 @@
+<script>
+(function () {
+  var COOKIE = "sc_lead";
+
+  function readScLead() {
+    var cookies = document.cookie ? document.cookie.split("; ") : [];
+    var i, parts, name, value;
+    for (i = 0; i < cookies.length; i++) {
+      parts = cookies[i].split("=");
+      try {
+        name = decodeURIComponent(parts[0]);
+      } catch (e) {
+        name = parts[0];
+      }
+      if (name !== COOKIE) continue;
+      value = parts.slice(1).join("=");
+      try {
+        value = decodeURIComponent(value);
+      } catch (e) {}
+      try {
+        return JSON.parse(value);
+      } catch (e) {
+        return value;
+      }
+    }
+  }
+
+  if (readScLead()) return;
+
+  var expires = new Date();
+  expires.setTime(expires.getTime() + 30 * 864e5);
+  var value = encodeURIComponent(JSON.stringify({ landing_page: window.location.href }))
+    .replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g, decodeURIComponent);
+
+  document.cookie = COOKIE + "=" + value +
+    "; path=/; domain=.sellerchamp.com; expires=" + expires.toUTCString();
+})();
+</script>

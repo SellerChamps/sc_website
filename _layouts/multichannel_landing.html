@@ -30,6 +30,7 @@
 </head>
 <body>
   {% include tracking-body.html %}
+  {% include sc-lead-cookie.html %}
   {{ content }}
   {% include tracking-deferred.html %}
   <script src="{{ '/assets/js/multichannel_landing.js' | relative_url }}" defer></script>
