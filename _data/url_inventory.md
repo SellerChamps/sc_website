@@ -52,6 +52,7 @@ Raw lists: `_data/wp_pages.txt` (88), `_data/wp_posts.txt` (202).
 | `/resources/`, `/amazon-fba-revenue-calculator/`, `/ebay-fee-calculator/`, `/free-shipping-label-template/`, `/shopify-store-checklist/`, `/updates/` | `/blog/` |
 | `/amazon-fba-checklist/`, `/ebay-description/`, `/ecommerce-seo-checklist/` | rebuild (see `pages/*-checklist*.html`, `pages/ebay-description.html`) |
 | `/sellerchamp-comparison-sellercloud/`, `/sellerchamp_comparison_sellercloud_rithum_landing/` | `/compare/sellerchamp-vs-sellercloud/` |
+| `/compare/sellerchamp-vs-channeladvisor/`, `/sellerchamp-vs-channeladvisor/` | `/compare/sellerchamp-vs-rithum/` |
 | `/landing-multi-channel-listing-software/`, `/landing-fastest-ebay-lister-multi-marketplace-listing-software/`, `/inkfrog-migration/` | `/landing-multi-channel-listing-software-v2/` |
 | `/landing-amazon-lister-multi-marketplace-listing-software/` | dedicated Amazon Lister landing (no longer redirected) |
 | `/sellerchamp-affliate-program/`, `/partner-with-sellerchamp/`, `/prospershow/`, `/sellerchamp-carbon6-partnership/` | `/` |

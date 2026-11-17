@@ -1,0 +1,11 @@
+{% if include.intro %}<p class="cmp-matrix-intro">{{ include.intro }}</p>{% endif %}
+<div class="compare-table-scroll" role="region" aria-label="{{ include.aria | default: 'Feature comparison table' }}" tabindex="0">
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th scope="col">{{ include.col_area | default: 'Area' }}</th>
+        <th scope="col">{{ include.col_them }}</th>
+        <th scope="col" class="compare-table__us">{{ include.col_us | default: 'SellerChamp' }}</th>
+      </tr>
+    </thead>
+    <tbody>

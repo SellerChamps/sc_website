@@ -15,8 +15,13 @@ SellerChamp is B2B SaaS for high-SKU, multichannel sellers. Typical customers ru
 - [Integrations](https://sellerchamp.com/integrations/)
 - [Solutions](https://sellerchamp.com/solutions/)
 - [FAQ](https://sellerchamp.com/faq/)
+- [Compare hub](https://sellerchamp.com/compare/)
 - [Compare vs Sellbrite](https://sellerchamp.com/compare/sellerchamp-vs-sellbrite/)
 - [Compare vs SellerCloud & enterprise tools](https://sellerchamp.com/compare/sellerchamp-vs-sellercloud/)
+- [Compare vs Linnworks](https://sellerchamp.com/compare/sellerchamp-vs-linnworks/)
+- [Compare vs Listing Mirror](https://sellerchamp.com/compare/sellerchamp-vs-listing-mirror/)
+- [Guide: multichannel listing software](https://sellerchamp.com/guides/multichannel-listing-software/)
+- [Guide: inventory sync software](https://sellerchamp.com/guides/inventory-sync-software/)
 
 ## Product facts (verify on site; updated 2026-11-17)
 

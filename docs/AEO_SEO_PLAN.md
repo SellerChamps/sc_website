@@ -1,7 +1,7 @@
 # SellerChamp AEO / SEO plan (`sc_website` → sellerchamp.com)
 
 **Owner:** Growth  
-**Last updated:** 2026-11-17  
+**Last updated:** 2026-11-17 (Phase 1 starter)  
 **Living doc:** Notion (search “SellerChamp AEO SEO Plan”)
 
 ## Baseline (HubSpot AEO, 2026-10-18 → 2026-11-17)
@@ -40,13 +40,14 @@ Calendar split: **60%** searchable · **30%** shareable · **10%** experimental.
 - [x] AEO summary blocks (`aeo_lead`, `last_updated`) on those pages
 - [x] Compare pages: `/compare/sellerchamp-vs-sellbrite/`, `/compare/sellerchamp-vs-sellercloud/` + redirects
 - [x] Fix legacy comparison URLs in key landings
-- [ ] Footer/nav link to Compare hub (optional)
-- [ ] HubSpot: expand prompt slots + SellerCloud/Linnworks prompts
+- [x] Footer + nav links to Compare and guides
+- [ ] HubSpot: prompt swap (Nizar → HubSpot manager: delete 5, add 2 SellerCloud prompts)
 
 ### Phase 1 (months 1–3)
 
-- Listing + inventory hubs under `/guides/`
-- Linnworks + Listing Mirror compare pages
+- [x] Listing + inventory hubs: `/guides/multichannel-listing-software/`, `/guides/inventory-sync-software/`
+- [x] Compare hub `/compare/` + Linnworks compare
+- [x] Listing Mirror compare: `/compare/sellerchamp-vs-listing-mirror/`
 - Consolidate top blog posts → canonical product/compare URLs
 - Repricer strategy: narrow FAQ vs full pillar
 
@@ -59,7 +60,7 @@ See Notion doc for full backlog, KPIs, and distribution playbook.
 - Owned citation share **>10%**
 - Visibility **>40%** on core listing prompts
 - Competitor Comparison campaign landing on `/compare/*`
-- GSC: baseline impressions/clicks for money URLs
+- GSC: baseline impressions/clicks for money URLs (see [`GSC_POST_CUTOVER.md`](GSC_POST_CUTOVER.md))
 
 ## Related
 
