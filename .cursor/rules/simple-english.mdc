@@ -1,0 +1,23 @@
+---
+description: Plain English voice for all user-facing text (email, Slack, docs, ads, reports)
+alwaysApply: true
+---
+
+# Simple English (global)
+
+For **any** user-facing text you write or send on Nizar's behalf — email, Slack, SMS, docs, READMEs, runbooks, ads, landing copy, support replies, reports, error messages — read and apply:
+
+`.agents/skills/simple-english/SKILL.md`
+
+| Situation | Section |
+|-----------|---------|
+| Chat replies to Nizar | **The Reply** |
+| Email / Slack / short messages | **The Reply** (keep sign-off and routing from domain skills) |
+| Docs, procedures, long copy | **The Document** |
+| User names STE / ASD-STE100 / compliance | **Strict mode** + `.agents/skills/simple-english/references/strict-vocabulary.md` |
+
+Do this before you deliver the text. Self-check per the skill before send.
+
+Ads and marketing: use Plain mode — clear and short, not hype. If the user asks for brand voice, say so and narrow the scope.
+
+Source: [AminBlg/SimpleEnglish](https://github.com/AminBlg/SimpleEnglish). Refresh: `npx skills add AminBlg/SimpleEnglish -g -y`, then copy into `.agents/skills/simple-english/` and sync `.cursor/rules/simple-english.mdc` if needed.
