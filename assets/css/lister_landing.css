@@ -598,7 +598,7 @@ table.compare { width: 100%; border-collapse: collapse; min-width: 760px; backgr
 table.compare th, table.compare td { padding: 15px 18px; text-align: center; border-bottom: 1px solid var(--line-soft); font-size: 14.5px; }
 table.compare thead th { font-family: var(--display); font-weight: 800; color: var(--ink); background: var(--bg-soft); font-size: 14px; }
 table.compare th:first-child, table.compare td:first-child { text-align: left; font-weight: 600; color: var(--ink); }
-table.compare td.us { background: #f0f9f6; font-weight: 700; color: var(--teal); }
+table.compare td.us { background: #f0f9f6; font-weight: 700; color: #0a6b56; }
 table.compare thead th.us { background: var(--navy); color: #fff; }
 .compare__logo { display: block; height: 28px; width: auto; margin: 0 auto; }
 table.compare tr:last-child td { border-bottom: 0; }

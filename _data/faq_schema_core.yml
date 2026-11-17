@@ -1,0 +1,11 @@
+# Core FAQ entries for JSON-LD (keep in sync with visible copy on /faq/ and homepage FAQ).
+- q: We have 50,000+ SKUs. Can SellerChamp handle that?
+  a: Yes. SellerChamp is built for large catalogs. Bulk import via CSV, supplier feed (API/FTP), or barcode scan. Customers manage hundreds of thousands, and over a million, SKUs on the platform.
+- q: How does pricing work?
+  a: Custom quote based on SKU count, monthly order volume, and channels connected. Most customers land between $399 and $999 per month. Month-to-month, we send the quote within 24 hours of the demo.
+- q: What makes your demos different?
+  a: We do not run a generic slide deck. We learn your challenges, catalog size, channels, and fulfillment pain points, then customize the demo to your workflow.
+- q: Do you require an annual contract?
+  a: No. SellerChamp is month-to-month, cancel any time with no penalty. Prefer to pay annually? Annual subscriptions get a 20% discount.
+- q: Will I lose my listings or inventory data when I migrate?
+  a: No. We migrate existing listings, quantities, pricing rules, and templates. Live listings stay active, we run parallel sync until you cut over confidently.

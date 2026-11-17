@@ -1,0 +1,46 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "{{ site.url | append: '/#organization' }}",
+      "name": "SellerChamp",
+      "url": "{{ site.url }}/",
+      "logo": "{{ '/assets/images/sellerchamp-logo-dk.png' | absolute_url }}",
+      "description": "Multichannel listing, inventory, and order management for ecommerce sellers.",
+      "email": "{{ site.support_email }}",
+      "telephone": "{{ site.phone }}",
+      "sameAs": [
+        "https://www.facebook.com/SellerChamp/",
+        "https://www.linkedin.com/company/sellerchamp/",
+        "https://www.youtube.com/c/SellerChamp"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "{{ site.url | append: '/#software' }}",
+      "name": "SellerChamp",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "Multichannel listing, inventory sync, order management, and fulfillment for Amazon, eBay, Walmart, Shopify, and 20+ channels.",
+      "url": "{{ site.url }}/",
+      "provider": { "@id": "{{ site.url | append: '/#organization' }}" },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "399",
+        "highPrice": "999",
+        "offerCount": "1"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.url | append: '/#website' }}",
+      "url": "{{ site.url }}/",
+      "name": "SellerChamp",
+      "publisher": { "@id": "{{ site.url | append: '/#organization' }}" }
+    }
+  ]
+}
+</script>

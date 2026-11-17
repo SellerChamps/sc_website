@@ -13,7 +13,7 @@
        --white:  #ffffff;
        --text:   #1a1a2e;
        --muted:  #5a6a84;
-       --muted2: #8a9ab8;
+       --muted2: #57657a;
        --border: #e0e8f4;
        --red:    #e8334a;
        --amber:  #e8930a;
@@ -321,7 +321,7 @@
      .ctable th { padding: 1rem 1.25rem; font-size: 13px; font-weight: 700; text-align: left; font-family: "Montserrat", system-ui, sans-serif; letter-spacing: 0.02em; border-bottom: 2px solid var(--border); }
      .th-f { color: var(--muted); width: 34%; }
      .th-s { background: linear-gradient(135deg, rgba(0,207,167,0.1), rgba(45,108,182,0.07)); color: var(--navy); text-align: center; border-bottom: 2px solid var(--teal) !important; font-size: 14px; }
-     .th-s small { display: block; font-size: 11px; color: var(--teal); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 2px; }
+     .th-s small { display: block; font-size: 11px; color: #007a5e; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 2px; }
      .th-c, .th-a { color: var(--muted); text-align: center; }
      .ctable tbody tr { border-bottom: 1px solid var(--border); transition: background 0.1s; }
      .ctable tbody tr:hover { background: var(--light2); }
@@ -331,10 +331,10 @@
      .td-s { background: rgba(0,207,167,0.04); border-left: 2px solid rgba(0,207,167,0.18); border-right: 2px solid rgba(0,207,167,0.18); text-align: center; }
      .td-c, .td-a { text-align: center; color: var(--muted); }
      .last-row .td-s { border-bottom: 2px solid rgba(0,207,167,0.2); }
-     .ico-yes { color: var(--teal); font-size: 18px; font-weight: 700; }
+     .ico-yes { color: #007a5e; font-size: 18px; font-weight: 700; }
      .ico-no  { color: var(--red); font-size: 16px; }
      .ico-part { color: var(--amber); font-size: 12px; font-weight: 600; border: 1px solid var(--amber); padding: 2px 8px; border-radius: 20px; white-space: nowrap; }
-     .price-good { color: var(--teal); font-family: "Montserrat", system-ui, sans-serif; font-size: 16px; font-weight: 800; }
+     .price-good { color: #0a6b56; font-family: "Montserrat", system-ui, sans-serif; font-size: 16px; font-weight: 800; }
      .price-bad  { color: var(--red); font-size: 14px; font-weight: 600; }
      .cell-good  { color: var(--green); font-size: 13px; font-weight: 600; }
      .cell-bad   { color: var(--red); font-size: 13px; }

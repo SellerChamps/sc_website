@@ -47,7 +47,7 @@ Raw lists: `_data/wp_pages.txt` (88), `_data/wp_posts.txt` (202).
 | `/bulk-lister-seller-champ/`, `/bulk-lister/`, `/bulk-lister/pricing-comparison/`, `/inventory-sync-software/`, `/multi-channel-fulfillment-software/`, `/repricer-software/`, `/repricer/`, `/repricer/pricing-comparison/`, `/ecommerce-analytics-tool-insights-reports/`, `/inventory-management-api-ftp/`, `/features/RePricer/` | `/features/` |
 | `/integrations/market-places/`, `/integrations/market-places/*`, `/integrations/shopping-carts/`, `/integrations/shopping-carts/*`, `/integrations/service-integrations/`, `/integrations/service-integrations/*` | `/integrations/` |
 | `/solutions/automotive-fitment-tool/`, `/solutions/e-commerce-inventory-forecasting-tool/`, `/solutions/e-commerce-shipping-integrations/`, `/solutions/ebay-lister/`, `/solutions/order-management-system-ecommerce/`, `/solutions/product-catalog-management/`, `/solutions/resellerold/` | `/solutions/` |
-| `/terms-and-conditions/` | `/terms-of-service/` |
+| `/terms-and-conditions/` | own page (Affiliate Agreement) |
 | `/always-in-touch-case-study/`, `/bonterra-companies-case-study/`, `/fragrance-spot-case-study/`, `/gamequest-case-study/` | `/our-customers/` |
 | `/resources/`, `/amazon-fba-revenue-calculator/`, `/ebay-fee-calculator/`, `/free-shipping-label-template/`, `/shopify-store-checklist/`, `/updates/` | `/blog/` |
 | `/amazon-fba-checklist/`, `/ebay-description/`, `/ecommerce-seo-checklist/` | rebuild (see `pages/*-checklist*.html`, `pages/ebay-description.html`) |
