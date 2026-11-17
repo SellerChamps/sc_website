@@ -1,0 +1,19 @@
+{% if page.software_schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": {{ page.software_schema.name | default: "SellerChamp" | jsonify }},
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": {{ page.software_schema.description | jsonify }},
+  "url": {% if page.canonical %}{{ page.canonical | jsonify }}{% else %}{{ page.url | absolute_url | jsonify }}{% endif %},
+  "provider": {
+    "@type": "Organization",
+    "name": "SellerChamp",
+    "url": "{{ site.url }}/"
+  }{% if page.software_schema.offers %},
+  "offers": {{ page.software_schema.offers | jsonify }}{% endif %}
+}
+</script>
+{% endif %}

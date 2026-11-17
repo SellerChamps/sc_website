@@ -1,0 +1,40 @@
+# SellerChamp
+
+> All-in-one multichannel listing, inventory sync, order management, and fulfillment for e-commerce sellers on Amazon, eBay, Walmart, Shopify, and 20+ channels.
+
+SellerChamp is B2B SaaS for high-SKU, multichannel sellers. Typical customers run thousands to hundreds of thousands of SKUs across five or more marketplaces. No GMV fees. Month-to-month contracts available.
+
+## Key pages
+
+- [Home](https://sellerchamp.com/)
+- [Pricing](https://sellerchamp.com/pricing/)
+- [Pricing (machine-readable)](https://sellerchamp.com/pricing.md)
+- [Features](https://sellerchamp.com/features/)
+- [Bulk Lister](https://sellerchamp.com/bulk-lister-seller-champ/)
+- [Inventory sync](https://sellerchamp.com/inventory-sync-software/)
+- [Integrations](https://sellerchamp.com/integrations/)
+- [Solutions](https://sellerchamp.com/solutions/)
+- [FAQ](https://sellerchamp.com/faq/)
+- [Compare vs Sellbrite](https://sellerchamp.com/compare/sellerchamp-vs-sellbrite/)
+- [Compare vs SellerCloud & enterprise tools](https://sellerchamp.com/compare/sellerchamp-vs-sellercloud/)
+
+## Product facts (verify on site; updated 2026-11-17)
+
+- Custom Platform pricing: most quotes fall between $399 and $999 per month based on SKUs, orders, and channels.
+- Self-serve lister trials: Starter, Growth, Pro tiers (see app signup flows).
+- 1,000+ sellers; 4.5/5 on Capterra (marketing site claim).
+- Free onboarding and migration for Platform customers; typical go-live 2 to 5 business days.
+- Core modules: bulk listing, real-time inventory sync, order routing, repricing, vendor feeds (API/FTP), shipping labels, analytics.
+
+## Apps and support
+
+- Sign up: https://app.sellerchamp.com/users/sign_up
+- Book demo: https://app.sellerchamp.com/leads/new
+- Help center: https://kb.sellerchamp.com/
+- Phone: (469) 224-5624
+- Email: support@sellerchamp.com
+
+## Optional
+
+- [Blog](https://sellerchamp.com/blog/)
+- [About](https://sellerchamp.com/about/)

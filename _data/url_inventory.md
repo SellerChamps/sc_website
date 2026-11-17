@@ -51,7 +51,8 @@ Raw lists: `_data/wp_pages.txt` (88), `_data/wp_posts.txt` (202).
 | `/always-in-touch-case-study/`, `/bonterra-companies-case-study/`, `/fragrance-spot-case-study/`, `/gamequest-case-study/` | `/our-customers/` |
 | `/resources/`, `/amazon-fba-revenue-calculator/`, `/ebay-fee-calculator/`, `/free-shipping-label-template/`, `/shopify-store-checklist/`, `/updates/` | `/blog/` |
 | `/amazon-fba-checklist/`, `/ebay-description/`, `/ecommerce-seo-checklist/` | rebuild (see `pages/*-checklist*.html`, `pages/ebay-description.html`) |
-| `/landing-multi-channel-listing-software/`, `/landing-fastest-ebay-lister-multi-marketplace-listing-software/`, `/sellerchamp-comparison-sellercloud/`, `/sellerchamp_comparison_sellercloud_rithum_landing/`, `/inkfrog-migration/` | `/landing-multi-channel-listing-software-v2/` |
+| `/sellerchamp-comparison-sellercloud/`, `/sellerchamp_comparison_sellercloud_rithum_landing/` | `/compare/sellerchamp-vs-sellercloud/` |
+| `/landing-multi-channel-listing-software/`, `/landing-fastest-ebay-lister-multi-marketplace-listing-software/`, `/inkfrog-migration/` | `/landing-multi-channel-listing-software-v2/` |
 | `/landing-amazon-lister-multi-marketplace-listing-software/` | dedicated Amazon Lister landing (no longer redirected) |
 | `/sellerchamp-affliate-program/`, `/partner-with-sellerchamp/`, `/prospershow/`, `/sellerchamp-carbon6-partnership/` | `/` |
 

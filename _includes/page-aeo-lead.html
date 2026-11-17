@@ -1,0 +1,8 @@
+{% if page.aeo_lead %}
+<section class="site-section section-compact" aria-label="Summary">
+  <div class="wrap">
+    <p class="section-lead" style="margin:0;font-size:1.05rem;line-height:1.6;">{{ page.aeo_lead }}</p>
+    {% if page.last_updated %}<p class="meta-muted" style="margin:0.75rem 0 0;font-size:0.85rem;color:var(--muted);">Last updated: {{ page.last_updated }}</p>{% endif %}
+  </div>
+</section>
+{% endif %}

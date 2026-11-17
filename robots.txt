@@ -1,0 +1,28 @@
+# sellerchamp.com — allow search and AI discovery crawlers by default.
+# Training-only crawlers: allow unless you add explicit Disallow later.
+
+User-agent: *
+Allow: /
+Sitemap: https://sellerchamp.com/sitemap.xml
+
+# AI search / retrieval (non-exhaustive; unnamed bots fall under User-agent: *)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
