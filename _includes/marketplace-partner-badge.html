@@ -1,0 +1,45 @@
+{% comment %}
+ Marketplace partner credential (Amazon, eBay, or Walmart).
+ Optional: {% include marketplace-partner-badge.html marketplace="walmart" %}
+ Otherwise resolves from page.marketplace_partner, integration_name, or permalink.
+{% endcomment %}
+{% assign mp = include.marketplace | default: page.marketplace_partner %}
+{% if mp == nil or mp == '' %}
+ {% case page.integration_name %}
+ {% when 'Amazon', 'Amazon FBA' %}
+ {% assign mp = 'amazon' %}
+ {% when 'eBay' %}
+ {% assign mp = 'ebay' %}
+ {% when 'Walmart', 'Walmart WFS' %}
+ {% assign mp = 'walmart' %}
+ {% endcase %}
+{% endif %}
+{% if mp == nil or mp == '' %}
+ {% assign path_lc = page.permalink | default: '' | downcase %}
+ {% if path_lc contains 'walmart' %}
+ {% assign mp = 'walmart' %}
+ {% elsif path_lc contains 'ebay' %}
+ {% assign mp = 'ebay' %}
+ {% elsif path_lc contains 'amazon' %}
+ {% assign mp = 'amazon' %}
+ {% endif %}
+{% endif %}
+{% if mp %}
+ {% assign mp = mp | downcase | strip %}
+{% endif %}
+{% if mp == 'amazon' %}
+ <div class="mp-partner-badge" role="img" aria-label="Amazon Software Partner">
+ <img src="{{ '/assets/images/badge-amazon-partner.svg' | relative_url }}" width="200" height="85" alt="" loading="lazy" decoding="async">
+ <span>Amazon Software Partner</span>
+ </div>
+{% elsif mp == 'ebay' %}
+ <div class="mp-partner-badge" role="img" aria-label="eBay Silver Solution Provider">
+ <img src="{{ '/assets/images/badge-ebay-silver.png' | relative_url }}" width="300" height="300" alt="" loading="lazy" decoding="async">
+ <span>eBay Silver Solution Provider</span>
+ </div>
+{% elsif mp == 'walmart' %}
+ <div class="mp-partner-badge" role="img" aria-label="Walmart Preferred Solution Provider">
+ <img src="{{ '/assets/images/badge-walmart-preferred.svg' | relative_url }}" width="200" height="85" alt="" loading="lazy" decoding="async">
+ <span>Walmart Preferred Solution Provider</span>
+ </div>
+{% endif %}

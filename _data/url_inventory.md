@@ -1,7 +1,8 @@
 # WordPress URL inventory (Phase 0)
 
-Source: `wp-sitemap-posts-page-1.xml` + `wp-sitemap-posts-post-*.xml` (2026-07-23).
-Raw lists: `_data/wp_pages.txt` (86), `_data/wp_posts.txt` (196).
+Source: live `page-sitemap.xml` + `post-sitemap.xml` (refreshed 2026-11-17).
+Raw lists: `_data/wp_pages.txt` (88), `_data/wp_posts.txt` (202).
+`python3 scripts/migration_audit.py` — **0 missing pages, 0 missing posts** (repo inventory vs live sitemap lists).
 
 ## Classification legend
 - **rebuild** — new page in this repo
@@ -23,6 +24,7 @@ Raw lists: `_data/wp_pages.txt` (86), `_data/wp_posts.txt` (196).
 | `/solutions/brand-owner/` | rebuild |
 | `/solutions/retail-ecommerce-solution/` | rebuild |
 | `/solutions/amazon-seller-software-for-fba/` | rebuild |
+| `/solutions/walmart-listing-software/` | rebuild |
 | `/faq/` | rebuild |
 | `/our-customers/` | rebuild |
 | `/privacy/` | rebuild |
@@ -47,7 +49,8 @@ Raw lists: `_data/wp_pages.txt` (86), `_data/wp_posts.txt` (196).
 | `/solutions/automotive-fitment-tool/`, `/solutions/e-commerce-inventory-forecasting-tool/`, `/solutions/e-commerce-shipping-integrations/`, `/solutions/ebay-lister/`, `/solutions/order-management-system-ecommerce/`, `/solutions/product-catalog-management/`, `/solutions/resellerold/` | `/solutions/` |
 | `/terms-and-conditions/` | `/terms-of-service/` |
 | `/always-in-touch-case-study/`, `/bonterra-companies-case-study/`, `/fragrance-spot-case-study/`, `/gamequest-case-study/` | `/our-customers/` |
-| `/resources/`, `/amazon-fba-checklist/`, `/amazon-fba-revenue-calculator/`, `/ebay-fee-calculator/`, `/ebay-description/`, `/ecommerce-seo-checklist/`, `/free-shipping-label-template/`, `/shopify-store-checklist/`, `/updates/` | `/blog/` |
+| `/resources/`, `/amazon-fba-revenue-calculator/`, `/ebay-fee-calculator/`, `/free-shipping-label-template/`, `/shopify-store-checklist/`, `/updates/` | `/blog/` |
+| `/amazon-fba-checklist/`, `/ebay-description/`, `/ecommerce-seo-checklist/` | rebuild (see `pages/*-checklist*.html`, `pages/ebay-description.html`) |
 | `/landing-multi-channel-listing-software/`, `/landing-fastest-ebay-lister-multi-marketplace-listing-software/`, `/sellerchamp-comparison-sellercloud/`, `/sellerchamp_comparison_sellercloud_rithum_landing/`, `/inkfrog-migration/` | `/landing-multi-channel-listing-software-v2/` |
 | `/landing-amazon-lister-multi-marketplace-listing-software/` | dedicated Amazon Lister landing (no longer redirected) |
 | `/sellerchamp-affliate-program/`, `/partner-with-sellerchamp/`, `/prospershow/`, `/sellerchamp-carbon6-partnership/` | `/` |

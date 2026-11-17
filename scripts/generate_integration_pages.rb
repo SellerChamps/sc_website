@@ -60,6 +60,7 @@ data.each do |item|
   lines << "hero_sub: #{yq(item['hero_sub'])}"
   lines << "hero_cta: Book a Free Demo \u2192"
   lines << "show_runway: true"
+  lines << "marketplace_partner: #{item['partner_marketplace']}" if item["partner_marketplace"]
   lines << "logo: #{item['logo']}" if item["logo"]
   lines << "logo_fullcolor: true" if item["logo_fullcolor"]
   lines << "logo_text: #{yq(item['logo_text'])}" if item["logo_text"]

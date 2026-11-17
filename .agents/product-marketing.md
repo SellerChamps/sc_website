@@ -1,0 +1,1 @@
+/Users/nizarnoorani/Documents/automations/sellerchamp/.agents/product-marketing.md

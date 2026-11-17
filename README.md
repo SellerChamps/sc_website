@@ -29,9 +29,12 @@ Pushes to `main` deploy via GitHub Actions (**Deploy Jekyll site to Pages**).
 | `_data/url_inventory.md` | WP URL rebuild/redirect map |
 | `scripts/migrate_wp_blog.py` | Re-run blog import from live WP URLs |
 
-## Blog re-import
+## Blog re-import & reskin
 ```bash
 python3 scripts/migrate_wp_blog.py
+python3 scripts/reskin_all_posts.py    # strip Elementor; use --force to re-run
+python3 scripts/migration_audit.py       # URL + markup coverage
+python3 scripts/migrate_blog_images.py   # wp-content → assets/images/blog/
 ```
 
 NOTE: Keep this repo public so GitHub Pages stays live. Keep `app`, `kb`, and `community` subdomains on their existing hosts.

@@ -34,16 +34,64 @@
   </div>
 </section>
 
+{% assign int_rec = nil %}
+{% for item in site.data.integrations %}
+  {% if item.path == page.permalink %}
+    {% assign int_rec = item %}
+  {% endif %}
+{% endfor %}
+
+{% if int_rec and int_rec.sections %}
+  {% for sec in int_rec.sections %}
+    <section class="site-section{% if sec.alt %} section-alt{% endif %}">
+      <div class="wrap">
+        {% if sec.eyebrow %}<div class="slabel">{{ sec.eyebrow }}</div>{% endif %}
+        <h2>{{ sec.title }}</h2>
+        <span class="h2-line"></span>
+        {% if sec.lead %}<p class="section-lead">{{ sec.lead }}</p>{% endif %}
+        {% if sec.cards %}
+          <div class="rgrid">
+            {% for card in sec.cards %}
+              <div class="rcard">
+                <h3>{% if card.link %}<a href="{{ card.link | relative_url }}">{{ card.title }}</a>{% else %}{{ card.title }}{% endif %}</h3>
+                <p>{{ card.text }}</p>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </section>
+  {% endfor %}
+{% endif %}
+
+{% if int_rec and int_rec.faq %}
+  <section class="site-section{% unless int_rec.sections %} section-alt{% endunless %}">
+    <div class="wrap">
+      <div class="slabel">FAQ</div>
+      <h2>{{ int_rec.faq_title | default: 'Common questions' }}</h2>
+      <span class="h2-line"></span>
+      <div class="faq-list">
+        {% for item in int_rec.faq %}
+          <details class="faq-item"{% if forloop.first %} open{% endif %}>
+            <summary class="faq-q">{{ item.q }}<span class="faq-icon">+</span></summary>
+            <div class="faq-a"><p>{{ item.a }}</p></div>
+          </details>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endif %}
+
 <section class="site-section section-alt">
   <div class="wrap">
     <div class="slabel">Platform capabilities</div>
     <h2>What you get with SellerChamp</h2>
     <span class="h2-line"></span>
-    <p class="section-lead">{{ int_name }} sits inside the same multichannel stack that runs listing, inventory, orders, pricing, and supplier feeds.</p>
+    <p class="section-lead">{% if int_rec and int_rec.platform_lead %}{{ int_rec.platform_lead }}{% else %}{{ int_name }} sits inside the same multichannel stack that runs listing, inventory, orders, pricing, and supplier feeds.{% endif %}</p>
     <div class="rgrid">
       <div class="rcard">
         <h3><a href="{{ '/bulk-lister-seller-champ/' | relative_url }}">Bulk Lister</a></h3>
-        <p>Scan, CSV upload, or feed import — then publish channel-ready listings without rebuilding your catalog.</p>
+        <p>Scan, CSV upload, or feed import, then publish channel-ready listings without rebuilding your catalog.</p>
       </div>
       <div class="rcard">
         <h3><a href="{{ '/inventory-sync-software/' | relative_url }}">Inventory Sync</a></h3>
@@ -74,7 +122,7 @@
     <div class="slabel">Explore more</div>
     <h2>Related integrations</h2>
     <span class="h2-line"></span>
-    <p class="section-lead"><a href="{{ '/integrations/' | relative_url }}">View all integrations</a> — marketplaces, carts, shipping, fulfillment, and services.</p>
+    <p class="section-lead"><a href="{{ '/integrations/' | relative_url }}">View all integrations</a> for marketplaces, carts, shipping, fulfillment, and services.</p>
     <div class="rgrid">
       {% assign related_count = 0 %}
       {% for item in site.data.integrations %}

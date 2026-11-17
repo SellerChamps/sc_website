@@ -1,0 +1,25 @@
+---
+description: Ban em dashes in all user-facing and agent-written copy (anti-AI-slop)
+alwaysApply: true
+---
+
+# No em dash (—)
+
+**Never use the em dash (—) or en dash (–) as a sentence joiner** in user-facing text or in copy you write for this repo: pages, posts, landings, meta descriptions, ads, docs aimed at customers, chat on Nizar's behalf.
+
+It reads as AI-generated. Simple English already bans em dashes; treat this as non-negotiable.
+
+**Use instead:**
+
+- Two short sentences (period).
+- A comma when the break is light.
+- A colon when the second part explains the first.
+- Plain words: "and", "or", "not", "then", "so".
+
+**Allowed:** Hyphen-minus in compounds (`multichannel`, `e-commerce`, `Buy Box`). Minus in numeric ranges only if the style guide for that page already uses it.
+
+**Self-check before you ship copy:** search the file or diff for `—` and `–` (Unicode). Replace every hit in marketing prose.
+
+Applies with `~/.cursor/skills/simple-english/SKILL.md` (**The Document** / **The Reply**).
+
+**Repo check:** `python3 scripts/de_emdash_user_facing.py` (exit 1 if Unicode `—` / `–` or entities like `&mdash;` remain in `pages/`, `landing/`, key includes, `integrations.yml`, `index.html`).

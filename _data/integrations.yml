@@ -1,8 +1,9 @@
-# Individual integration pages — keep URLs aligned with live sellerchamp.com where possible.
+# Individual integration pages, keep URLs aligned with live sellerchamp.com where possible.
 # category: marketplace | cart | shipping | fulfillment | service
 
 - id: amazon
   name: Amazon
+  partner_marketplace: amazon
   path: /integrations/market-places/amazon-seller-software/
   category: marketplace
   title: Amazon Seller Software | Professional Software for Amazon Sellers
@@ -11,13 +12,13 @@
     reprice for the Buy Box, and fulfill multichannel orders with SellerChamp.
   canonical: https://sellerchamp.com/integrations/market-places/amazon-seller-software/
   hero_title: Amazon seller software to automate your business
-  hero_sub: Bulk list products, create FBA shipments, sync inventory, win the Buy Box, and manage multichannel fulfillment — reclaim time and grow.
+  hero_sub: Bulk list products, create FBA shipments, sync inventory, win the Buy Box, and manage multichannel fulfillment so you reclaim time and grow.
   logo: /assets/images/channel-amazon.svg
   redirects:
     - /integrations/market-places/amazon/
   highlights:
     - title: Bulk Lister for Amazon
-      text: Scan barcodes or upload a file to bulk-list on Amazon in minutes — and cross-list to other marketplaces from the same catalog.
+      text: Scan barcodes or upload a file to bulk-list on Amazon in minutes, and cross-list to other marketplaces from the same catalog.
     - title: Inventory sync
       text: Keep Amazon stock accurate across every selling channel so fast movers never oversell.
     - title: FBA & multichannel fulfillment
@@ -25,12 +26,48 @@
     - title: Buy Box RePricer
       text: Compete continuously with margin floors so you win more Buy Box without racing to zero.
     - title: Insights & reports
-      text: See sales and profit by channel, date range, and product — including Amazon performance.
+      text: See sales and profit by channel, date range, and product, including Amazon performance.
     - title: API & supplier feeds
       text: Import supplier catalogs via FTP or API and keep Amazon listings current as feeds change.
+  platform_lead: Amazon sits at the center of most catalogs in SellerChamp. Listings, FBA, repricing, and fulfillment still run through the same platform as eBay, Walmart, Shopify, and your supplier feeds.
+  sections:
+    - eyebrow: Listing
+      title: From barcode to live ASIN without the spreadsheet tax
+      lead: High-volume Amazon sellers need intake, mapping, and publish in one loop, not exports between tools.
+      cards:
+        - title: Barcode & CSV intake
+          text: Scan warehouse product or upload vendor files. Auto-fetch titles, images, and attributes before you publish.
+          link: /bulk-lister-seller-champ/
+        - title: Category & attribute mapping
+          text: Map browse nodes, item specifics, and variations once, then push updates when Amazon’s rules change.
+        - title: Cross-list the same SKU
+          text: Publish Amazon catalog rows to eBay, Walmart, Shopify, and more without maintaining separate databases.
+    - eyebrow: FBA & fulfillment
+      alt: true
+      title: FBA, FBM, and multichannel orders in one queue
+      lead: FBA inventory is only half the story when you also ship from warehouse or MCF.
+      cards:
+        - title: FBA shipment creation
+          text: Build inbound shipments with fewer errors and less copy-paste from Seller Central.
+          link: /integrations/service-integrations/amazon-fba/
+        - title: FBA quantity sync
+          text: Mirror fulfillment-center stock next to seller-fulfilled quantity across every connected channel.
+          link: /inventory-sync-software/
+        - title: Buy Box repricing
+          text: Compete with margin floors, not manual price changes every hour.
+          link: /repricer-software/
+  faq_title: Amazon seller questions
+  faq:
+    - q: Does SellerChamp create new ASINs?
+      a: SellerChamp helps populate required fields, map categories, and reduce listing rejections when you create new Amazon ASINs or child variations.
+    - q: Can I run FBA and FBM together?
+      a: Yes. Track FBA and warehouse stock together, create FBA shipments, and route hybrid fulfillment from one dashboard.
+    - q: Will inventory sync to other marketplaces?
+      a: Yes. When an Amazon order sells, FBA or seller-fulfilled, quantities update on eBay, Walmart, Shopify, and other connected channels in real time.
 
 - id: ebay
   name: eBay
+  partner_marketplace: ebay
   path: /integrations/market-places/ebay/
   category: marketplace
   title: eBay Listing Software | Multichannel eBay Integration
@@ -39,7 +76,7 @@
     variations, bundles, and kits with SellerChamp.
   canonical: https://sellerchamp.com/integrations/market-places/ebay/
   hero_title: eBay listing software that keeps up with your catalog
-  hero_sub: Scan barcodes or upload files, auto-fetch product data and item specifics, then publish variations, bundles, and kits — and sync inventory everywhere else you sell.
+  hero_sub: Scan barcodes or upload files, auto-fetch product data and item specifics, then publish variations, bundles, and kits, and sync inventory everywhere else you sell.
   logo: /assets/images/channel-ebay.svg
   highlights:
     - title: Fast eBay listing
@@ -50,9 +87,45 @@
       text: When an eBay order sells, quantities update across Amazon, Walmart, Shopify, and more.
     - title: Order management
       text: Pull eBay orders into one queue with the rest of your multichannel volume.
+  platform_lead: eBay is often the highest-velocity listing channel for resellers. SellerChamp keeps item specifics, variations, and inventory tied to the same catalog that feeds Amazon and Walmart.
+  sections:
+    - eyebrow: eBay listing
+      title: Item specifics and variations without rebuilding every SKU
+      lead: eBay punishes incomplete listings. SellerChamp fetches product data and maps item specifics so catalogs go live fast.
+      cards:
+        - title: Scan & bulk upload
+          text: Barcode scan or CSV import. Auto-fetch product data and channel-ready drafts.
+          link: /bulk-lister-seller-champ/
+        - title: Bundles & kits
+          text: Manage bundles, lots, and multi-SKU families with structure that survives bulk edits.
+        - title: Silver Solution Provider
+          text: SellerChamp is an eBay Silver Solution Provider. Listing workflows align with eBay’s listing APIs and policies.
+    - eyebrow: Multichannel ops
+      alt: true
+      title: Keep eBay inventory honest when Amazon sells the same SKU
+      lead: Most eBay sellers also list elsewhere. One sale should update quantity everywhere.
+      cards:
+        - title: Real-time inventory sync
+          text: eBay quantity updates when any other channel sells the same SKU, and vice versa.
+          link: /inventory-sync-software/
+        - title: Unified orders
+          text: eBay orders flow into the same fulfillment queue as marketplace and cart volume.
+          link: /multi-channel-fulfillment-software/
+        - title: Profit visibility
+          text: See margin by SKU and channel, not just eBay fees in a monthly export.
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: eBay integration questions
+  faq:
+    - q: Can SellerChamp fetch eBay item specifics automatically?
+      a: Yes. Product data and item specifics are pulled into listing drafts so you spend less time in eBay’s manual forms.
+    - q: Does this work with eBay variations?
+      a: Yes. Parent/child variations publish with the structure eBay expects, managed from the same catalog as your other channels.
+    - q: Can I list the same products on Amazon and Walmart?
+      a: Yes. Cross-list from one master catalog with per-channel mapping for categories and attributes.
 
 - id: walmart
   name: Walmart
+  partner_marketplace: walmart
   path: /integrations/market-places/sell-on-walmart/
   category: marketplace
   title: Sell on Walmart | Walmart Marketplace Listing Software
@@ -65,13 +138,48 @@
   logo: /assets/images/channel-walmart.svg
   highlights:
     - title: Walmart listing tools
-      text: Publish and manage listings with the fields Walmart expects — fewer errors, faster go-live.
+      text: Publish and manage listings with the fields Walmart expects, fewer errors, faster go-live.
     - title: Dynamic pricing
       text: Reprice with floors so you stay competitive without killing margin.
     - title: Inventory truth
       text: Keep Walmart stock aligned with Amazon, eBay, Shopify, and every other connected channel.
     - title: WFS & warehouse routing
       text: Route orders to Walmart WFS or your own fulfillment workflow from one place.
+  platform_lead: Walmart Marketplace growth should not mean a separate listing team. SellerChamp is a Preferred Solution Provider with listing, repricing, WFS, and inventory in the same stack as your other channels.
+  sections:
+    - eyebrow: Walmart listing
+      title: Publish bulk catalogs with fewer Seller Center round trips
+      lead: Walmart’s taxonomy and validation rules reward clean data up front, not fix-it-later uploads.
+      cards:
+        - title: Bulk upload & mapping
+          text: CSV, feeds, or cross-list from Amazon/eBay with Walmart category and attribute mapping built in.
+          link: /bulk-lister-seller-champ/
+        - title: Error resolution queue
+          text: Fix validation issues in SellerChamp before you re-submit in Walmart Seller Center.
+        - title: Preferred Solution Provider
+          text: Workflows are aligned with Walmart Marketplace APIs and seller programs, not a generic connector.
+    - eyebrow: Pricing & fulfillment
+      alt: true
+      title: Buy Box, WFS, and warehouse in one ops view
+      lead: Winning Walmart’s Buy Box takes competitive price and reliable fulfillment. Automate both.
+      cards:
+        - title: Walmart repricing
+          text: Dynamic pricing with margin floors on Walmart, tied to the same rules engine as Amazon.
+          link: /repricer-software/
+        - title: Walmart WFS
+          text: Route eligible orders to WFS and track fulfillment-center stock next to seller-fulfilled units.
+          link: /integrations/service-integrations/walmart-wfs/
+        - title: Inventory sync
+          text: Walmart quantity updates in real time when any other channel sells the same SKU.
+          link: /inventory-sync-software/
+  faq_title: Walmart Marketplace questions
+  faq:
+    - q: Is SellerChamp a Walmart Preferred Solution Provider?
+      a: Yes. SellerChamp is credentialed as a Walmart Preferred Solution Provider for listing and multichannel operations.
+    - q: Can I use Walmart WFS with SellerChamp?
+      a: Yes. Route orders to Walmart Fulfillment Services and monitor WFS inventory alongside warehouse and FBA stock.
+    - q: Does repricing work on Walmart?
+      a: Yes. Reprice Walmart offers with margin floors using the same RePricer module as Amazon Buy Box.
 
 - id: etsy
   name: Etsy
@@ -92,6 +200,41 @@
       text: Prevent oversells when items sell on Etsy, Amazon, eBay, or your storefront.
     - title: Centralized orders
       text: Manage Etsy orders alongside every other channel in one queue.
+  platform_lead: Etsy shops rarely stay Etsy-only. SellerChamp keeps handmade and catalog SKUs on the same master record as Amazon, eBay, Walmart, and your storefront so quantity and fulfillment stay honest.
+  sections:
+    - eyebrow: Etsy listing
+      title: List once, sell on Etsy and everywhere else you grow
+      lead: Etsy wants clear titles, attributes, and variation structure. Rebuilding that data in a spreadsheet for every new channel wastes the week.
+      cards:
+        - title: Cross-list from your catalog
+          text: Publish Etsy listings from the same SKU records you use on Amazon, eBay, and Walmart, with Etsy-specific fields mapped up front.
+          link: /bulk-lister-seller-champ/
+        - title: Variations & quantity
+          text: Manage size, color, and material variations without duplicating inventory counts per channel.
+        - title: Bulk edits
+          text: Update prices, quantities, and shipping-related fields across large Etsy catalogs in one operation.
+    - eyebrow: Multichannel ops
+      alt: true
+      title: Etsy sales should update every other channel instantly
+      lead: Overselling on Etsy hurts reviews fast. Real-time sync protects seller reputation and ops sanity.
+      cards:
+        - title: Real-time inventory sync
+          text: When Etsy sells, Amazon, eBay, Walmart, Shopify, and other connected channels see the new quantity immediately.
+          link: /inventory-sync-software/
+        - title: Unified orders
+          text: Etsy orders print and ship from the same queue as marketplace and cart volume.
+          link: /multi-channel-fulfillment-software/
+        - title: Margin visibility
+          text: See Etsy performance next to every other channel in one reporting view.
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: Etsy integration questions
+  faq:
+    - q: Can I list the same SKU on Etsy and Amazon?
+      a: Yes. Maintain one master catalog, map Etsy-specific attributes, and publish to Etsy plus other marketplaces without separate spreadsheets.
+    - q: Does inventory sync when Etsy sells?
+      a: Yes. Etsy orders reduce quantity on every other connected channel in real time, and sales on other channels update Etsy stock.
+    - q: Can I manage Etsy orders in SellerChamp?
+      a: Yes. Etsy orders flow into the same fulfillment queue as Amazon, eBay, Walmart, Shopify, and your other connected channels.
 
 - id: google-shopping
   name: Google Shopping
@@ -113,6 +256,42 @@
       text: Sync stock and catalog updates so shoppers see what’s actually available.
     - title: One catalog source
       text: Maintain product data once and push it to Google Shopping plus marketplaces and carts.
+  platform_lead: Google Shopping is a discovery layer on top of the catalog you already run. SellerChamp keeps product data, availability, and price aligned with marketplaces and carts so feeds do not drift out of stock.
+  sections:
+    - eyebrow: Product feeds
+      title: Keep Google Shopping feeds accurate as catalogs move
+      lead: Shoppers click when price and availability match reality. One catalog source beats nightly exports that lag by a day.
+      cards:
+        - title: Central catalog
+          text: Maintain titles, images, identifiers, and attributes once, then push updates to Google Shopping and every other channel.
+          link: /bulk-lister-seller-champ/
+        - title: Stock-linked availability
+          text: Tie Google Shopping availability to live inventory so marketplace sales do not leave free ads showing in-stock units.
+          link: /inventory-sync-software/
+        - title: Supplier & API feeds
+          text: Import vendor catalogs via FTP or API and keep Shopping product data current when feeds change.
+          link: /inventory-management-api-ftp/
+    - eyebrow: Multichannel discovery
+      alt: true
+      title: Pair Shopping ads with marketplace scale
+      lead: Most sellers run Google Shopping beside Amazon, Walmart, and a storefront. Ops should not be three different databases.
+      cards:
+        - title: Cross-channel listing
+          text: Launch new SKUs to Google Shopping and marketplaces from the same intake workflow, scan, CSV, or feed.
+        - title: Unified fulfillment
+          text: Orders from Shopping campaigns and marketplaces pick and ship from one queue.
+          link: /multi-channel-fulfillment-software/
+        - title: Channel reporting
+          text: Compare Shopping-driven sales with marketplace volume in one dashboard.
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: Google Shopping questions
+  faq:
+    - q: Does SellerChamp update Google Shopping when inventory changes?
+      a: Yes. Quantity and availability stay tied to your central catalog so Shopping listings reflect what you can actually ship after marketplace sales.
+    - q: Can I use the same product data as Amazon and Shopify?
+      a: Yes. One master record powers Google Shopping, marketplaces, and carts with per-channel mapping for required fields.
+    - q: Do I need a separate tool for Google Shopping feeds?
+      a: SellerChamp is the multichannel ops layer for catalog, inventory, orders, and fulfillment. Google Merchant Center remains where you manage Shopping campaigns and diagnostics.
 
 - id: poshmark
   name: Poshmark
@@ -124,7 +303,7 @@
     your other selling channels using SellerChamp.
   canonical: https://sellerchamp.com/integrations/market-places/sell-on-poshmark/
   hero_title: Sell on Poshmark from your central catalog
-  hero_sub: Add products or sync them from another channel to launch Poshmark listings faster — without losing inventory control elsewhere.
+  hero_sub: Add products or sync them from another channel to launch Poshmark listings faster, without losing inventory control elsewhere.
   logo: /assets/images/channel-poshmark.png
   highlights:
     - title: Faster Poshmark listings
@@ -133,6 +312,41 @@
       text: Keep quantities accurate when the same items sell on Poshmark and other marketplaces.
     - title: Shared catalog
       text: Manage Poshmark alongside Amazon, eBay, Walmart, and more.
+  platform_lead: Poshmark is often a closet or resale line beside Amazon and eBay. SellerChamp keeps Poshmark SKUs on the same catalog so shared inventory does not oversell when multiple channels move the same pieces.
+  sections:
+    - eyebrow: Poshmark listing
+      title: List resale inventory without a Poshmark-only spreadsheet
+      lead: Fashion and resale sellers duplicate work when Poshmark lives outside their main catalog.
+      cards:
+        - title: Import from other channels
+          text: Pull SKUs you already sell on eBay, Amazon, or Etsy into Poshmark-ready listings.
+          link: /bulk-lister-seller-champ/
+        - title: Faster go-live
+          text: Upload or sync products in bulk instead of retyping titles and attributes in Poshmark alone.
+        - title: Shared media & attributes
+          text: Reuse images and product data from your master catalog when you open new Poshmark listings.
+    - eyebrow: Multichannel resale
+      alt: true
+      title: One piece, many marketplaces, one quantity
+      lead: The same jacket cannot sell twice. Sync must follow the item across channels.
+      cards:
+        - title: Real-time inventory sync
+          text: Poshmark quantity updates when eBay, Amazon, Etsy, or your storefront sells the same SKU.
+          link: /inventory-sync-software/
+        - title: Unified orders
+          text: Poshmark orders ship from the same queue as the rest of your multichannel volume.
+          link: /multi-channel-fulfillment-software/
+        - title: Channel reporting
+          text: See Poshmark performance next to eBay and Amazon in one dashboard.
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: Poshmark integration questions
+  faq:
+    - q: Can I sync Poshmark with eBay or Etsy inventory?
+      a: Yes. Shared SKUs stay on one master record with real-time quantity updates across Poshmark and your other connected channels.
+    - q: Do Poshmark orders appear in SellerChamp?
+      a: Yes. Poshmark orders import into the same fulfillment queue as Amazon, eBay, Walmart, and your carts.
+    - q: Can I cross-list from an existing catalog?
+      a: Yes. Publish Poshmark listings from products you already manage in SellerChamp without rebuilding data by hand.
 
 - id: valore
   name: Valore
@@ -144,7 +358,7 @@
     Valore with SellerChamp.
   canonical: https://sellerchamp.com/integrations/market-places/valore/
   hero_title: Valore listing integration for textbook and catalog sellers
-  hero_sub: Scan textbooks or import them from another channel to list on Valore quickly — then keep inventory synced across the rest of your stack.
+  hero_sub: Scan textbooks or import them from another channel to list on Valore quickly, then keep inventory synced across the rest of your stack.
   logo: /assets/images/channel-valore.png
   highlights:
     - title: Scan-to-list
@@ -153,6 +367,41 @@
       text: Pull products from your existing catalog instead of re-entering everything.
     - title: Inventory sync
       text: Avoid oversells when Valore and other channels share stock.
+  platform_lead: Textbook and media sellers live on scan speed. SellerChamp ties Valore to barcode intake, cross-channel sync, and one fulfillment queue so semester peaks do not break inventory truth.
+  sections:
+    - eyebrow: Valore listing
+      title: Scan textbooks into Valore and your other channels
+      lead: ISBN scans should become listings in seconds, not manual data entry in a single marketplace UI.
+      cards:
+        - title: Barcode scan-to-list
+          text: Scan textbooks and fetch product data to build Valore listings fast, then cross-list where you also sell.
+          link: /bulk-lister-seller-champ/
+        - title: Catalog import
+          text: Pull SKUs from Amazon, eBay, or your master catalog instead of re-keying Valore-only spreadsheets.
+        - title: Bulk season onboarding
+          text: CSV and feed imports for large buybacks and warehouse intake before rush weeks.
+    - eyebrow: Textbook ops
+      alt: true
+      title: Shared stock across Valore, Amazon, and eBay
+      lead: The same copy often lists on multiple textbook marketplaces. Quantity must stay aligned.
+      cards:
+        - title: Real-time sync
+          text: Valore sales update Amazon, eBay, and other channels immediately, and vice versa.
+          link: /inventory-sync-software/
+        - title: Unified fulfillment
+          text: Valore orders pick and ship with marketplace and cart volume from one queue.
+          link: /multi-channel-fulfillment-software/
+        - title: Margin by ISBN
+          text: Track Valore performance beside other channels in reporting instead of isolated exports.
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: Valore integration questions
+  faq:
+    - q: Can SellerChamp scan ISBNs for Valore listings?
+      a: Yes. Barcode scan and product lookup feed Valore listing drafts from the same workflow you use for other marketplaces.
+    - q: Will Valore inventory sync with Amazon?
+      a: Yes. Shared SKUs update in real time across Valore, Amazon, eBay, and other connected channels.
+    - q: Where do Valore orders ship from?
+      a: Valore orders flow into SellerChamp with your other marketplace orders for picking, packing, and tracking.
 
 - id: bonanza
   name: Bonanza
@@ -173,6 +422,41 @@
       text: Sync stock so Bonanza sales update every other connected channel.
     - title: Centralized orders
       text: Process Bonanza orders in the same queue as the rest of your volume.
+  platform_lead: Bonanza is a lightweight marketplace add-on for many eBay-first sellers. SellerChamp keeps Bonanza on the same catalog and sync loop as eBay, Amazon, and Walmart so it does not become a forgotten silo.
+  sections:
+    - eyebrow: Bonanza listing
+      title: Add Bonanza without rebuilding your catalog
+      lead: Bonanza works best when it is a cross-list, not a second full-time listing job.
+      cards:
+        - title: Cross-list from eBay or Amazon
+          text: Publish Bonanza listings from SKUs you already manage in SellerChamp.
+          link: /bulk-lister-seller-champ/
+        - title: Bulk publish
+          text: CSV, scan, or feed intake to onboard Bonanza alongside your primary marketplaces.
+        - title: Central attributes
+          text: Map categories and item fields once, then push updates when Bonanza or other channels change requirements.
+    - eyebrow: Sync & orders
+      alt: true
+      title: Bonanza inventory that matches eBay and Amazon
+      lead: Small marketplaces still cause oversells when quantity is wrong.
+      cards:
+        - title: Real-time inventory sync
+          text: Bonanza stock updates when any other channel sells the same SKU.
+          link: /inventory-sync-software/
+        - title: Unified orders
+          text: Bonanza orders fulfill from the same queue as eBay, Amazon, and Walmart.
+          link: /multi-channel-fulfillment-software/
+        - title: Reporting
+          text: See Bonanza sales alongside your core channels in one view.
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: Bonanza integration questions
+  faq:
+    - q: Can I list on Bonanza and eBay from one catalog?
+      a: Yes. One master SKU record powers Bonanza, eBay, Amazon, and other connected channels with per-channel mapping.
+    - q: Does Bonanza inventory sync in real time?
+      a: Yes. Sales on Bonanza update other marketplaces immediately, and sales elsewhere update Bonanza quantity.
+    - q: Do Bonanza orders show in SellerChamp?
+      a: Yes. Bonanza orders import into the same multichannel fulfillment queue as your other channels.
 
 - id: tiktok
   name: TikTok Shop
@@ -194,6 +478,42 @@
       text: Protect seller metrics with sync across TikTok Shop and your other channels.
     - title: One order queue
       text: Fulfill TikTok Shop orders with the same ops workflow as Amazon, eBay, and Walmart.
+  platform_lead: TikTok Shop rewards fast catalog launch and clean seller metrics. SellerChamp lets you publish from an existing multichannel catalog and keep stock accurate when the same SKUs still sell on Amazon, Walmart, and eBay.
+  sections:
+    - eyebrow: TikTok Shop listing
+      title: Launch TikTok Shop from the catalog you already built
+      lead: Social commerce moves fast. Re-keying titles and attributes in TikTok’s seller tools does not scale past a few dozen SKUs.
+      cards:
+        - title: Cross-list existing SKUs
+          text: Pull products from Amazon, Walmart, eBay, or your master catalog and publish TikTok-ready listings with mapped categories and attributes.
+          link: /bulk-lister-seller-champ/
+        - title: Bulk onboarding
+          text: CSV upload, barcode scan, or supplier feeds to add hundreds of SKUs before you open TikTok campaigns.
+        - title: AI listing content
+          text: Generate and polish titles and descriptions so new TikTok listings go live with less manual copy work.
+          link: /ai-automation/
+    - eyebrow: Seller metrics
+      alt: true
+      title: Protect TikTok Shop metrics with real-time inventory
+      lead: Late shipments and oversells hit social marketplaces hard. Sync quantity before campaigns send traffic.
+      cards:
+        - title: Real-time inventory sync
+          text: TikTok Shop quantity updates when any other channel sells the same SKU, and vice versa.
+          link: /inventory-sync-software/
+        - title: Unified fulfillment
+          text: TikTok Shop orders route to warehouse, 3PL, or FBA with the same rules as your other channels.
+          link: /multi-channel-fulfillment-software/
+        - title: Performance reporting
+          text: See TikTok Shop sales beside Amazon, Walmart, and Shopify in one view.
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: TikTok Shop integration questions
+  faq:
+    - q: Can I cross-list from Amazon or Walmart to TikTok Shop?
+      a: Yes. Publish from your SellerChamp master catalog so TikTok Shop listings share the same SKU records as your other marketplaces.
+    - q: Will TikTok Shop inventory stay accurate during promotions?
+      a: Yes. Real-time sync updates TikTok Shop quantity when sales land on any other connected channel.
+    - q: Where do TikTok Shop orders go?
+      a: TikTok Shop orders appear in the same SellerChamp order queue as Amazon, eBay, Walmart, and your carts for picking, packing, and tracking.
 
 - id: temu
   name: Temu
@@ -205,7 +525,7 @@
     of your multichannel business using SellerChamp.
   canonical: https://sellerchamp.com/integrations/market-places/temu/
   hero_title: Temu integration for growing multichannel catalogs
-  hero_sub: Upload or sync products to Temu quickly — then keep quantities and orders tied to your central SellerChamp catalog.
+  hero_sub: Upload or sync products to Temu quickly, then keep quantities and orders tied to your central SellerChamp catalog.
   logo: /assets/images/channel-temu.svg
   logo_fullcolor: true
   highlights:
@@ -215,6 +535,41 @@
       text: Update stock across Temu and every other connected marketplace.
     - title: Unified fulfillment
       text: Route and track Temu orders with the rest of your volume.
+  platform_lead: Temu sellers often run tight margins at high SKU counts. SellerChamp keeps Temu tied to one catalog with inventory sync and fulfillment so you are not maintaining Temu stock in a separate spreadsheet.
+  sections:
+    - eyebrow: Temu listing
+      title: Publish large Temu catalogs without a second ops team
+      lead: Temu growth usually means importing an existing catalog, not typing listings one by one.
+      cards:
+        - title: Cross-list from other channels
+          text: Bring products from Amazon, Walmart, eBay, or Shopify into Temu with mapped attributes and categories.
+          link: /bulk-lister-seller-champ/
+        - title: CSV & feed import
+          text: Onboard vendor files or warehouse exports, then push Temu listings in bulk.
+        - title: Central SKU records
+          text: Change price or quantity once and push updates to Temu plus every other connected marketplace.
+    - eyebrow: Inventory control
+      alt: true
+      title: Stop Temu oversells when Amazon still shares the same bin
+      lead: Shared warehouse stock needs one number every channel trusts.
+      cards:
+        - title: Real-time sync
+          text: Temu quantity drops when Amazon, eBay, Walmart, or your storefront sells the same SKU.
+          link: /inventory-sync-software/
+        - title: Order routing
+          text: Fulfill Temu orders from warehouse, 3PL, or FBA using the same rules as other channels.
+          link: /multi-channel-fulfillment-software/
+        - title: Profit by channel
+          text: Track Temu margin next to the rest of your stack instead of isolated seller-center exports.
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: Temu integration questions
+  faq:
+    - q: Can I list on Temu and Amazon from one catalog?
+      a: Yes. SellerChamp maintains one master record per SKU with per-channel mapping for Temu, Amazon, Walmart, eBay, and more.
+    - q: Does SellerChamp sync Temu inventory in real time?
+      a: Yes. Sales on Temu update other channels immediately, and sales elsewhere update Temu stock.
+    - q: How do Temu orders ship?
+      a: Temu orders flow into SellerChamp with your other marketplace and cart orders so your team picks, packs, and tracks from one queue.
 
 - id: newegg
   name: Newegg
@@ -226,7 +581,7 @@
     listings and sync inventory with SellerChamp.
   canonical: https://sellerchamp.com/integrations/market-places/newegg/
   hero_title: Newegg marketplace integration
-  hero_sub: Add products or pull them from another channel to launch Newegg listings quickly — with inventory sync across your stack.
+  hero_sub: Add products or pull them from another channel to launch Newegg listings quickly, with inventory sync across your stack.
   logo: /assets/images/channel-newegg.png
   highlights:
     - title: Faster Newegg go-live
@@ -235,6 +590,41 @@
       text: Keep Newegg quantities honest when items sell elsewhere.
     - title: Shared order management
       text: Process Newegg orders in one multichannel queue.
+  platform_lead: Newegg fits electronics and tech catalog sellers who already run Amazon and Walmart. SellerChamp keeps Newegg on the same intake, sync, and fulfillment stack so specialty SKUs do not need their own ops tool.
+  sections:
+    - eyebrow: Newegg listing
+      title: Launch tech catalogs on Newegg from your master record
+      lead: Component and accessory sellers should cross-list, not retype specs in every seller portal.
+      cards:
+        - title: Cross-list existing SKUs
+          text: Publish Newegg listings from Amazon, Walmart, or your SellerChamp catalog with mapped attributes.
+          link: /bulk-lister-seller-champ/
+        - title: Barcode & CSV intake
+          text: Scan UPCs or import vendor files for fast Newegg onboarding during new product drops.
+        - title: Spec-heavy attributes
+          text: Manage item specifics and compatibility fields from one catalog update that pushes to every channel.
+    - eyebrow: Electronics ops
+      alt: true
+      title: Keep Newegg quantity honest with Amazon and Walmart
+      lead: Fast-moving electronics oversell quickly when channels do not share one stock number.
+      cards:
+        - title: Real-time inventory sync
+          text: Newegg quantity updates when any other channel sells the same SKU.
+          link: /inventory-sync-software/
+        - title: Unified fulfillment
+          text: Newegg orders route to warehouse, 3PL, or FBA with the same rules as other marketplaces.
+          link: /multi-channel-fulfillment-software/
+        - title: Reporting
+          text: Compare Newegg margin and velocity with Amazon and Walmart in one dashboard.
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: Newegg integration questions
+  faq:
+    - q: Can I cross-list from Amazon to Newegg?
+      a: Yes. Publish from your central catalog so Newegg listings share SKU records with Amazon, Walmart, eBay, and other channels.
+    - q: Does Newegg sync inventory in real time?
+      a: Yes. Newegg sales update connected channels immediately, and sales elsewhere update Newegg stock.
+    - q: Where do Newegg orders appear?
+      a: Newegg orders import into SellerChamp with your other marketplace and cart orders for fulfillment.
 
 - id: overstock
   name: Overstock
@@ -246,7 +636,7 @@
     listings quickly with SellerChamp.
   canonical: https://sellerchamp.com/integrations/market-places/overstock/
   hero_title: Overstock marketplace integration
-  hero_sub: Transfer products or bring them in from another channel to create Overstock listings — then sync inventory everywhere you sell.
+  hero_sub: Transfer products or bring them in from another channel to create Overstock listings, then sync inventory everywhere you sell.
   logo: /assets/images/channel-overstock.svg
   highlights:
     - title: Catalog transfer
@@ -255,6 +645,41 @@
       text: Prevent oversells with real-time sync across channels.
     - title: Central ops
       text: Manage Overstock orders with Amazon, eBay, Walmart, and more.
+  platform_lead: Overstock and home-focused sellers often run wide catalogs on Amazon and Walmart already. SellerChamp transfers that catalog to Overstock and keeps fulfillment and inventory on one ops layer.
+  sections:
+    - eyebrow: Overstock listing
+      title: Transfer catalogs to Overstock without starting over
+      lead: Home and décor catalogs are too large to rebuild field by field in another seller portal.
+      cards:
+        - title: Catalog transfer
+          text: Bring products you already manage in SellerChamp live on Overstock with mapped categories and attributes.
+          link: /bulk-lister-seller-champ/
+        - title: Bulk import
+          text: CSV and supplier feeds for seasonal collections and closeout inventory.
+        - title: Cross-channel updates
+          text: Change price or quantity once and push to Overstock plus every other connected marketplace.
+    - eyebrow: Home & décor ops
+      alt: true
+      title: One warehouse serving Overstock and major marketplaces
+      lead: Oversized SKUs make oversells expensive. Sync must be immediate.
+      cards:
+        - title: Real-time inventory sync
+          text: Overstock stock aligns with Amazon, Walmart, eBay, and other channels after every sale.
+          link: /inventory-sync-software/
+        - title: Unified fulfillment
+          text: Overstock orders pick and ship from the same queue as the rest of your volume.
+          link: /multi-channel-fulfillment-software/
+        - title: Reporting
+          text: Track Overstock contribution beside your core channels in one dashboard.
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: Overstock integration questions
+  faq:
+    - q: Can I import an existing SellerChamp catalog to Overstock?
+      a: Yes. Transfer or cross-list SKUs you already manage instead of re-entering product data in Overstock alone.
+    - q: Does Overstock inventory sync with Amazon and Walmart?
+      a: Yes. Real-time sync keeps shared SKUs accurate across Overstock and your other connected channels.
+    - q: Do Overstock orders flow into SellerChamp?
+      a: Yes. Overstock orders appear in the same fulfillment queue as Amazon, eBay, Walmart, and your carts.
 
 - id: fruugo
   name: Fruugo
@@ -266,7 +691,7 @@
     Fruugo with SellerChamp inventory sync.
   canonical: https://sellerchamp.com/integrations/market-places/fruugo/
   hero_title: Fruugo marketplace integration
-  hero_sub: Upload products or import them from another channel to list on Fruugo quickly — with multichannel inventory control.
+  hero_sub: Upload products or import them from another channel to list on Fruugo quickly, with multichannel inventory control.
   logo: /assets/images/channel-fruugo.svg
   highlights:
     - title: Quick Fruugo listings
@@ -275,6 +700,41 @@
       text: Keep Fruugo stock aligned with every other channel.
     - title: Shared order flow
       text: Fulfill Fruugo orders from the same SellerChamp queue.
+  platform_lead: Fruugo expands reach into international shoppers. SellerChamp keeps Fruugo tied to your central catalog, inventory sync, and fulfillment so global listings do not drift from domestic stock.
+  sections:
+    - eyebrow: Fruugo listing
+      title: Reach international buyers from one catalog
+      lead: Cross-border marketplaces fail when product data is copied manually from Amazon or eBay exports.
+      cards:
+        - title: Cross-list from existing channels
+          text: Publish Fruugo listings from Amazon, Walmart, or your SellerChamp master catalog.
+          link: /bulk-lister-seller-champ/
+        - title: Bulk upload
+          text: CSV and feed imports for large catalogs going live on Fruugo and other channels at once.
+        - title: Consistent product data
+          text: Maintain titles, images, and identifiers once, then push updates across Fruugo and domestic marketplaces.
+    - eyebrow: Global sync
+      alt: true
+      title: Fruugo stock that matches your warehouse truth
+      lead: International orders still ship from the same bins. Quantity must be unified.
+      cards:
+        - title: Real-time inventory sync
+          text: Fruugo quantity updates when domestic marketplaces sell the same SKU, and Fruugo sales update everywhere else.
+          link: /inventory-sync-software/
+        - title: Unified fulfillment
+          text: Fruugo orders fulfill from the same queue and routing rules as Amazon, eBay, and Walmart.
+          link: /multi-channel-fulfillment-software/
+        - title: Reporting
+          text: See Fruugo sales beside other channels without juggling separate exports.
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: Fruugo integration questions
+  faq:
+    - q: Can I list on Fruugo and Amazon from one catalog?
+      a: Yes. One master record per SKU powers Fruugo and your other marketplaces with per-channel field mapping.
+    - q: Does Fruugo inventory sync in real time?
+      a: Yes. Sales on any connected channel update Fruugo quantity immediately, and Fruugo sales update other channels.
+    - q: Where do Fruugo orders ship from?
+      a: Fruugo orders import into SellerChamp with your other marketplace orders for picking, packing, and tracking.
 
 - id: bestbuy
   name: Best Buy
@@ -286,7 +746,7 @@
     across channels with SellerChamp.
   canonical: https://sellerchamp.com/integrations/market-places/best-buy/
   hero_title: Best Buy Marketplace integration
-  hero_sub: Upload products or sync them from another channel to create Best Buy listings — without losing inventory control.
+  hero_sub: Upload products or sync them from another channel to create Best Buy listings, without losing inventory control.
   logo: /assets/images/channel-bestbuy.png
   highlights:
     - title: Best Buy listings
@@ -295,6 +755,41 @@
       text: Update stock across Best Buy and your other marketplaces.
     - title: Unified orders
       text: Manage Best Buy orders alongside the rest of your volume.
+  platform_lead: Best Buy Marketplace suits electronics and CE sellers who already scale on Amazon and Walmart. SellerChamp keeps Best Buy listings, sync, and orders on the same catalog so specialty retail does not need a parallel ops stack.
+  sections:
+    - eyebrow: Best Buy listing
+      title: Publish CE catalogs on Best Buy from your master record
+      lead: Big-box marketplaces expect clean attributes and fast error resolution. Start from data you already trust.
+      cards:
+        - title: Cross-list from Amazon or Walmart
+          text: Publish Best Buy listings from SKUs you already manage with mapped categories and compliance fields.
+          link: /bulk-lister-seller-champ/
+        - title: Bulk catalog intake
+          text: CSV, scan, or supplier feeds for large SKU counts and seasonal resets.
+        - title: Central updates
+          text: Change price, quantity, or content once and push to Best Buy plus every other channel.
+    - eyebrow: Retail marketplace ops
+      alt: true
+      title: Best Buy inventory aligned with Amazon and Walmart
+      lead: CE inventory turns fast. One stale quantity hurts seller metrics on every channel.
+      cards:
+        - title: Real-time inventory sync
+          text: Best Buy stock updates when Amazon, Walmart, eBay, or your storefront sells the same SKU.
+          link: /inventory-sync-software/
+        - title: Unified fulfillment
+          text: Best Buy orders route to warehouse, 3PL, or FBA with the same rules as other marketplaces.
+          link: /multi-channel-fulfillment-software/
+        - title: Reporting
+          text: Compare Best Buy performance with Amazon and Walmart in one dashboard.
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: Best Buy Marketplace questions
+  faq:
+    - q: Can I cross-list from Walmart or Amazon to Best Buy?
+      a: Yes. Publish from your SellerChamp master catalog with per-channel mapping for Best Buy required fields.
+    - q: Does Best Buy inventory sync in real time?
+      a: Yes. Best Buy quantity updates on every connected-channel sale, and Best Buy sales update other channels.
+    - q: Where do Best Buy orders appear?
+      a: Best Buy orders import into SellerChamp with your other marketplace and cart orders for fulfillment.
 
 - id: shein
   name: SHEIN
@@ -306,7 +801,7 @@
     your SellerChamp multichannel catalog.
   canonical: https://sellerchamp.com/integrations/market-places/shein/
   hero_title: SHEIN marketplace integration
-  hero_sub: Upload products or sync them from another channel to publish on SHEIN — then keep quantities accurate everywhere else.
+  hero_sub: Upload products or sync them from another channel to publish on SHEIN, then keep quantities accurate everywhere else.
   logo: /assets/images/channel-shein.svg
   highlights:
     - title: SHEIN listings
@@ -315,6 +810,42 @@
       text: Protect against oversells across SHEIN and other channels.
     - title: One ops queue
       text: Process SHEIN orders with your existing fulfillment workflow.
+  platform_lead: SHEIN is built for apparel and high-variation catalogs. SellerChamp keeps size and color matrices on one master SKU record with inventory sync across SHEIN, Amazon, Walmart, Shopify, and the rest of your channels.
+  sections:
+    - eyebrow: SHEIN listing
+      title: Fashion catalogs with variations, not spreadsheet chaos
+      lead: Apparel marketplaces need size and color structure up front. Rebuilding matrices per channel burns listing team hours.
+      cards:
+        - title: Variation-ready publishing
+          text: Manage parent/child size and color SKUs once, then publish to SHEIN and other apparel-friendly channels.
+          link: /bulk-lister-seller-champ/
+        - title: Cross-list existing inventory
+          text: Import SKUs you already sell on Amazon, Walmart, or Shopify instead of re-entering SHEIN data by hand.
+        - title: AI content assistance
+          text: Speed up titles and attribute text for large seasonal drops.
+          link: /ai-automation/
+    - eyebrow: Multichannel apparel ops
+      alt: true
+      title: One warehouse, many fashion channels
+      lead: The same size run often sells on SHEIN, Amazon, Walmart, and your storefront. Quantity must move together.
+      cards:
+        - title: Real-time inventory sync
+          text: SHEIN stock updates when any other channel sells the same variant, and SHEIN sales update everywhere else.
+          link: /inventory-sync-software/
+        - title: Unified fulfillment
+          text: SHEIN orders ship from the same queue and routing rules as your other marketplace volume.
+          link: /multi-channel-fulfillment-software/
+        - title: Reporting by SKU
+          text: See which styles and sizes perform on SHEIN versus other channels.
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: SHEIN integration questions
+  faq:
+    - q: Does SellerChamp handle SHEIN size and color variations?
+      a: Yes. Parent/child variation structure is managed from your central catalog so SHEIN listings stay aligned with other channels.
+    - q: Can I sync SHEIN with Shopify or Amazon inventory?
+      a: Yes. Real-time sync keeps shared SKUs accurate across SHEIN, Shopify, Amazon, Walmart, eBay, and other connected channels.
+    - q: Where do SHEIN orders appear?
+      a: SHEIN orders import into SellerChamp with your other marketplace and cart orders for fulfillment and tracking.
 
 - id: macys
   name: "Macy's"
@@ -326,7 +857,7 @@
     Marketplace with SellerChamp.
   canonical: https://sellerchamp.com/integrations/market-places/macys/
   hero_title: "Macy's Marketplace integration"
-  hero_sub: Bring in products or sync them from another channel to publish on Macy's — with inventory sync across your multichannel stack.
+  hero_sub: Bring in products or sync them from another channel to publish on Macy's, with inventory sync across your multichannel stack.
   logo: /assets/images/channel-macys.svg
   highlights:
     - title: "Macy's listings"
@@ -335,6 +866,41 @@
       text: Keep Macy's stock aligned after every sale on any channel.
     - title: Centralized orders
       text: Fulfill Macy's orders from one SellerChamp dashboard.
+  platform_lead: Macy's Marketplace is a brand-forward channel for apparel and home sellers. SellerChamp keeps Macy's on the same catalog, variation structure, and sync loop as Amazon, Walmart, and Shopify.
+  sections:
+    - eyebrow: "Macy's listing"
+      title: "Publish Macy's from the catalog you run year-round"
+      lead: "Department store marketplaces need consistent titles, imagery, and variation data. Rebuilding per channel wastes listing team time."
+      cards:
+        - title: Cross-list apparel & home
+          text: Bring SKUs from Amazon, Walmart, or Shopify live on Macy's with mapped categories and attributes.
+          link: /bulk-lister-seller-champ/
+        - title: Variation management
+          text: Manage size and color matrices once, then publish to Macy's and other fashion-friendly channels.
+        - title: Seasonal bulk updates
+          text: CSV and bulk edits for collection launches without logging into Macy's seller tools SKU by SKU.
+    - eyebrow: Brand marketplace ops
+      alt: true
+      title: "Macy's stock that matches every other channel"
+      lead: "Flash sales and marketplace promos only work when quantity is trusted everywhere."
+      cards:
+        - title: Real-time inventory sync
+          text: "Macy's quantity updates when any other channel sells the same variant, and Macy's sales update everywhere else."
+          link: /inventory-sync-software/
+        - title: Unified fulfillment
+          text: "Macy's orders ship from the same queue as Amazon, Walmart, and your storefront."
+          link: /multi-channel-fulfillment-software/
+        - title: Reporting
+          text: "See Macy's revenue beside other channels in one multichannel dashboard."
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: "Macy's Marketplace questions"
+  faq:
+    - q: "Can I list on Macy's and Shopify from one catalog?"
+      a: "Yes. One master SKU record powers Macy's, Shopify, Amazon, and other channels with per-channel mapping."
+    - q: "Does Macy's inventory sync in real time?"
+      a: "Yes. Sales on any connected channel update Macy's stock immediately, and Macy's sales update other channels."
+    - q: "Where do Macy's orders go?"
+      a: "Macy's orders import into SellerChamp with your other marketplace orders for picking, packing, and tracking."
 
 - id: shopify
   name: Shopify
@@ -347,17 +913,52 @@
     eBay, Walmart, and more.
   canonical: https://sellerchamp.com/integrations/shopping-carts/shopify/
   hero_title: Shopify integration for multichannel brands
-  hero_sub: Bulk-update your Shopify catalog, list and promote products, and keep inventory and orders in sync with every marketplace you sell on — including bulk edits Shopify’s own website doesn’t provide.
+  hero_sub: Bulk-update your Shopify catalog, list and promote products, and keep inventory and orders in sync with every marketplace you sell on, including bulk edits Shopify’s own website doesn’t provide.
   logo: /assets/images/channel-shopify.svg
   highlights:
     - title: Shopify bulk updates
-      text: Change titles, prices, quantities, descriptions, and more across hundreds or thousands of Shopify products at once. Shopify’s admin doesn’t give you true bulk product updates — SellerChamp does.
+      text: Change titles, prices, quantities, descriptions, and more across hundreds or thousands of Shopify products at once. Shopify’s admin doesn’t give you true bulk product updates, SellerChamp does.
     - title: Shopify store listing
       text: Manage Shopify products from the same catalog that powers your marketplaces.
     - title: Inventory sync
-      text: A sale on Amazon or eBay updates Shopify stock — and the other way around.
+      text: A sale on Amazon or eBay updates Shopify stock, and the other way around.
     - title: Unified orders
       text: Pull Shopify orders into the same fulfillment queue as marketplace volume.
+  platform_lead: Shopify is your brand storefront. SellerChamp keeps bulk catalog work, marketplace sync, and fulfillment in the same system so your team is not trapped in Shopify Admin one SKU at a time.
+  sections:
+    - eyebrow: Shopify catalog
+      title: Bulk product updates Shopify Admin cannot do
+      lead: Shopify’s admin UI was not built for 10,000-SKU price changes. SellerChamp was.
+      cards:
+        - title: Bulk edit at scale
+          text: Change titles, prices, quantities, and descriptions across large Shopify catalogs in one operation.
+        - title: Same catalog as marketplaces
+          text: Shopify products share a master record with Amazon, eBay, Walmart, and other channels.
+        - title: Listing & promotions
+          text: Launch new collections and sync availability when marketplace inventory moves.
+          link: /bulk-lister-seller-champ/
+    - eyebrow: Multichannel sync
+      alt: true
+      title: DTC and marketplace inventory that stay aligned
+      lead: A Shopify flash sale should not leave Amazon quantity wrong. Sync must be instant.
+      cards:
+        - title: Two-way inventory sync
+          text: Marketplace sales update Shopify stock, and Shopify sales update marketplaces.
+          link: /inventory-sync-software/
+        - title: Unified fulfillment
+          text: Shopify orders pick and ship from the same queue as Amazon, eBay, and Walmart.
+          link: /multi-channel-fulfillment-software/
+        - title: Reporting
+          text: Compare DTC vs marketplace margin in one dashboard.
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: Shopify integration questions
+  faq:
+    - q: Can SellerChamp bulk-update Shopify products?
+      a: Yes. Update prices, quantities, titles, and descriptions across large Shopify catalogs beyond what Shopify Admin supports in bulk.
+    - q: Does inventory sync both ways?
+      a: Yes. Sales on Shopify update marketplace quantity, and marketplace sales update your Shopify store in real time.
+    - q: Do I still need Shopify apps for marketplaces?
+      a: SellerChamp is the multichannel ops layer for listing, inventory, orders, and fulfillment. Shopify remains your storefront.
 
 - id: woocommerce
   name: WooCommerce
@@ -378,6 +979,41 @@
       text: Sync stock between your store and every connected marketplace.
     - title: Shared order management
       text: Fulfill WooCommerce orders with the rest of your multichannel volume.
+  platform_lead: WooCommerce is the open storefront for many multichannel sellers. SellerChamp keeps WordPress store inventory, listings, and orders on the same catalog as Amazon, eBay, and Walmart so plugins and spreadsheets do not fight each other.
+  sections:
+    - eyebrow: WooCommerce catalog
+      title: Run WooCommerce beside marketplaces, not beside them in a spreadsheet
+      lead: WooCommerce plugins alone rarely cover listing at scale plus marketplace sync plus fulfillment rules.
+      cards:
+        - title: Storefront from master catalog
+          text: Manage WooCommerce products from the same records that power Amazon, eBay, and Walmart.
+          link: /bulk-lister-seller-champ/
+        - title: Bulk catalog work
+          text: Update prices, quantities, and descriptions across large WooCommerce catalogs in one operation.
+        - title: Cross-channel launches
+          text: Publish new SKUs to WooCommerce and marketplaces from the same intake workflow.
+    - eyebrow: Sync & fulfillment
+      alt: true
+      title: WooCommerce sales should update Amazon quantity instantly
+      lead: A WooCommerce checkout must reduce marketplace stock the same minute, or oversells follow.
+      cards:
+        - title: Two-way inventory sync
+          text: WooCommerce sales update marketplace quantity, and marketplace sales update your store.
+          link: /inventory-sync-software/
+        - title: Unified fulfillment
+          text: WooCommerce orders pick and ship from the same queue as Amazon, eBay, and Walmart.
+          link: /multi-channel-fulfillment-software/
+        - title: Reporting
+          text: Compare DTC WooCommerce margin with marketplace volume in one dashboard.
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: WooCommerce integration questions
+  faq:
+    - q: Does SellerChamp sync WooCommerce with Amazon and eBay?
+      a: Yes. Real-time inventory sync keeps WooCommerce and connected marketplaces on the same quantity per SKU.
+    - q: Can I bulk-update WooCommerce products?
+      a: Yes. Bulk edit titles, prices, quantities, and descriptions from SellerChamp instead of one product at a time in WordPress admin.
+    - q: Do WooCommerce orders appear in SellerChamp?
+      a: Yes. WooCommerce orders import into the same fulfillment queue as your marketplace orders.
 
 - id: bigcommerce
   name: BigCommerce
@@ -389,7 +1025,7 @@
     and orders across marketplaces with SellerChamp.
   canonical: https://sellerchamp.com/integrations/shopping-carts/bigcommerce/
   hero_title: BigCommerce integration for growing brands
-  hero_sub: Quickly list products and expose your brand on BigCommerce — without disconnecting marketplace inventory and fulfillment.
+  hero_sub: Quickly list products and expose your brand on BigCommerce, without disconnecting marketplace inventory and fulfillment.
   logo: /assets/images/channel-bigcommerce.png
   highlights:
     - title: BigCommerce store control
@@ -398,6 +1034,41 @@
       text: Keep BigCommerce stock honest when marketplaces sell the same SKUs.
     - title: One fulfillment workflow
       text: Process BigCommerce orders with marketplace orders in one queue.
+  platform_lead: BigCommerce brands often add Amazon and Walmart as they scale. SellerChamp connects the BigCommerce storefront to marketplace listing, sync, and fulfillment so ops does not split between BigCommerce admin and seller portals.
+  sections:
+    - eyebrow: BigCommerce catalog
+      title: BigCommerce storefront plus marketplace scale
+      lead: Growing brands need bulk catalog control and instant sync, not nightly CSV jobs between systems.
+      cards:
+        - title: Central product records
+          text: Manage BigCommerce listings from the same catalog that feeds Amazon, Walmart, and eBay.
+          link: /bulk-lister-seller-champ/
+        - title: Bulk updates
+          text: Change prices, quantities, and content across large BigCommerce catalogs in one pass.
+        - title: Brand + marketplace launches
+          text: Publish new collections to BigCommerce and marketplaces from shared SKU data.
+    - eyebrow: Multichannel brand ops
+      alt: true
+      title: DTC and marketplace inventory on one number
+      lead: Promotions on BigCommerce should not leave Amazon showing units you already sold on your site.
+      cards:
+        - title: Two-way inventory sync
+          text: BigCommerce and marketplace quantities stay aligned after every sale on any channel.
+          link: /inventory-sync-software/
+        - title: Unified fulfillment
+          text: BigCommerce orders ship from the same queue and routing rules as marketplace volume.
+          link: /multi-channel-fulfillment-software/
+        - title: Reporting
+          text: Compare BigCommerce DTC performance with marketplace channels in one view.
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: BigCommerce integration questions
+  faq:
+    - q: Does SellerChamp sync BigCommerce with marketplaces?
+      a: Yes. Real-time sync keeps BigCommerce and connected marketplaces on the same stock per SKU.
+    - q: Can I bulk-edit BigCommerce products in SellerChamp?
+      a: Yes. Bulk update catalog fields across large BigCommerce stores alongside marketplace listings.
+    - q: Do BigCommerce orders flow into SellerChamp?
+      a: Yes. BigCommerce orders appear in the same multichannel fulfillment queue as Amazon, eBay, and Walmart.
 
 - id: shipstation
   name: ShipStation
@@ -419,6 +1090,40 @@
       text: Reduce tab-hopping between SellerChamp and shipping tools.
     - title: Multichannel orders
       text: Ship Amazon, eBay, Walmart, Shopify, and more from one connected flow.
+  platform_lead: ShipStation is where labels print. SellerChamp is where multichannel orders and warehouse truth live. The integration sends the product and bin data pickers need so ShipStation ships without re-keying weight, UPC, and location.
+  sections:
+    - eyebrow: Warehouse handoff
+      title: Send complete pick data from SellerChamp to ShipStation
+      lead: Half the pick errors start with missing bin, weight, or identifier data in the shipping tool.
+      cards:
+        - title: BIN locations on orders
+          text: Push warehouse locations to ShipStation so pickers find product faster.
+        - title: Weight, dimensions & UPC
+          text: Send package and product identifiers ShipStation needs for accurate labels and carrier rules.
+        - title: Multichannel order import
+          text: Amazon, eBay, Walmart, Shopify, and other channel orders flow through one ops queue first.
+          link: /multi-channel-fulfillment-software/
+    - eyebrow: Shipping workflow
+      alt: true
+      title: Less tab-switching between ops and labels
+      lead: Warehouse teams lose minutes per order when they bounce between catalog, orders, and ShipStation.
+      cards:
+        - title: Faster pick-and-pack
+          text: Richer order payloads mean fewer manual lookups before you print in ShipStation.
+        - title: Works with your catalog
+          text: Product data stays tied to the same master records that power listing and inventory sync.
+          link: /inventory-sync-software/
+        - title: Scale multichannel volume
+          text: Ship peak marketplace days without bolting on a separate order export process.
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: ShipStation integration questions
+  faq:
+    - q: What data does SellerChamp send to ShipStation?
+      a: SellerChamp can send BIN locations, weight, dimensions, UPC, and order details ShipStation uses for picking and label creation.
+    - q: Do all marketplace orders go through SellerChamp first?
+      a: Yes. Connected marketplace and cart orders consolidate in SellerChamp before fulfillment handoff to ShipStation.
+    - q: Does this replace ShipStation?
+      a: No. ShipStation remains your shipping and label platform. SellerChamp feeds it richer multichannel order and product data.
 
 - id: shiprush
   name: ShipRush
@@ -429,7 +1134,7 @@
     Launch ShipRush directly inside SellerChamp to print shipping labels without
     switching programs.
   canonical: https://sellerchamp.com/integrations/service-integrations/shiprush/
-  hero_title: ShipRush integration — labels without the app switch
+  hero_title: ShipRush integration, labels without the app switch
   hero_sub: Launch ShipRush directly inside SellerChamp so your team prints labels without jumping between programs.
   logo: /assets/images/integration-shiprush.png
   highlights:
@@ -439,6 +1144,40 @@
       text: Keep warehouse staff in one workflow from order to label.
     - title: Works with your order queue
       text: Ship orders from every connected marketplace and cart.
+  platform_lead: ShipRush users want labels without leaving the order screen. SellerChamp launches ShipRush in context so warehouse staff print from the same multichannel queue they already use for pick and pack.
+  sections:
+    - eyebrow: In-app shipping
+      title: Print ShipRush labels without leaving SellerChamp
+      lead: Every extra application switch adds time and mistakes at the packing bench.
+      cards:
+        - title: Launch ShipRush inside SellerChamp
+          text: Open ShipRush from the order workflow so staff stay in one interface through label print.
+        - title: Multichannel orders
+          text: Ship Amazon, eBay, Walmart, Shopify, and other connected channels from the same queue.
+          link: /multi-channel-fulfillment-software/
+        - title: Less context switching
+          text: Reduce hops between ops, catalog, and shipping tools during high-volume days.
+    - eyebrow: Warehouse efficiency
+      alt: true
+      title: Labels tied to live catalog data
+      lead: Shipping should reflect the SKU records that already power inventory sync and listings.
+      cards:
+        - title: Accurate product context
+          text: Orders carry product data from your central catalog, not stale exports.
+          link: /inventory-sync-software/
+        - title: Peak season ready
+          text: Keep label throughput high when marketplace order volume spikes.
+        - title: Reporting after ship
+          text: Fulfillment and channel performance stay visible in SellerChamp reporting.
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: ShipRush integration questions
+  faq:
+    - q: Is ShipRush embedded in SellerChamp?
+      a: SellerChamp launches ShipRush directly from the order workflow so your team prints labels without switching to a separate program.
+    - q: Which orders can use ShipRush?
+      a: Orders from connected marketplaces and carts in your SellerChamp queue can flow into the ShipRush label workflow.
+    - q: Do I still need a ShipRush account?
+      a: Yes. ShipRush remains your label printing service. SellerChamp connects it to your multichannel order queue.
 
 - id: amazon-fba
   name: Amazon FBA
@@ -446,11 +1185,11 @@
   category: fulfillment
   title: Amazon FBA Integration | Multichannel Fulfillment
   description: >-
-    List FBA products on other channels and use Fulfillment by Amazon to ship —
+    List FBA products on other channels and use Fulfillment by Amazon to ship.
     plus create FBA shipments with SellerChamp.
   canonical: https://sellerchamp.com/integrations/service-integrations/amazon-fba/
   hero_title: Amazon FBA integration for multichannel growth
-  hero_sub: Get more exposure by listing FBA products on other channels and using Fulfillment by Amazon to ship — while creating FBA shipments without the spreadsheet mess.
+  hero_sub: Get more exposure by listing FBA products on other channels and using Fulfillment by Amazon to ship, while creating FBA shipments without the spreadsheet mess.
   logo_text: FBA
   highlights:
     - title: Multichannel FBA selling
@@ -459,6 +1198,41 @@
       text: Create Amazon FBA shipments quickly and with fewer errors.
     - title: Inventory visibility
       text: Track FBA and seller-fulfilled stock together in SellerChamp.
+  platform_lead: FBA is both fulfillment and inventory Amazon controls. SellerChamp mirrors FBA quantity with seller-fulfilled stock, lists FBA units on other channels, and builds inbound shipments without living in Seller Central spreadsheets.
+  sections:
+    - eyebrow: FBA inventory
+      title: See FBA and FBM stock in one multichannel view
+      lead: Hybrid sellers oversell when FBA units are invisible to eBay, Walmart, and Shopify sync.
+      cards:
+        - title: FBA quantity sync
+          text: Reflect fulfillment-center stock next to warehouse quantity across every connected channel.
+          link: /inventory-sync-software/
+        - title: Multichannel FBA selling
+          text: Offer FBA-backed inventory on other marketplaces and fulfill with Amazon when rules match.
+        - title: Amazon listing ops
+          text: Bulk list and update Amazon catalog from the same stack as your other channels.
+          link: /integrations/market-places/amazon-seller-software/
+    - eyebrow: Inbound & fulfillment
+      alt: true
+      title: FBA shipments and order routing without spreadsheet glue
+      lead: Inbound errors and wrong fulfillment channels cost weeks of stranded inventory.
+      cards:
+        - title: FBA shipment creation
+          text: Build inbound shipments with fewer Seller Central round trips and less copy-paste.
+        - title: Unified order queue
+          text: Route FBA, FBM, and multichannel orders from one SellerChamp dashboard.
+          link: /multi-channel-fulfillment-software/
+        - title: Buy Box repricing
+          text: Reprice Amazon offers with margin floors tied to the same cost data you use elsewhere.
+          link: /repricer-software/
+  faq_title: Amazon FBA integration questions
+  faq:
+    - q: Can I list FBA inventory on eBay or Walmart?
+      a: SellerChamp supports multichannel selling workflows where FBA inventory is represented on other connected channels per your fulfillment rules.
+    - q: Does SellerChamp sync FBA quantities to other channels?
+      a: Yes. FBA and seller-fulfilled stock roll into inventory sync so other marketplaces see accurate available quantity.
+    - q: Can I create FBA inbound shipments in SellerChamp?
+      a: Yes. SellerChamp includes FBA shipment tools so you spend less time rebuilding inbound plans in Seller Central.
 
 - id: walmart-wfs
   name: Walmart WFS
@@ -475,13 +1249,48 @@
   logo_text: WFS
   highlights:
     - title: Route orders to WFS
-      text: Send the right Walmart Marketplace orders to Walmart Fulfillment Services with rules you control — without juggling a separate ops tool.
+      text: Send the right Walmart Marketplace orders to Walmart Fulfillment Services with rules you control, without juggling a separate ops tool.
     - title: WFS inventory visibility
       text: Track WFS and seller-fulfilled Walmart stock together so you don’t oversell or miss replenishment signals.
     - title: Fast delivery eligibility
       text: Support fulfillment workflows that help unlock Walmart’s faster shipping badges and buyer trust.
     - title: Multichannel fulfillment
       text: Manage WFS alongside Amazon FBA, 3PLs, and your warehouse from one SellerChamp order queue.
+  platform_lead: Walmart WFS is Walmart’s answer to Prime-like delivery expectations. SellerChamp routes eligible Walmart orders to WFS, tracks WFS inventory beside seller-fulfilled units, and keeps Walmart listing ops in the same stack as Amazon and eBay.
+  sections:
+    - eyebrow: WFS fulfillment
+      title: Route Walmart orders to WFS with rules you control
+      lead: Not every Walmart order belongs in WFS. Routing logic should live next to your other fulfillment rules.
+      cards:
+        - title: WFS order routing
+          text: Send eligible Walmart Marketplace orders to Walmart Fulfillment Services based on SKU, region, or stock location.
+        - title: WFS inventory visibility
+          text: Track WFS and seller-fulfilled Walmart quantity together so listings and sync stay honest.
+          link: /inventory-sync-software/
+        - title: Walmart listing ops
+          text: Publish and manage Walmart catalog from the same platform as WFS routing.
+          link: /integrations/market-places/sell-on-walmart/
+    - eyebrow: Multichannel context
+      alt: true
+      title: WFS beside FBA, warehouse, and 3PL
+      lead: Most Walmart sellers also run Amazon FBA or warehouse fulfillment. One queue must orchestrate all of it.
+      cards:
+        - title: Unified order queue
+          text: Walmart, Amazon, eBay, and cart orders pick and ship from one SellerChamp workflow.
+          link: /multi-channel-fulfillment-software/
+        - title: Fast delivery badges
+          text: Support fulfillment workflows that help unlock Walmart faster shipping programs and buyer trust.
+        - title: Walmart repricing
+          text: Dynamic pricing with margin floors on Walmart offers from the same RePricer module as Amazon.
+          link: /repricer-software/
+  faq_title: Walmart WFS questions
+  faq:
+    - q: Can SellerChamp route orders to Walmart WFS?
+      a: Yes. Route eligible Walmart Marketplace orders to WFS using fulfillment rules you define in SellerChamp.
+    - q: Does WFS inventory sync with other channels?
+      a: WFS and seller-fulfilled Walmart stock roll into your central inventory view so multichannel sync stays accurate.
+    - q: Is SellerChamp credentialed for Walmart?
+      a: SellerChamp is a Walmart Preferred Solution Provider for listing and multichannel operations, including WFS workflows.
 
 - id: flexport
   name: Flexport
@@ -493,7 +1302,7 @@
     2-day delivery and eBay Fast ‘N Free.
   canonical: https://sellerchamp.com/integrations/service-integrations/flexport/
   hero_title: Flexport fulfillment integration
-  hero_sub: Route orders to Flexport and pursue fast-shipping badges — Walmart 2-day delivery and eBay Fast ‘N Free — to boost visibility.
+  hero_sub: Route orders to Flexport and pursue fast-shipping badges, Walmart 2-day delivery and eBay Fast ‘N Free, to boost visibility.
   logo: /assets/images/integration-flexport.png
   highlights:
     - title: Fast-shipping badges
@@ -502,6 +1311,41 @@
       text: Send the right orders to Flexport based on rules you define.
     - title: Multichannel ready
       text: Keep Flexport fulfillment tied to your central order queue.
+  platform_lead: Flexport helps brands hit speed badges buyers notice. SellerChamp routes the right marketplace orders to Flexport and keeps fulfillment tied to the multichannel queue that already runs Amazon, Walmart, and eBay.
+  sections:
+    - eyebrow: Fulfillment routing
+      title: Send eligible orders to Flexport from marketplace rules
+      lead: Speed programs only work when the right SKUs and regions route to the right 3PL automatically.
+      cards:
+        - title: Rule-based routing
+          text: Define which orders go to Flexport based on SKU, channel, destination, or inventory location.
+          link: /multi-channel-fulfillment-software/
+        - title: Fast-shipping badges
+          text: Support workflows that help qualify for programs like Walmart 2-day delivery and eBay Fast 'N Free where your catalog and carriers allow.
+        - title: Central order context
+          text: Flexport-bound orders originate from the same SellerChamp queue as FBA, WFS, and warehouse volume.
+    - eyebrow: Multichannel ops
+      alt: true
+      title: Badge pursuit without a separate ops stack
+      lead: Marketplace badges are a fulfillment outcome, not a listing tool feature. Routing must sit next to orders.
+      cards:
+        - title: Inventory truth
+          text: Quantities stay synced across channels before you promise fast delivery on any marketplace.
+          link: /inventory-sync-software/
+        - title: Channel reporting
+          text: See which channels benefit from Flexport-backed delivery in your SellerChamp reporting.
+          link: /ecommerce-analytics-tool-insights-reports/
+        - title: Scale new channels
+          text: Add marketplaces without rebuilding fulfillment routing in a separate system.
+          link: /bulk-lister-seller-champ/
+  faq_title: Flexport integration questions
+  faq:
+    - q: Does SellerChamp replace Flexport?
+      a: No. Flexport remains your fulfillment partner. SellerChamp routes eligible marketplace orders and keeps them in your central ops queue.
+    - q: Can Flexport help with Walmart or eBay speed badges?
+      a: SellerChamp supports fulfillment routing workflows aimed at programs like Walmart 2-day delivery and eBay Fast 'N Free when your Flexport setup and catalog qualify.
+    - q: Which orders can route to Flexport?
+      a: You define rules in SellerChamp so the right multichannel orders hand off to Flexport based on SKU, channel, and destination.
 
 - id: quickbooks
   name: QuickBooks
@@ -523,6 +1367,41 @@
       text: Keep financial workflows tied to the same platform that runs listings and orders.
     - title: Scale without spreadsheet glue
       text: Spend less time reconciling channel activity by hand.
+  platform_lead: QuickBooks closes the books. SellerChamp runs the catalog and orders that generate those numbers. The integration keeps accounting closer to live multichannel activity so finance spends less time exporting and reconciling by hand.
+  sections:
+    - eyebrow: Ops to accounting
+      title: Connect multichannel orders to QuickBooks workflows
+      lead: Spreadsheets between ops and accounting break the moment SKU count or channel mix jumps.
+      cards:
+        - title: Reduce manual exports
+          text: Keep financial workflows closer to the platform that already holds listings, orders, and channel context.
+        - title: Multichannel context
+          text: Accounting inputs tie back to the same system Amazon, eBay, Walmart, and Shopify orders flow through.
+          link: /multi-channel-fulfillment-software/
+        - title: Scale without glue tools
+          text: Spend less time copying channel reports into QuickBooks as order volume grows.
+    - eyebrow: Finance alignment
+      alt: true
+      title: One ops platform, cleaner month-end
+      lead: Founders want margin truth by channel, not just a consolidated deposit.
+      cards:
+        - title: Channel-aware ops data
+          text: Reporting in SellerChamp complements QuickBooks by showing performance by SKU and channel first.
+          link: /ecommerce-analytics-tool-insights-reports/
+        - title: Inventory and COGS context
+          text: Catalog and cost data live next to the orders QuickBooks must reflect.
+          link: /inventory-sync-software/
+        - title: Supplier automation
+          text: FTP and API feeds keep product and cost inputs current for both ops and finance.
+          link: /inventory-management-api-ftp/
+  faq_title: QuickBooks integration questions
+  faq:
+    - q: What does the QuickBooks integration sync?
+      a: SellerChamp connects ecommerce operations with QuickBooks so financial workflows stay aligned with the system that runs your multichannel catalog and orders. Scope depends on your plan and setup.
+    - q: Does SellerChamp replace QuickBooks?
+      a: No. QuickBooks remains your accounting system. SellerChamp reduces manual handoffs from multichannel ops.
+    - q: Can I still use SellerChamp reporting with QuickBooks?
+      a: Yes. SellerChamp reporting shows channel and SKU performance that complements your QuickBooks books.
 
 - id: informed
   name: Informed
@@ -543,6 +1422,41 @@
       text: Support smarter external repricing with accurate floor inputs.
     - title: Works with your catalog
       text: Pull pricing inputs from the same system that manages listings and inventory.
+  platform_lead: Informed repricing needs fresh cost and floor inputs. SellerChamp already holds catalog, cost, and channel context, so pushing minimum price or cost to Informed continuously keeps external repricing aligned with real margins.
+  sections:
+    - eyebrow: Repricing inputs
+      title: Feed Informed accurate cost and floor data from SellerChamp
+      lead: Stale cost in a repricer races you to zero margin faster than any competitor.
+      cards:
+        - title: Continuous cost feeds
+          text: Send cost price or minimum selling price to Informed on an ongoing basis from SellerChamp.
+        - title: Catalog-linked floors
+          text: Pricing inputs come from the same SKU records that power listings and inventory sync.
+          link: /inventory-sync-software/
+        - title: Works with multichannel catalog
+          text: Margin inputs stay tied to the catalog you list on Amazon, eBay, Walmart, and more.
+          link: /bulk-lister-seller-champ/
+    - eyebrow: Margin-aware automation
+      alt: true
+      title: External repricing grounded in ops truth
+      lead: Repricing tools are only as good as the cost data ops teams actually maintain.
+      cards:
+        - title: Complement SellerChamp RePricer
+          text: Use Informed where you already rely on it while keeping cost source of truth in SellerChamp.
+          link: /repricer-software/
+        - title: Fewer spreadsheet overrides
+          text: Reduce manual cost uploads when catalog or supplier pricing changes.
+        - title: Channel reporting
+          text: Validate repricing outcomes against margin reporting in SellerChamp.
+          link: /ecommerce-analytics-tool-insights-reports/
+  faq_title: Informed integration questions
+  faq:
+    - q: What does SellerChamp send to Informed?
+      a: SellerChamp can continuously send cost price or minimum selling price to Informed so repricing reflects current margins.
+    - q: Does this replace SellerChamp RePricer?
+      a: No. Many sellers use Informed alongside SellerChamp. SellerChamp remains the source of catalog, cost, and multichannel ops data.
+    - q: How often are Informed inputs updated?
+      a: SellerChamp supports continuous feeds so Informed receives updated cost or floor values as your catalog changes.
 
 - id: api-data-feed
   name: API & Data Feed
@@ -554,7 +1468,7 @@
     the SellerChamp REST API for custom integrations.
   canonical: https://sellerchamp.com/integrations/service-integrations/api-data-feed/
   hero_title: API & data feed integrations for supplier automation
-  hero_sub: Connect with suppliers to import product catalogs and inventory — plus use our REST API to build custom integrations.
+  hero_sub: Connect with suppliers to import product catalogs and inventory, plus use our REST API to build custom integrations.
   logo: /assets/images/integration-api-data-feed.png
   highlights:
     - title: Supplier FTP & API
@@ -563,3 +1477,37 @@
       text: Set exclusions, quantity rules, and pricing logic before products hit channels.
     - title: REST API
       text: Connect ERPs, WMS, and internal tools without a black-box ops stack.
+  platform_lead: Supplier and ERP data should flow into listings and inventory, not sit in overnight files your team babysits. SellerChamp FTP, API imports, and a REST API connect vendors and internal systems to the same catalog that feeds every marketplace.
+  sections:
+    - eyebrow: Supplier feeds
+      title: Auto-import vendor catalogs and stock changes
+      lead: Dropship and wholesale sellers live or die on feed freshness. Manual CSV uploads do not scale.
+      cards:
+        - title: FTP & API supplier import
+          text: Pull vendor catalogs and inventory updates on a schedule you control.
+        - title: Feed rules before publish
+          text: Set exclusions, quantity buffers, and pricing logic before products hit channels.
+        - title: Dropshipping automation
+          text: Keep supplier stock tied to marketplace listings without retyping catalog data.
+          link: /solutions/dropshipping-automation-software/
+    - eyebrow: Custom integrations
+      alt: true
+      title: REST API for ERP, WMS, and internal tools
+      lead: Enterprise sellers need programmatic access to the same ops layer their team uses in the UI.
+      cards:
+        - title: SellerChamp REST API
+          text: Build custom integrations with ERP, WMS, and internal systems instead of brittle export scripts.
+        - title: Listing & inventory sync
+          text: API access sits on top of the catalog that powers Amazon, Walmart, eBay, and more.
+          link: /inventory-sync-software/
+        - title: Bulk listing intake
+          text: Pair API automation with Bulk Lister for high-SKU onboarding.
+          link: /bulk-lister-seller-champ/
+  faq_title: API and data feed questions
+  faq:
+    - q: Can SellerChamp import supplier catalogs via FTP?
+      a: Yes. Connect suppliers through FTP or API to auto-import catalogs and keep inventory synchronized as vendor data changes.
+    - q: Is there a SellerChamp REST API?
+      a: Yes. Use the REST API to connect ERPs, WMS systems, and custom internal tools to your multichannel catalog and ops data.
+    - q: Can I set rules before feed products go live?
+      a: Yes. Configure exclusions, quantity rules, and pricing logic so feed rows map safely before they publish to channels.

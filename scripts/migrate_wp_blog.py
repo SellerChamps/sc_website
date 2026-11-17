@@ -18,7 +18,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 URL_LIST = ROOT / "_data" / "wp_posts.txt"
 POSTS_DIR = ROOT / "_posts"
-USER_AGENT = "SellerChampJekyllMigrator/1.0 (+https://sellerchamp.com)"
+USER_AGENT = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+)
 
 
 def fetch(url: str) -> str:

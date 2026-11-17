@@ -1,4 +1,9 @@
-{% assign demo_href = include.href | default: site.app.leads | append: '?utm_source=blog&utm_campaign=post-demo-banner' %}
+{% if include.href %}
+  {% assign demo_href = include.href %}
+{% else %}
+  {% assign demo_href = site.app.leads | append: '?utm_source=blog&utm_campaign=post-demo-banner' %}
+{% endif %}
+<aside class="post-demo-banner-wrap">
 <a class="post-demo-banner" href="{{ demo_href }}">
   <div class="post-demo-banner__copy">
     <p class="post-demo-banner__eyebrow">Free demo</p>
@@ -7,6 +12,7 @@
     <span class="post-demo-banner__cta">Schedule Your Demo Today →</span>
   </div>
   <div class="post-demo-banner__visual" aria-hidden="true">
-    <img src="{{ '/assets/images/hero-devices.png' | relative_url }}" alt="" width="640" height="400" loading="lazy" decoding="async">
+    <img src="{{ '/assets/images/hero-dashboard-banner.png' | relative_url }}" alt="" width="300" height="360" loading="lazy" decoding="async">
   </div>
 </a>
+</aside>

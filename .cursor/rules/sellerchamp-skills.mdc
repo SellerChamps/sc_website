@@ -1,0 +1,16 @@
+---
+description: Use SellerChamp automations skills for growth, landing pages, and marketing on this site
+alwaysApply: true
+---
+
+# SellerChamp skills (sc_website)
+
+This repo is the SellerChamp marketing site. Skills are symlinked from `~/Documents/automations/sellerchamp/`.
+
+1. **Discover:** Check `.cursor/skills/` and `~/Documents/automations/sellerchamp/CLAUDE.md` for a matching `SKILL.md` before you improvise.
+2. **Product context:** Read `.agents/product-marketing.md` before copy, SEO, CRO, launch, or positioning work.
+3. **Head of Growth:** Start at `.cursor/skills/head-of-growth/SKILL.md` for funnel, landing pages, ads, and nested `marketingskills/` / `google-ads/` skills.
+4. **Landing pages** live in `landing/`; follow patterns in existing layouts under `_layouts/`.
+5. **Voice:** `~/.cursor/skills/simple-english/SKILL.md` for all user-facing text.
+
+Do not commit secrets from the automations folder. Symlinks use absolute paths on this machine — run `.cursor/skills/link-sellerchamp.sh` if links break.

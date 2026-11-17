@@ -1,0 +1,14 @@
+---
+description: sellerchamp.com → sc_website migration — no broken URLs at cutover
+alwaysApply: true
+---
+
+# Site migration (sellerchamp.com → this repo)
+
+**Goal:** Replace the current sellerchamp.com with this Jekyll site. **Staging:** site.sellerchamp.com. **Production:** repoint sellerchamp.com to this repo only after migration is complete.
+
+**Non‑negotiable:** At cutover, no sellerchamp.com marketing URL should 404. Each legacy path must map to a page in this project or a 301 to one.
+
+**Content:** Do not blind copy/paste WordPress or Elementor HTML. Extract facts and intent, then **rewrite** copy (simple-english, product-marketing, head-of-growth marketingskills as needed) and **rebuild markup** with this site’s layouts, fonts, colors, and section patterns (`site.css`, `multichannel_landing.css`, `_layouts/`, `_includes/`). Migrated pages should look fresh and crisp on par with existing landings and Tier 1 pages.
+
+**References:** `docs/SITE_MIGRATION.md`, `docs/CUTOVER.md`, `_data/url_inventory.md`. External: keep `app.`, `kb.`, `community.` on their existing hosts.

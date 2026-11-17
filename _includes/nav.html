@@ -31,7 +31,7 @@
             </a>
             <a href="{{ '/ai-automation/' | relative_url }}">
               <span class="mega-link-title">Photo to listing</span>
-              <span class="mega-link-desc">Snap a product, draft a listing</span>
+              <span class="mega-link-desc">Mobile app: snap or upload, AI builds the draft</span>
             </a>
             <a href="{{ '/solutions/automotive-fitment-tool/' | relative_url }}">
               <span class="mega-link-title">Automotive Fitment</span>
@@ -98,7 +98,7 @@
           </div>
           <div class="mega-featured">
             <p class="mega-featured-label">Featured</p>
-            <p class="mega-featured-text">See how SellerChamp runs listing, inventory, and fulfillment from one platform — in about 2 minutes.</p>
+            <p class="mega-featured-text">See how SellerChamp runs listing, inventory, and fulfillment from one platform in about 2 minutes.</p>
             <a class="mega-featured-cta" href="{{ '/' | relative_url }}#overview-video">Watch overview →</a>
             <a class="mega-featured-link" href="{{ '/features/' | relative_url }}">Explore all features</a>
             <a class="mega-featured-link" href="{{ site.app.leads }}">Book Free Demo</a>
@@ -148,7 +148,7 @@
           </div>
           <div class="mega-featured">
             <p class="mega-featured-label">Featured</p>
-            <p class="mega-featured-text">Built for operators managing serious catalogs — not starter-store tools.</p>
+            <p class="mega-featured-text">Built for operators managing serious catalogs, not starter-store tools.</p>
             <a class="mega-featured-cta" href="{{ site.app.leads }}">Book Free Demo →</a>
             <a class="mega-featured-link" href="{{ '/our-customers/' | relative_url }}">See customer results</a>
           </div>
@@ -216,7 +216,57 @@
       </div>
     </div>
 
-    <a class="nav-top-link{% if page.url contains '/blog' %} is-active{% endif %}" href="{{ '/blog/' | relative_url }}">Blog</a>
+    {% assign on_resources = page.nav_section == 'resources' or page.url contains '/blog' or page.url contains 'checklist' or page.url contains '/ebay-description' or page.url contains '/sc_manifesto' or page.url == '/our-customers/' %}
+    <div class="nav-item has-dropdown has-mega{% if on_resources %} is-current{% endif %}">
+      <div class="nav-item-head">
+        <a href="{{ '/blog/' | relative_url }}" class="nav-top-link{% if on_resources %} is-active{% endif %}">Resources</a>
+        <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="nav-menu-resources" aria-label="Resources submenu">
+          <span class="nav-caret" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="nav-dropdown nav-dropdown--mega" id="nav-menu-resources">
+        <div class="mega-grid mega-grid--resources">
+          <div class="mega-col">
+            <p class="mega-label">Resources</p>
+            <a href="{{ '/our-customers/#casestudy' | relative_url }}">
+              <span class="mega-link-title">Success Stories</span>
+              <span class="mega-link-desc">Hear from sellers who use SellerChamp every day</span>
+            </a>
+            <a href="{{ '/blog/' | relative_url }}">
+              <span class="mega-link-title">Blog</span>
+              <span class="mega-link-desc">Expert multichannel tips and ecommerce news</span>
+            </a>
+            <a href="{{ '/blog/product-updates/' | relative_url }}">
+              <span class="mega-link-title">Product Updates</span>
+              <span class="mega-link-desc">Release notes and what’s new in the platform</span>
+            </a>
+            <a href="{{ '/blog/#free-tools' | relative_url }}">
+              <span class="mega-link-title">Free Tools</span>
+              <span class="mega-link-desc">Guides, checklists, and downloads for sellers</span>
+            </a>
+          </div>
+          <div class="mega-col">
+            <p class="mega-label">Free tools</p>
+            <a href="{{ '/sc_manifesto/' | relative_url }}">
+              <span class="mega-link-title">Guide for E-Commerce Resellers &amp; Retailers</span>
+              <span class="mega-link-desc">Strategies and best practices for multichannel selling</span>
+            </a>
+            <a href="{{ '/amazon-fba-checklist/' | relative_url }}">
+              <span class="mega-link-title">Amazon FBA Checklist</span>
+              <span class="mega-link-desc">Step-by-step prep from research to listing</span>
+            </a>
+            <a href="{{ '/ebay-description/' | relative_url }}">
+              <span class="mega-link-title">eBay Description Checklist</span>
+              <span class="mega-link-desc">Write listings that convert and rank</span>
+            </a>
+            <a href="{{ '/ecommerce-seo-checklist/' | relative_url }}">
+              <span class="mega-link-title">Ecommerce SEO Checklist</span>
+              <span class="mega-link-desc">On-page SEO essentials for your store</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="nav-right">
     <a class="btn-login" href="{{ site.app.signin }}">Login</a>

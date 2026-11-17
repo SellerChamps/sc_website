@@ -31,9 +31,6 @@ Keep `app`, `kb`, `community`, and other product subdomains on their current tar
 5. Submit `https://sellerchamp.com/sitemap.xml` in Search Console
 6. Keep WP Engine live ~2 weeks as emergency fallback, then decommission
 
-## 7. Blog media (wp-content)
-Migrated posts currently hotlink images from `https://sellerchamp.com/wp-content/...`.
-**Before decommissioning WP Engine**, either:
-- Keep a static mirror of `/wp-content/uploads/` on a CDN / object storage and leave URLs unchanged, or
-- Re-run a media download pass and rewrite image paths to `/assets/images/blog/`
+## 7. Blog media
+Blog images are mirrored under `assets/images/blog/` (see `scripts/migrate_blog_images.py` and `_data/blog_image_map.json`). Re-run the script after a fresh blog import. Before decommissioning WP Engine, confirm no post still hotlinks `wp-content` (`rg wp-content _posts`).
 
