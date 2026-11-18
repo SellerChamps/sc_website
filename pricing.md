@@ -39,3 +39,12 @@ Lister-focused signups (eBay/Amazon lister campaigns) may use separate Starter /
 
 - **Book demo:** https://app.sellerchamp.com/leads/new
 - **Human pricing page:** https://sellerchamp.com/pricing/
+
+## Compare pages (evaluation)
+
+- https://sellerchamp.com/compare/
+- https://sellerchamp.com/compare/sellerchamp-vs-sellbrite/
+- https://sellerchamp.com/compare/sellerchamp-vs-sellercloud/
+- https://sellerchamp.com/compare/sellerchamp-vs-rithum/
+- https://sellerchamp.com/compare/sellerchamp-vs-linnworks/
+- https://sellerchamp.com/compare/sellerchamp-vs-listing-mirror/

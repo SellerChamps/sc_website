@@ -1107,6 +1107,20 @@ section.site-section.section-alt {
   color: var(--muted);
 }
 
+.post-body .blog-compare-canonical {
+  margin: 0 0 1.75rem;
+  padding: 1rem 1.15rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 207, 167, 0.35);
+  background: rgba(0, 207, 167, 0.08);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.post-body .blog-compare-canonical p {
+  margin: 0;
+}
+
 .compare-quote {
   margin: 0;
   padding: 1.25rem 1.35rem;

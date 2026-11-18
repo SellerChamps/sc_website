@@ -17,13 +17,15 @@ SellerChamp is B2B SaaS for high-SKU, multichannel sellers. Typical customers ru
 - [FAQ](https://sellerchamp.com/faq/)
 - [Compare hub](https://sellerchamp.com/compare/)
 - [Compare vs Sellbrite](https://sellerchamp.com/compare/sellerchamp-vs-sellbrite/)
-- [Compare vs SellerCloud & enterprise tools](https://sellerchamp.com/compare/sellerchamp-vs-sellercloud/)
+- [Compare vs SellerCloud](https://sellerchamp.com/compare/sellerchamp-vs-sellercloud/)
+- [Compare vs Rithum (ChannelAdvisor)](https://sellerchamp.com/compare/sellerchamp-vs-rithum/)
 - [Compare vs Linnworks](https://sellerchamp.com/compare/sellerchamp-vs-linnworks/)
 - [Compare vs Listing Mirror](https://sellerchamp.com/compare/sellerchamp-vs-listing-mirror/)
+- [RePricer](https://sellerchamp.com/repricer-software/)
 - [Guide: multichannel listing software](https://sellerchamp.com/guides/multichannel-listing-software/)
 - [Guide: inventory sync software](https://sellerchamp.com/guides/inventory-sync-software/)
 
-## Product facts (verify on site; updated 2026-11-17)
+## Product facts (verify on site; updated 2026-11-17; compare + repricer AEO refresh)
 
 - Custom Platform pricing: most quotes fall between $399 and $999 per month based on SKUs, orders, and channels.
 - Self-serve lister trials: Starter, Growth, Pro tiers (see app signup flows).
