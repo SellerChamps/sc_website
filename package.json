@@ -1,0 +1,13 @@
+{
+  "name": "sc-website",
+  "private": true,
+  "dependencies": {
+    "@heycatch/sdk": "0.8.5"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  },
+  "scripts": {
+    "build:heycatch": "esbuild assets/js/heycatch-entry.mjs --bundle --format=esm --outfile=assets/js/heycatch.mjs --minify"
+  }
+}

@@ -38,6 +38,7 @@
   {% if page.url == '/faq/' %}{% include json-ld-faq.html %}{% endif %}
   {% if page.faq_schema and page.url != '/' and page.url != '/faq/' %}{% include json-ld-faq.html %}{% endif %}
   {% include json-ld-software-page.html %}
+  {% include heycatch.html %}
 </head>
 <body class="site-body{% if page.body_class %} {{ page.body_class }}{% endif %}">
   {% include tracking-body.html %}

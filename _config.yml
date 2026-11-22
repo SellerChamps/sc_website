@@ -39,6 +39,10 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor
+  - node_modules
+  - package.json
+  - package-lock.json
+  - assets/js/heycatch-entry.mjs
   - scripts
   - docs
   - _data/url_inventory.md
