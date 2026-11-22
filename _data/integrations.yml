@@ -80,7 +80,7 @@
   logo: /assets/images/channel-ebay.svg
   highlights:
     - title: Fast eBay listing
-      text: Build listings with fetched product data and item specifics so catalog onboarding stays fast.
+      text: Build listings with fetched product data and item specifics so large catalogs publish faster.
     - title: Variations, bundles & kits
       text: Manage multi-SKU families and kits without spreadsheet gymnastics.
     - title: Cross-channel inventory
@@ -378,8 +378,8 @@
           link: /bulk-lister-seller-champ/
         - title: Catalog import
           text: Pull SKUs from Amazon, eBay, or your master catalog instead of re-keying Valore-only spreadsheets.
-        - title: Bulk season onboarding
-          text: CSV and feed imports for large buybacks and warehouse intake before rush weeks.
+        - title: Bulk seasonal listing
+          text: Publish from CSV or supplier feeds for large buybacks and warehouse intake before rush weeks.
     - eyebrow: Textbook ops
       alt: true
       title: Shared stock across Valore, Amazon, and eBay
@@ -487,8 +487,8 @@
         - title: Cross-list existing SKUs
           text: Pull products from Amazon, Walmart, eBay, or your master catalog and publish TikTok-ready listings with mapped categories and attributes.
           link: /bulk-lister-seller-champ/
-        - title: Bulk onboarding
-          text: CSV upload, barcode scan, or supplier feeds to add hundreds of SKUs before you open TikTok campaigns.
+        - title: Publish listings in bulk
+          text: Publish via CSV import, barcode scan, UPC/ASIN lookup, or supplier feed (API/FTP) before you open TikTok campaigns.
         - title: AI listing content
           text: Generate and polish titles and descriptions so new TikTok listings go live with less manual copy work.
           link: /ai-automation/
@@ -600,7 +600,7 @@
           text: Publish Newegg listings from Amazon, Walmart, or your SellerChamp catalog with mapped attributes.
           link: /bulk-lister-seller-champ/
         - title: Barcode & CSV intake
-          text: Scan UPCs or import vendor files for fast Newegg onboarding during new product drops.
+          text: Scan UPCs or import vendor files to publish Newegg listings in bulk during new product drops.
         - title: Spec-heavy attributes
           text: Manage item specifics and compatibility fields from one catalog update that pushes to every channel.
     - eyebrow: Electronics ops
@@ -1501,7 +1501,7 @@
           text: API access sits on top of the catalog that powers Amazon, Walmart, eBay, and more.
           link: /inventory-sync-software/
         - title: Bulk listing intake
-          text: Pair API automation with Bulk Lister for high-SKU onboarding.
+          text: Pair API automation with Bulk Lister for high-volume bulk listing.
           link: /bulk-lister-seller-champ/
   faq_title: API and data feed questions
   faq:
