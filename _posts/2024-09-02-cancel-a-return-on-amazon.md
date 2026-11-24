@@ -1,8 +1,8 @@
 ---
-title: How to Cancel a Return on Amazon? A Simple Guide
+title: How to Cancel an Amazon Return (Before It Ships Back)
 date: 2024-09-02 12:00:00 +0000
 permalink: /blog/cancel-a-return-on-amazon/
-description: Learn how to cancel a return on Amazon with our step-by-step guide. Follow these clear instructions to ensure a smooth and simple process.
+description: Changed your mind about a return? Here's exactly how to cancel an Amazon return in under 2 minutes, plus what happens if it's already shipped.
 reskin: true
 ---
 
