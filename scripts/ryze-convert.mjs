@@ -37,11 +37,13 @@ function dateOnly(isoString) {
 function buildFrontMatter(article) {
   const title = yamlEscape(article.title || article.slug);
   const description = yamlEscape(article.meta_description || article.excerpt || "");
-  const dateStr = article.published_at || article.updated_at || new Date().toISOString();
+  const rawDate = article.published_at || article.updated_at || new Date().toISOString();
+  // Strip fractional seconds (Jekyll's YAML date parser can choke on them)
+  const dateStr = rawDate.replace(/\.\d+Z$/, "Z").replace("T", " ").replace("Z", " +0000");
   const lines = [
     "---",
     `title: "${title}"`,
-    `date: ${dateStr.replace("T", " ").replace("Z", " +0000")}`,
+    `date: ${dateStr}`,
     `permalink: /blog/${article.slug}/`,
     `description: "${description}"`,
     "reskin: true",
