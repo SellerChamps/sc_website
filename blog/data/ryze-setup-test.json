@@ -1,0 +1,18 @@
+{
+  "slug": "ryze-setup-test",
+  "title": "Ryze Publishing Setup Test",
+  "body_markdown": "## Test\n\nThis is a test article to verify the Ryze publishing pipeline.",
+  "body_html": "<h2>Test</h2><p>This is a test article to verify the Ryze publishing pipeline.</p>",
+  "blocks": [],
+  "meta_title": "Ryze Publishing Setup Test",
+  "meta_description": "Verifying the Ryze to GitHub publishing pipeline.",
+  "excerpt": "Verifying the Ryze to GitHub publishing pipeline.",
+  "primary_keyword": null,
+  "image": {
+    "url": "https://via.placeholder.com/800x400",
+    "alt": "Test image"
+  },
+  "published_at": "2026-11-24T00:00:00.000Z",
+  "updated_at": "2026-11-24T00:00:00.000Z",
+  "status": "published"
+}
