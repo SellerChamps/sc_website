@@ -2,10 +2,9 @@ name: Ryze publish
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "ryze/publishing-setup"]
     paths:
       - "blog/data/**"
-  workflow_dispatch: {}
 
 permissions:
   contents: write
