@@ -29,13 +29,13 @@ November gave shipping its own home in the platform, rebuilt how catalog categor
 <li>Manage all shipments, order-tied and standalone, from one place</li>
 </ul>
 
-<p>![](http://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/24c35a57-b731-480e-9f6a-7918ab2202b9/2514x1454.png)</p>
+<p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/24c35a57-b731-480e-9f6a-7918ab2202b9/2514x1454.png" alt="" loading="lazy"></p>
 
 <p><b>Shipment Insurance:</b></p>
 
 <p>When buying a label, from either Shipments or Orders, you can now insure the shipment at the same step. Find it in the label window under Insurance.</p>
 
-<p>![](http://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/49bc4db7-dfde-4e32-8d0d-f5cf5958875e/2458x1280.png)</p>
+<p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/49bc4db7-dfde-4e32-8d0d-f5cf5958875e/2458x1280.png" alt="" loading="lazy"></p>
 
 <h3>Why It Matters:
 </h3>
@@ -60,7 +60,7 @@ November gave shipping its own home in the platform, rebuilt how catalog categor
 <li>Failed rows come back as an error report so nothing is silently dropped</li>
 </ul>
 
-<p>![](http://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/fb733014-eb21-4a55-93e9-50fb2c4a31fd/2274x1338.png)</p>
+<p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/fb733014-eb21-4a55-93e9-50fb2c4a31fd/2274x1338.png" alt="" loading="lazy"></p>
 
 <h3>Why It Matters:
 </h3>
@@ -81,7 +81,7 @@ November gave shipping its own home in the platform, rebuilt how catalog categor
 <li>The setting applies to mapping, product forms, and copy flows for that channel</li>
 </ul>
 
-<p>![](http://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/4c2e6bd0-0629-44f8-8e89-507012e32a57/1922x1030.png)</p>
+<p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/4c2e6bd0-0629-44f8-8e89-507012e32a57/1922x1030.png" alt="" loading="lazy"></p>
 
 <h3>Why It Matters:
 </h3>
@@ -105,7 +105,7 @@ November gave shipping its own home in the platform, rebuilt how catalog categor
 <li>Use Edit Variant inside the batch to manage that variant on its own</li>
 </ul>
 
-<p>![](http://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/a7bfb6ba-6779-48e8-a1c0-9a9c4047866d/1558x936.png)</p>
+<p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/a7bfb6ba-6779-48e8-a1c0-9a9c4047866d/1558x936.png" alt="" loading="lazy"></p>
 
 <h3>Why It Matters:
 </h3>
@@ -129,7 +129,7 @@ November gave shipping its own home in the platform, rebuilt how catalog categor
 <li>Set the percentage and the label displays the discount price automatically</li>
 </ul>
 
-<p>![](http://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/f0d5fc9f-86e6-4ca5-b78f-fbc2ac6ca12f/2426x1516.png)</p>
+<p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/f0d5fc9f-86e6-4ca5-b78f-fbc2ac6ca12f/2426x1516.png" alt="" loading="lazy"></p>
 
 <h3>Why It Matters:
 </h3>
@@ -146,7 +146,7 @@ November gave shipping its own home in the platform, rebuilt how catalog categor
 <li><b>Catalog in the Main Nav</b>: When catalog sync is enabled for your account, Catalog now appears directly in the top navigation so you can get to it in one click</li>
 </ul>
 
-<p>![](http://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/cc7135fe-1ce9-48f7-b39d-ac19238b3248/2422x1392.png)</p>
+<p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/cc7135fe-1ce9-48f7-b39d-ac19238b3248/2422x1392.png" alt="" loading="lazy"></p>
 
 <ul>
 <li><b>Catalog Quantity Protected When SellerChamp is Inventory Master</b>: Marketplace refreshes no longer push channel quantity onto catalog locations when SellerChamp owns inventory. Your own edits still update locations as before</li>
@@ -159,13 +159,13 @@ November gave shipping its own home in the platform, rebuilt how catalog categor
 <li><b>Test Mode Visible on the Data Feeds List</b>: The data feeds index now shows a Test Mode column so you can see at a glance which feeds are running in test mode without opening each one</li>
 </ul>
 
-<p>![](http://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/2b764f53-c3dd-4447-9954-0dc537468926/2446x1022.png)</p>
+<p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/2b764f53-c3dd-4447-9954-0dc537468926/2446x1022.png" alt="" loading="lazy"></p>
 
 <ul>
 <li><b>Filter MAP Enforcement Lists</b>: On MAP enforcement, you can now filter manufacturers by their Enforce MAP status to find exactly what you are looking for</li>
 </ul>
 
-<p>![](http://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/a900cc14-7695-4a6d-ac62-9439b784beea/1994x1230.png)</p>
+<p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/a900cc14-7695-4a6d-ac62-9439b784beea/1994x1230.png" alt="" loading="lazy"></p>
 
 <h3>Listings and Batches Enhancements
 </h3>
@@ -174,19 +174,19 @@ November gave shipping its own home in the platform, rebuilt how catalog categor
 <li><b>Print Item Labels on All Plans</b>: Bulk Print Item Labels is now available from batches and from the products page on all plans, with no plan restriction</li>
 </ul>
 
-<p>![](http://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/3c44fdc4-5c11-488d-a33c-78236bb55721/1816x1124.png)</p>
+<p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/3c44fdc4-5c11-488d-a33c-78236bb55721/1816x1124.png" alt="" loading="lazy"></p>
 
 <ul>
 <li><b>Download UPCs Not Found</b>: From inside a batch, download a CSV of UPCs that were not found so you know exactly what to look up or add</li>
 </ul>
 
-<p>![](http://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/444fc83b-110e-4459-9147-a95ef849657d/1836x1096.png)</p>
+<p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/444fc83b-110e-4459-9147-a95ef849657d/1836x1096.png" alt="" loading="lazy"></p>
 
 <ul>
 <li><b>Clearer Location Mapping Help</b>: The Location Mapping tab now explains that each SellerChamp location should map to a marketplace warehouse and what happens if it does not, making the setup easier to get right the first time</li>
 </ul>
 
-<p>![](http://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/02c2eb0f-20f7-493c-bef2-739783654141/1840x1060.png)</p>
+<p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/02c2eb0f-20f7-493c-bef2-739783654141/1840x1060.png" alt="" loading="lazy"></p>
 
 <h3>Orders Enhancements
 </h3>
@@ -195,19 +195,19 @@ November gave shipping its own home in the platform, rebuilt how catalog categor
 <li><b>Search and Export by Order Notes</b>: Order search now includes Order Notes as a search field, and CSV exports include that column. Order notes also appear in the shipping label window</li>
 </ul>
 
-<p>![](http://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/b99b3a67-0d9c-48d7-b054-1dcd342d7dd6/1266x1518.png)</p>
+<p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/b99b3a67-0d9c-48d7-b054-1dcd342d7dd6/1266x1518.png" alt="" loading="lazy"></p>
 
 <ul>
 <li><b>Supplier SKU When Assigning Fulfillment</b>: If an order needs a supplier SKU before it can be sent to a supplier, the set-fulfillment flow now asks for it per line item</li>
 </ul>
 
-<p>![](http://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/80b6c584-bb4b-4221-bef6-359515faf8e5/1832x930.png)</p>
+<p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/80b6c584-bb4b-4221-bef6-359515faf8e5/1832x930.png" alt="" loading="lazy"></p>
 
 <ul>
 <li><b>Manual Orders Show Status Right Away</b>: A newly created manual order now shows its order status immediately on the list and detail view, without needing a page refresh</li>
 </ul>
 
-<p>![](http://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/aa0e4657-bd3b-4fe7-8505-cb8e79bfca5f/1820x886.png)</p>
+<p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/aa0e4657-bd3b-4fe7-8505-cb8e79bfca5f/1820x886.png" alt="" loading="lazy"></p>
 
 <h3>Walmart Enhancements
 </h3>
@@ -216,7 +216,7 @@ November gave shipping its own home in the platform, rebuilt how catalog categor
 <li><b>Cancellation Reason When Canceling an Order</b>: Canceling a Walmart order now shows the cancellation reason dropdown, consistent with other channels that require a reason before confirming</li>
 </ul>
 
-<p>![](http://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/ea9191c3-69e8-489f-9d74-b9e154177050/1804x1168.png)</p>
+<p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/ea9191c3-69e8-489f-9d74-b9e154177050/1804x1168.png" alt="" loading="lazy"></p>
 
 <h3>WooCommerce Enhancements
 </h3>
@@ -225,7 +225,7 @@ November gave shipping its own home in the platform, rebuilt how catalog categor
 <li><b>Shipping Class on the Listing</b>: WooCommerce listings and variants can now set a shipping class directly in the listing editor. Leave it blank to clear the shipping class on WooCommerce when you push</li>
 </ul>
 
-<p>![](http://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/d17a8b32-b046-4409-9753-c8da49dbdd25/1860x976.png)</p>
+<p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/d17a8b32-b046-4409-9753-c8da49dbdd25/1860x976.png" alt="" loading="lazy"></p>
 
 <h3>Lightspeed Enhancements
 </h3>
@@ -234,13 +234,13 @@ November gave shipping its own home in the platform, rebuilt how catalog categor
 <li><b>Choose Which Lightspeed Sales to Import</b>: Import all completed sales, or limit to register and in-store sales only, so marketplace orders you export to Lightspeed are not imported back in as duplicates</li>
 </ul>
 
-<p>![](http://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/1f65953c-e097-482f-8228-d0cbda51e6a6/1802x1106.png)</p>
+<p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/1f65953c-e097-482f-8228-d0cbda51e6a6/1802x1106.png" alt="" loading="lazy"></p>
 
 <ul>
 <li><b>Shipping Line on Lightspeed Order Export</b>: Set the Lightspeed item ID or SKU used for buyer-paid shipping when marketplace orders are exported to Lightspeed. Discounts and taxes on that export are also handled more accurately</li>
 </ul>
 
-<p>![](http://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/821b99d7-7b02-47cb-b7c3-2dfb29bddb07/2512x1310.png)</p>
+<p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/821b99d7-7b02-47cb-b7c3-2dfb29bddb07/2512x1310.png" alt="" loading="lazy"></p>
 
 <h2>Final Thoughts
 </h2>
