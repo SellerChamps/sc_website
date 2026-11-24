@@ -57,6 +57,7 @@ defaults:
     values:
       layout: post
       permalink: /blog/:title/
+      author: sellerchamp-editorial
 
 # Pretty permalinks for pages
 permalink: pretty

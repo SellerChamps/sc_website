@@ -49,10 +49,14 @@ function buildFrontMatter(article) {
     `date: ${dateStr}`,
     `permalink: /blog/${article.slug}/`,
     `description: "${description}"`,
-    "reskin: true",
-    "---",
-    "",
   ];
+  if (article.image && article.image.url) {
+    lines.push(`image: "${yamlEscape(article.image.url)}"`);
+  }
+  if (article.author) {
+    lines.push(`author: ${yamlEscape(article.author)}`);
+  }
+  lines.push("reskin: true", "---", "");
   return lines.join("\n");
 }
 

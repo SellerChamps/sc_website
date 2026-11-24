@@ -1,0 +1,32 @@
+{% comment %}
+  Sets post_card_image from include.post: front matter image, else first markdown/HTML
+  image in the body (skips SellerChamp logo/icon placeholders).
+{% endcomment %}
+{% assign post_card_image = nil %}
+{% assign target = include.post %}
+
+{% if target.image and target.image != '' %}
+  {% assign post_card_image = target.image %}
+{% else %}
+  {% assign md_parts = target.content | split: '](' %}
+  {% for part in md_parts offset: 1 %}
+    {% assign src = part | split: ')' | first | strip | remove: '"' | remove: "'" %}
+    {% if src == '' %}{% continue %}{% endif %}
+    {% assign lower = src | downcase %}
+    {% if lower contains 'sellerchamp-logo' or lower contains 'sellerchamp-icon' %}{% continue %}{% endif %}
+    {% assign post_card_image = src %}
+    {% break %}
+  {% endfor %}
+
+  {% if post_card_image == nil and target.content contains 'src="' %}
+    {% assign html_parts = target.content | split: 'src="' %}
+    {% for part in html_parts offset: 1 %}
+      {% assign src = part | split: '"' | first | strip %}
+      {% if src == '' %}{% continue %}{% endif %}
+      {% assign lower = src | downcase %}
+      {% if lower contains 'sellerchamp-logo' or lower contains 'sellerchamp-icon' %}{% continue %}{% endif %}
+      {% assign post_card_image = src %}
+      {% break %}
+    {% endfor %}
+  {% endif %}
+{% endif %}

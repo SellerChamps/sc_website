@@ -1,0 +1,89 @@
+{% assign my_haystack = page.title | append: ' ' | append: page.url | downcase %}
+{% assign my_section = nil %}
+{% for section in site.data.blog_sections %}
+  {% unless my_section %}
+    {% for keyword in section.match %}
+      {% assign needle = keyword | downcase %}
+      {% if my_haystack contains needle %}
+        {% assign my_section = section %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endunless %}
+{% endfor %}
+
+{% assign similar_posts = '' | split: '' %}
+{% for post in site.posts %}
+  {% if post.url == page.url %}{% continue %}{% endif %}
+  {% if similar_posts.size >= 3 %}{% break %}{% endif %}
+  {% assign include_post = false %}
+  {% if my_section %}
+    {% assign haystack = post.title | append: ' ' | append: post.url | downcase %}
+    {% for keyword in my_section.match %}
+      {% assign needle = keyword | downcase %}
+      {% if haystack contains needle %}
+        {% assign include_post = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    {% assign include_post = true %}
+  {% endif %}
+  {% if include_post %}
+    {% assign similar_posts = similar_posts | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% if similar_posts.size < 3 %}
+  {% for post in site.posts %}
+    {% if post.url == page.url %}{% continue %}{% endif %}
+    {% if similar_posts.size >= 3 %}{% break %}{% endif %}
+    {% assign already = false %}
+    {% for picked in similar_posts %}
+      {% if picked.url == post.url %}
+        {% assign already = true %}
+      {% endif %}
+    {% endfor %}
+    {% unless already %}
+      {% assign similar_posts = similar_posts | push: post %}
+    {% endunless %}
+  {% endfor %}
+{% endif %}
+
+{% if similar_posts.size > 0 %}
+<section class="post-related" aria-labelledby="post-related-heading">
+  <div class="wrap post-related-in">
+    <h2 id="post-related-heading" class="post-related__title">Similar posts</h2>
+    <div class="post-related-grid">
+      {% for post in similar_posts %}
+      {% include post-featured-image.html post=post %}
+      <a class="post-related-card" href="{{ post.url | relative_url }}">
+        <div class="post-related-card__media">
+          {% if post_card_image %}
+          <img
+            src="{% if post_card_image contains '://' %}{{ post_card_image }}{% else %}{{ post_card_image | relative_url }}{% endif %}"
+            alt=""
+            width="400"
+            height="225"
+            loading="lazy"
+            decoding="async"
+          >
+          {% else %}
+          <div class="post-related-card__media-fallback" aria-hidden="true"></div>
+          {% endif %}
+        </div>
+        <div class="post-related-card__body">
+          {% if my_section %}
+          <span class="post-related-card__tag">{{ my_section.title }}</span>
+          {% else %}
+          <span class="post-related-card__tag">Guides &amp; tips</span>
+          {% endif %}
+          <h3 class="post-related-card__title">{{ post.title }}</h3>
+          <time class="post-related-card__date" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%B %-d, %Y' }}</time>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

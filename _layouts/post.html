@@ -2,19 +2,30 @@
 layout: default
 ---
 <article class="post-article">
-  <header class="page-hero page-hero--compact">
-    <div class="wrap page-hero-in">
+  <header class="page-hero page-hero--compact post-hero">
+    <div class="wrap page-hero-in post-hero-in">
       <p class="slabel">Blog</p>
       <h1>{{ page.title }}</h1>
-      <p class="post-meta">
-        <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %-d, %Y' }}</time>
-        {% if page.author %} · {{ page.author }}{% endif %}
-      </p>
+      {% include post-author-byline.html %}
     </div>
   </header>
-  <div class="wrap prose post-body">
-    {{ content }}
+
+  <div class="wrap post-layout">
+    <div class="prose post-body post-main" id="post-content">
+      {{ content }}
+    </div>
+    <aside class="post-sidebar" aria-label="Article tools">
+      <div class="post-toc" id="post-toc" role="navigation" aria-labelledby="post-toc-heading" hidden>
+        <p id="post-toc-heading" class="post-toc__label">Jump to section</p>
+        <ol class="post-toc__list" id="post-toc-list"></ol>
+      </div>
+      <div class="post-sidebar-cta">
+        {% include post-demo-banner.html %}
+      </div>
+    </aside>
   </div>
+
+  {% include post-similar-posts.html %}
 </article>
 
 <template id="post-demo-banner-template">

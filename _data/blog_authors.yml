@@ -1,0 +1,7 @@
+# Default author slug for posts without page.author
+default: sellerchamp-editorial
+
+authors:
+  sellerchamp-editorial:
+    name: Nizar Noorani
+    avatar: /assets/images/nizar_headshot.jpeg

@@ -1,0 +1,22 @@
+{% assign author_key = page.author | default: site.data.blog_authors.default %}
+{% assign author_record = site.data.blog_authors.authors[author_key] %}
+{% if author_record == nil %}
+  {% assign author_record = site.data.blog_authors.authors[site.data.blog_authors.default] %}
+{% endif %}
+<div class="post-byline">
+  <div class="post-byline__author">
+    {% if author_record.avatar %}
+    <img
+      class="post-byline__avatar"
+      src="{{ author_record.avatar | relative_url }}"
+      alt=""
+      width="44"
+      height="44"
+      loading="lazy"
+      decoding="async"
+    >
+    {% endif %}
+    <span class="post-byline__name">{{ author_record.name }}</span>
+  </div>
+  <time class="post-byline__date" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %-d, %Y' }}</time>
+</div>
