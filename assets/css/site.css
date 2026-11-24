@@ -1814,14 +1814,14 @@ a.int-logo:hover {
   background: rgba(255, 255, 255, 0.12);
 }
 
-.post-byline__name {
+.page-hero.post-hero .post-byline__name {
   color: rgba(255, 255, 255, 0.88);
   font-family: "Montserrat", system-ui, sans-serif;
   font-size: 0.95rem;
   font-weight: 600;
 }
 
-.post-byline__date {
+.page-hero.post-hero .post-byline__date {
   color: rgba(255, 255, 255, 0.62);
   font-family: "Montserrat", system-ui, sans-serif;
   font-size: 0.9rem;
@@ -1987,10 +1987,12 @@ a.int-logo:hover {
   gap: 1.25rem;
 }
 
-.post-related-card {
+a.post-related-card,
+a.post-related-card:visited {
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  color: inherit;
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 14px;
@@ -1998,10 +2000,28 @@ a.int-logo:hover {
   transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
-.post-related-card:hover {
+a.post-related-card:hover,
+a.post-related-card:focus-visible {
   border-color: var(--teal);
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(0, 207, 167, 0.12);
+  text-decoration: none;
+  color: inherit;
+}
+
+a.post-related-card .post-related-card__tag {
+  text-decoration: none;
+  color: var(--teal2);
+}
+
+a.post-related-card .post-related-card__title {
+  text-decoration: none;
+  color: var(--navy);
+}
+
+a.post-related-card .post-related-card__date {
+  text-decoration: none;
+  color: var(--muted2);
 }
 
 .post-related-card__media {
