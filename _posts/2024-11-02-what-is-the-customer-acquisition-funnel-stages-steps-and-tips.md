@@ -1,8 +1,8 @@
 ---
-title: What is the Customer Acquisition Funnel? Stages, Steps, and Tips
+title: Customer Acquisition Funnel: 5 Stages Explained (With Examples)
 date: 2024-11-02 12:00:00 +0000
 permalink: /blog/what-is-the-customer-acquisition-funnel-stages-steps-and-tips/
-description: Learn the stages and steps of the customer acquisition funnel and get essential tips to attract, convert, and retain customers.
+description: A clear breakdown of all 5 funnel stages — awareness to retention — with the exact tactics to use at each one to convert more browsers into buyers.
 reskin: true
 ---
 
