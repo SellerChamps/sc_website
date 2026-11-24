@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 // Converts Ryze-published article JSON files into Jekyll posts in _posts/.
 // No npm dependencies. Idempotent: re-running overwrites only its own output.
+//
+// Ryze (get-ryze.ai) publishes JSON to blog/data/. CI runs this script before
+// Jekyll build (.github/workflows/jekyll.yml). Local: node scripts/ryze-convert.mjs
 
 import { readdirSync, readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import path from "node:path";
