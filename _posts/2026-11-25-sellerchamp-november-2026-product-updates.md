@@ -1,6 +1,6 @@
 ---
 title: SellerChamp November 2026 Product Updates
-date: 2026-11-28 12:00:00 +0000
+date: 2026-11-25 12:00:00 +0000
 permalink: /blog/sellerchamp-november-2026-product-updates/
 description: SellerChamp November 2026 updates add standalone Shipments, catalog category CSV uploads, variant editing in batches, discount price labels, and more.
 reskin: true
