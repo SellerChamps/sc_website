@@ -1,6 +1,6 @@
 ---
 title: SellerChamp November 2026 Product Updates
-date: 2026-11-24 08:00:00 +0000
+date: 2026-11-28 12:00:00 +0000
 permalink: /blog/sellerchamp-november-2026-product-updates/
 description: SellerChamp November 2026 updates add standalone Shipments, catalog category CSV uploads, variant editing in batches, discount price labels, and more.
 reskin: true
@@ -67,18 +67,18 @@ November gave shipping its own home in the platform, rebuilt how catalog categor
 
 <p>Manually setting up category mappings one at a time is impractical for large catalogs. CSV uploads let you configure and update categories in bulk, and the error report ensures you can find and fix any issues without starting over.</p>
 
-<h3>Limit Which Marketplace Categories Are Shown
+<h3>Populate Catalog Categories from a Selling Channel
 </h3>
 
-<p>Per selling channel, you can now control which marketplace categories appear across mapping, product forms, and copy flows.</p>
+<p>You can now populate your catalog categories directly from a specific selling channel.</p>
 
 <h3>What's New:
 </h3>
 
 <ul>
-<li>Set the category filter at Settings → Account Setup → Mappings → Marketplace Categories</li>
-<li>Choose to show all categories, only categories already on your products, or categories from an uploaded file</li>
-<li>The setting applies to mapping, product forms, and copy flows for that channel</li>
+<li>Go to Settings → Account Setup → Mappings → Marketplace Categories</li>
+<li>Select the selling channel to pull categories from</li>
+<li>Your catalog categories are populated from that channel's category structure</li>
 </ul>
 
 <p><img src="https://cdn.mcauto-images-production.sendgrid.net/45174282d0a602d8/4c2e6bd0-0629-44f8-8e89-507012e32a57/1922x1030.png" alt="" loading="lazy"></p>
@@ -86,7 +86,7 @@ November gave shipping its own home in the platform, rebuilt how catalog categor
 <h3>Why It Matters:
 </h3>
 
-<p>Marketplaces can have hundreds or thousands of categories. Limiting the visible set to only the categories you actually use makes mapping faster, reduces errors, and keeps dropdowns clean for your team.</p>
+<p>Manually building out catalog category lists is tedious. Pulling them directly from a selling channel means your catalog structure matches the channel from day one, with no duplicate data entry.</p>
 
 <h2>Listings Updates
 </h2>
@@ -150,6 +150,7 @@ November gave shipping its own home in the platform, rebuilt how catalog categor
 
 <ul>
 <li><b>Catalog Quantity Protected When SellerChamp is Inventory Master</b>: Marketplace refreshes no longer push channel quantity onto catalog locations when SellerChamp owns inventory. Your own edits still update locations as before</li>
+<li><b>Selling Channel Category Control</b>: Users can now restrict which categories are available for each selling channel, giving you tighter control over what your team can assign per channel</li>
 </ul>
 
 <h3>Feeds and Pricing Enhancements
