@@ -2,6 +2,8 @@
 title: "What is Automated Inventory Management and 9 Tips for You!"
 date: 2024-09-05 12:00:00 +0000
 permalink: /blog/automated-inventory-management/
+redirect_from:
+  - /blog/multi-channel-inventory-management-solution-integration-steps/
 description: An automated Inventory Management boosts efficiency, reduces errors, and streamlines control. Learn 9 ways to get it right in this article.
 reskin: true
 ---
