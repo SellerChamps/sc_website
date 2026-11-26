@@ -1,0 +1,7 @@
+{%- if page.search_title -%}
+{{ page.search_title }} | {{ site.title }}
+{%- elsif page.title -%}
+{{ page.title }} | {{ site.title }}
+{%- else -%}
+{{ site.title }}
+{%- endif -%}
